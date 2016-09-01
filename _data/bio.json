@@ -68,7 +68,7 @@
   ],
   "education": [
     {
-      "institution": "University of Hawaii, Honolulu, HI",
+      "institution": "University of Hawaii at Manoa, Honolulu, HI",
       "area": "Computer Science (expected Spring, 2018)",
       "studyType": "B.S.",
       "startDate": "2014-09-01",
@@ -90,13 +90,16 @@
   ],
   "work": [
     {
-      "company": "UH Manoa",
+      "company": "University of Hawaii at Manoa Information and Computer Sciences Department",
       "position": "Teaching Assistant",
       "website": "",
       "startDate": "2015-08-17",
       "endDate": "Present",
-      "summary": "Teaching Assistant for ICS 101",
+      "summary": "Undergraduate teaching assistant for ICS 101 (Digital Tools for the Information World), teaching the use of various software including MicroSoft Office, SSH and Adobe Dreamweaver",
       "highlights": [
+        "Conducted 75-min lab sessions twice a week",
+        "Developed full lesson plans including class format and material for each lab session",
+        "Handled student grades including grading homework and quizzes"
       ]
     },
     {
@@ -105,11 +108,12 @@
       "website": "",
       "startDate": "2016-06-16",
       "endDate": "2016-07-29",
-      "summary": "IT Intern for the County of Kauai",
+      "summary": "Intern for the County of Kauai IT Department",
       "highlights": [
-        "Build & deployed new computers. Replaced & repaired old computers",
+        "Build and deployed new shipment of computers for county employees that needed an upgrade",
+        "Repaired computers that were still in good condition",
+        "Handled technical calls weekly",
         "Expanded a local area network",
-        "Handled technical calls daily",
         "Securely erased hard drives"
       ]
     },
@@ -122,7 +126,7 @@
       "summary": "Intern for the Fire Department",
       "highlights": [
         "Database management using DBMS software",
-        "Created & digitized new forms using a variety of software"
+        "Created and digitized new forms using a variety of software"
       ]
     }
   ],
@@ -137,7 +141,7 @@
       "highlights": [
       ]
     }
-  ],
+  ]<!---,
   "awards": [
     {
       "title": "",
@@ -151,5 +155,5 @@
       "name": "Available upon request",
       "reference": ""
     }
-  ]
+  ]--->
 }
