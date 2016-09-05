@@ -13,7 +13,7 @@ labels:
 
 From playing with Legos to drawing with a pencil, building and designing has always been a concept that I have been fascinated with. To see the little intricate designs within something someone built is very impressive and amazing. There is also this, feeling, a sense of accomplishment that feels amazing when you can look at what you built or designed and say "Yeah, I made that." Combining this exact feeling along with the adding little intricate designs is why I decided to take Computer Science as a major. 
 
-<img class="ui right small circular floated image" src="../images/99littlebugs.png">
+<img class="ui right tiny circular floated image" src="../images/99littlebugs2.png">
 
 Programming is just as I imagined. With the intricacies being the amount of lines to type, just to have them fall together to build an application or even a website, is something I enjoy. Programming does have its nightmares though. The amount of hours one could put into a debug can be a real headache but this is where the sense of accomplishment comes back into play. Once the bugs have been found and fixed, after so long, that sense of accomplishment escalates even more.
 
