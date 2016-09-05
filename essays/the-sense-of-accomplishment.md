@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-published: false
+published: true
 title: The Sense of Accomplishment
 date: 2016-08-28
 labels:
