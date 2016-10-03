@@ -62,7 +62,7 @@
       "level": "",
       "keywords": [
         "Windows",
-        "Ubuntu",
+        "Linux (Ubuntu)",
         "Git/GitHub"
       ]
     }
@@ -75,7 +75,11 @@
       "startDate": "2014-09-01",
       "endDate": "Present",
       "gpa": "",
-      "courses": [
+      "courses": [ 
+        "Program Structure",
+        "Software Engineering I",
+        "Data Storage & Retrievel",
+        "Computing Ethics for Lab Assistants"
       ]
     },
     {
