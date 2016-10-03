@@ -76,6 +76,8 @@
       "endDate": "Present",
       "gpa": "",
       "courses": [ 
+        "Introduction to Computer Science I & II",
+        "Discrete Mathematics I & II",
         "Program Structure",
         "Software Engineering I",
         "Data Storage & Retrievel",
