@@ -1,12 +1,12 @@
 {
   "basics": {
-    "name": "Michael Mangrobang (Micky)",
+    "name": "Michael (Micky) Mangrobang",
     "label": "Student",
     "picture": "https://mickyjm.github.io/images/mMangro-1.jpg",
-    "email": "mjm4@hawaii.edu",
+    "email": "micky.jm4@gmail.com",
     "phone": "",
     "website": "https://mickyjm.github.io",
-    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring, 2018.",
+    "summary": "I am a student attending University of Hawaii at Manoa and am currently studying for a B.S. in Computer Science in the Department of Information and Computer Sciences. I expect to graduate in Spring, 2018.",
     "location": {
       "address": "",
       "postalCode": "96822",
@@ -22,24 +22,24 @@
       },
       {
         "network": "linkedin",
-        "username": "",
-        "url": "http://linkedin.com/in/michael-mangrobang-48826a124"
+        "username": "mickyjm",
+        "url": "http://linkedin.com/in/mickyjm"
       }
     ]
   },
   "interests": [
+    {
+      "name": "videogame development",
+      "keywords": [
+      ]
+    },
     {
       "name": "artificial intelligence",
       "keywords": [
       ]
     },
     {
-      "name": "software engineering",
-      "keywords": [
-      ]
-    },
-    {
-      "name": "video game development",
+      "name": "software engeeering",
       "keywords": [
       ]
     }
@@ -49,11 +49,13 @@
       "name": "Languages and Frameworks",
       "level": "",
       "keywords": [
-        "C",
         "C++",
+        "C",
         "Java",
         "Javascript",
         "HTML",
+        "Semantic UI",
+        "Meteor",
         "PHP"
       ]
     },
@@ -70,7 +72,7 @@
   "education": [
     {
       "institution": "University of Hawaii at Manoa, Honolulu, HI",
-      "area": "Computer Science (expected Spring, 2018)",
+      "area": "Computer Science (expected Spring 2018)",
       "studyType": "B.S.",
       "startDate": "2014-09-01",
       "endDate": "Present",
@@ -99,38 +101,51 @@
     {
       "company": "University of Hawaii at Manoa Information and Computer Sciences Department",
       "position": "Teaching Assistant",
-      "website": "",
+      "website": "http://www.ics.hawaii.edu/",
       "startDate": "2016-08-17",
       "endDate": "Present",
-      "summary": "Undergraduate teaching assistant for ICS 101 (Digital Tools for the Information World), teaching the use of various software including MicroSoft Office, SSH and Adobe Dreamweaver",
+      "summary": "Undergraduate teaching assistant for ICS 101 (Digital Tools for the Information World), teaching the use of various software including Microsoft Office, SSH and Adobe Dreamweaver",
       "highlights": [
-        "Conducted 75-min lab sessions twice a week",
+        "Conducted 75-minute lab sessions twice a week",
         "Developed full lesson plans including class format and material for each lab session",
-        "Handled student grades including grading homework and quizzes"
+        "Handled student grades including grading homework, quizzes and overal course grade"
       ]
     },
     {
-      "company": "County of Kauai IT Department",
+      "company": "County of Kauai Finance Department (Information Technology)",
       "position": "Intern",
-      "website": "",
+      "website": "http://www.kauai.gov/Government/Departments/Finance/IT",
       "startDate": "2016-06-16",
       "endDate": "2016-07-29",
-      "summary": "Intern for the County of Kauai IT Department",
+      "summary": "Interned for the County of Kauai IT Department, handling various technical support issues",
       "highlights": [
-        "Build and deployed new shipment of computers for county employees that needed an upgrade",
-        "Repaired computers that were still in good condition",
+        "Built and deployed new shipment of computers for county employees that needed an upgrade",
+        "Repaired computers that did not need to be upgraded",
         "Handled technical calls weekly",
         "Expanded a local area network",
         "Securely erased hard drives"
       ]
     },
     {
+      "company": "University of Hawaii at Manoa Information and Computer Sciences Department",
+      "position": "Assistant Teaching Assistant",
+      "website": "http://www.ics.hawaii.edu/",
+      "startDate": "2016-01-16",
+      "endDate": "2016-05-15",
+      "summary": "Assistant teaching assistant for ICS101 (Digital Tools for the Information World), assisting both the teaching assistant and students",
+      "highlights": [
+        "Supported a lab session twice a week helping the teaching assistant throughout their lesson",
+        "Conducted a week of lab",
+        "Developed a week's worth of lesson plans including class format and material for each session"
+      ]
+    },
+    {
       "company": "County of Kauai Fire Department",
       "position": "Intern",
-      "website": "",
+      "website": "http://www.kauai.gov/fire",
       "startDate": "2015-06-16",
       "endDate": "2015-07-31",
-      "summary": "Intern for the County of Kauai Fire Department",
+      "summary": "Interned for the County of Kauai Fire Department, managing the Fire Department's database",
       "highlights": [
         "Database management using DBMS software",
         "Created and digitized new forms using a variety of software"
