@@ -113,7 +113,7 @@
     },
     {
       "company": "County of Kauai Finance Department (Information Technology)",
-      "position": "Intern",
+      "position": "IT Intern",
       "website": "http://www.kauai.gov/Government/Departments/Finance/IT",
       "startDate": "2016-06-16",
       "endDate": "2016-07-29",
@@ -141,7 +141,7 @@
     },
     {
       "company": "County of Kauai Fire Department",
-      "position": "Intern",
+      "position": "Fire Intern",
       "website": "http://www.kauai.gov/fire",
       "startDate": "2015-06-16",
       "endDate": "2015-07-31",
@@ -157,7 +157,7 @@
       "title": "Certificate of Achievement - 4th Place",
       "date": "2016-11-05",
       "awarder": "International Collegiate Programming Contest",
-      "summary": "Recieved a Certificate of Achievement for placing in 4th place with my team in the International Collegiate Programming Contest, sponsored by IBM."
+      "summary": "Recieved a Certificate of Achievement for placing in 4th place statewide with my team in the International Collegiate Programming Contest, sponsored by IBM."
     }
   ],
   "references": [
