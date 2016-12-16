@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-published: true
+published: false
 title: Reflecting on JavaScript and WODs
 date: 2016-09-01
 labels:
