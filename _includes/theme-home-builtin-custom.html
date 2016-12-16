@@ -8,14 +8,13 @@
 
   <div style="text-align: center;" class="column">
     <div  class="ui rounded image">
-      <img style="max-width: 300px; padding:5px; border:1px solid #021a40; background-color:#fff;" src="{{ site.data.bio.basics.picture }}">
+      <img style="max-width: 250px; padding:5px; border:1px solid #021a40; background-color:#fff;" src="{{ site.data.bio.basics.picture }}">
     </div>
   </div>
 
   <div class="column">
     <h2 class="header no-bottom">{{ site.data.bio.basics.name }}</h2>
     <p class="">{{ site.data.bio.basics.label }}</p>
-    <div class="">{% include bio-address.html %}</div>
     <p class="">
       {{ site.data.bio.basics.summary }}
     </p>
@@ -29,8 +28,8 @@
       <a href="{{ site.baseurl}}/essays/">
         <button class="ui basic button">Essays ({{ num_essays }})</button>
       </a>
-      <a href="{{ site.baseurl}}/downloads/MichaelMangrobangRésumé.pdf">
-       <button class="ui basic button">Résumé</button>
+      <a href="{{ site.baseurl}}/downloads/MichaelMangrobangRésumé.pdf" target="_blank">
+       <button class="ui basic button">Résumé (Download)</button>
      </a>
     </p>
   </div>
