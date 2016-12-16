@@ -1,0 +1,49 @@
+<!-- Custom Home page design -->
+{% assign essay_pages = site.pages | where: "type", "essay"  | where_exp: "page", "page.draft != true" %}
+{% assign project_pages = site.pages | where: "type", "project" | where_exp: "page", "page.draft != true" %}
+{% assign num_essays = essay_pages.size %}
+{% assign num_projects = project_pages.size %}
+
+<div style="height: 100%;" class="ui middle equal width centered stackable grid container">
+
+  <div class="row">
+
+    <div style="text-align: center" class="column">
+      <div  class="ui circular image">
+        <img style="max-width: 300px; border-radius: 50%; padding:5px; border:1px solid #021a40; background-color:#fff;" src="{{ site.data.bio.basics.picture }}">
+      </div>
+    </div>
+
+    <div class="column">
+      <h2 class="header no-bottom">{{ site.data.bio.basics.name }}</h2>
+      <p class="">{{ site.data.bio.basics.label }}</p>
+      <p class="">{{ site.data.bio.basics.address }}</p>
+      <p class="">
+        {{ site.data.bio.basics.summary }}
+      </p>
+      <p style="text-align: center">
+        {% include home-network-links.html %}
+      </p>
+      <p style="text-align: center">
+        <a href="{{ site.baseurl}}/projects/">
+          <button class="ui basic button">Projects ({{ num_projects }})</button>
+        </a>
+        <a href="{{ site.baseurl}}/essays/">
+          <button class="ui basic button">Essays ({{ num_essays }})</button>
+        </a>
+      </p>
+    </div>
+
+  </div>
+
+  <div style="margin-bottom: 20px" class="ui stackable grid container">
+    {% include bio-interests-1.html %}
+    {% include bio-skills-1.html %}
+    {% include bio-education-1.html %}
+    {% include bio-work-1.html %}
+    {% include bio-volunteer-1.html %}
+    {% include bio-publications-1.html %}
+    {% include bio-awards-1.html %}
+  </div>
+
+</div>
