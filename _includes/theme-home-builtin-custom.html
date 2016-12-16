@@ -4,24 +4,24 @@
 {% assign num_essays = essay_pages.size %}
 {% assign num_projects = project_pages.size %}
 
-<div style="height:100%; padding-top:100px;" class="ui middle middle aligned two column centered stackable grid container">
+<div style="height: 100%; padding-top: 100px; border: 5px solid black;" class="ui middle middle aligned two column centered stackable grid container">
 
-  <div style="text-align:center;" class="column">
+  <div style="text-align: center;" class="column">
     <div  class="ui rounded image">
-      <img style="max-width:300px; padding:5px; border:1px solid #021a40; background-color:#fff;" src="{{ site.data.bio.basics.picture }}">
+      <img style="max-width: 300px; padding:5px; border:1px solid #021a40; background-color:#fff;" src="{{ site.data.bio.basics.picture }}">
     </div>
   </div>
 
-  <div class="column" style="border:1px solid black">
+  <div class="column">
     <h2 class="header no-bottom">{{ site.data.bio.basics.name }}</h2>
     <p class="">{{ site.data.bio.basics.label }}</p>
     <p class="">
       {{ site.data.bio.basics.summary }}
     </p>
-    <p style="text-align:center;">
+    <p style="text-align: center;">
       {% include home-network-links.html %}
     </p>
-    <p style="text-align:center;">
+    <p style="text-align: center;">
       <a href="{{ site.baseurl}}/projects/">
         <button class="ui basic button">Projects ({{ num_projects }})</button>
       </a>
@@ -35,7 +35,7 @@
   </div>
 
 <div class="row">
-  <div style="text-align:left; margin-bottom:20px;" class="ui stackable grid container">
+  <div style="text-align: left; margin-bottom: 20px;" class="ui stackable grid container">
     {% include bio-interests-1.html %}
     {% include bio-skills-1.html %}
     {% include bio-education-1.html %}
