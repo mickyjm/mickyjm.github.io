@@ -14,7 +14,8 @@
 
   <div class="column">
     <h2 class="header no-bottom">{{ site.data.bio.basics.name }}</h2>
-    <p class="">{{ site.data.bio.basics.label }}<span style="float:right;">{% include bio-address.html %}</span></p>
+    <div class="left floated column">{{ site.data.bio.basics.label }}</div>
+    <div class="right floated column">{% include bio-address.html %}</div>
     <p class="">
       {{ site.data.bio.basics.summary }}
     </p>
@@ -30,8 +31,6 @@
       </a>
     </p>
   </div>
-
- <div class="ui section divider"></div>
 
 <div class="row">
   <div style="text-align: left; margin-bottom: 20px;" class="ui stackable grid container">
