@@ -4,7 +4,7 @@
 {% assign num_essays = essay_pages.size %}
 {% assign num_projects = project_pages.size %}
 
-<div style="height: 100%; padding-top: 50px;" class="ui middle middle aligned two column centered stackable grid container">
+<div style="height: 100%; padding-top: 100px;" class="ui middle middle aligned two column centered stackable grid container">
 
   <div style="text-align: center;" class="column">
     <div  class="ui rounded image">
@@ -14,8 +14,7 @@
 
   <div class="column">
     <h2 class="header no-bottom">{{ site.data.bio.basics.name }}</h2>
-    <p class="no-bottom">{{ site.data.bio.basics.label }}</p>
-    <p class="">{% include bio-address.html %}</p>
+    <p class="">{{ site.data.bio.basics.label }}<span style="float:right;">{% include bio-address.html %}</span></p>
     <p class="">
       {{ site.data.bio.basics.summary }}
     </p>
@@ -32,7 +31,7 @@
     </p>
   </div>
 
- <div class="ui divider"></div>
+ <div class="ui section divider"></div>
 
 <div class="row">
   <div style="text-align: left; margin-bottom: 20px;" class="ui stackable grid container">
