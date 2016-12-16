@@ -29,17 +29,27 @@
   },
   "interests": [
     {
-      "name": "videogame development",
+      "name": "Video Game Development",
       "keywords": [
       ]
     },
     {
-      "name": "artificial intelligence",
+      "name": "Artificial Intelligence",
       "keywords": [
       ]
     },
     {
-      "name": "software engeeering",
+      "name": "Web Development",
+      "keywords": [
+      ]
+    },
+    {
+      "name": "Software Engineering",
+      "keywords": [
+      ]
+    },
+    {
+      "name": "Database Management",
       "keywords": [
       ]
     }
@@ -56,6 +66,7 @@
         "HTML",
         "Semantic UI",
         "Meteor",
+        "SQL",
         "PHP"
       ]
     },
