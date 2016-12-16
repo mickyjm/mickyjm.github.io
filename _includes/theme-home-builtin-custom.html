@@ -4,18 +4,18 @@
 {% assign num_essays = essay_pages.size %}
 {% assign num_projects = project_pages.size %}
 
-<div style="height: 100%;" class="ui middle middle aligned two column centered stackable grid container">
+<div style="height: 100%; padding-top: 50px;" class="ui middle middle aligned two column centered stackable grid container">
 
   <div style="text-align: center;" class="column">
-    <div  class="ui circular image">
-      <img style="max-width: 300px; border-radius: 50%; padding:5px; border:1px solid #021a40; background-color:#fff;" src="{{ site.data.bio.basics.picture }}">
+    <div  class="ui rounded image">
+      <img style="max-width: 200px; border-radius: 50%; padding:5px; border:1px solid #021a40; background-color:#fff;" src="{{ site.data.bio.basics.picture }}">
     </div>
   </div>
 
   <div class="column">
     <h2 class="header no-bottom">{{ site.data.bio.basics.name }}</h2>
     <p class="">{{ site.data.bio.basics.label }}</p>
-    <p class="">{% include bio-address.html %}</p>
+    <p class="">{{ site.data.bio.basics.location }}</p>
     <p class="">
       {{ site.data.bio.basics.summary }}
     </p>
@@ -31,6 +31,8 @@
       </a>
     </p>
   </div>
+
+<hr />
 
 <div class="row">
   <div style="text-align: left; margin-bottom: 20px;" class="ui stackable grid container">
