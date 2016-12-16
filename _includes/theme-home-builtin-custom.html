@@ -4,63 +4,46 @@
 {% assign num_essays = essay_pages.size %}
 {% assign num_projects = project_pages.size %}
 
-<div style="height: 100%; margin-top: -75px" class="ui middle aligned centered stackable grid container">
+<div style="height: 100%; padding-top: 100px;" class="ui middle aligned two column centered stackable grid container">
+
+  <div style="text-align: center;" class="column">
+    <div  class="ui rounded image">
+      <img style="max-width: 300px; padding:5px; border:1px solid #021a40; background-color:#fff;" src="{{ site.data.bio.basics.picture }}">
+    </div>
+  </div>
 
   <div class="column">
+    <h2 class="header no-bottom">{{ site.data.bio.basics.name }}</h2>
+    <p class="">{{ site.data.bio.basics.label }}</p>
+    <p class="">
+      {{ site.data.bio.basics.summary }}
+    </p>
+    <p style="text-align: center;">
+      {% include home-network-links.html %}
+    </p>
+    <p style="text-align: center;">
+      <a href="{{ site.baseurl}}/projects/">
+        <button class="ui basic button">Projects ({{ num_projects }})</button>
+      </a>
+      <a href="{{ site.baseurl}}/essays/">
+        <button class="ui basic button">Essays ({{ num_essays }})</button>
+      </a>
+      <a href="{{ site.baseurl}}/downloads/MichaelMangrobangRésumé.pdf" target="_blank">
+       <button class="ui basic button">Résumé (PDF)</button>
+     </a>
+    </p>
+  </div>
 
-    <div style="position: relative; top: 75px; z-index: 1" class="ui fluid centered small circular image">
-      <img src="{{ site.data.bio.basics.picture }}">
-    </div>
-
-
-    <div style="max-width: 500px; padding-top: 75px; margin-top: 0px" class="ui fluid centered card">
-
-      <div class="center aligned content">
-        <span class="header">{{ site.data.bio.basics.name }}</span>
-        <div class="meta">
-          <span class="date">{{ site.data.bio.basics.label }}</span>
-        </div>
-        <div class="left aligned description">
-          {{ site.data.bio.basics.summary }}
-        </div>
-      </div>
-      <div class="center aligned content">
-        <div class="description">
-          Interests:
-          {% for interest in site.data.bio.interests %}
-            {{ interest.name }}{% if forloop.last != true %}, {% endif %}
-          {% endfor %}
-
-        </div>
-      </div>
-      <div class="center aligned extra content">
-        {% include home-network-links.html %}
-      </div>
-      <div class="center aligned content">
-        <a href="{{ site.baseurl}}/projects/">
-          <button class="ui basic button">Projects ({{ num_projects }})</button>
-        </a>
-        <a href="{{ site.baseurl}}/essays/">
-          <button class="ui basic button">Essays ({{ num_essays }})</button>
-        </a>
-        <a href="{{ site.baseurl}}/bio/">
-          <button class="ui basic button">{{ site.bio-page-label }}</button>
-        </a>
-      </div>
+  <div class="row">
+    <div style="text-align: left; margin-bottom: 20px;" class="ui stackable grid container">
+      {% include bio-interests-1.html %}
+      {% include bio-skills-1.html %}
+      {% include bio-education-1.html %}
+      {% include bio-work-1.html %}
+      {% include bio-volunteer-1.html %}
+      {% include bio-publications-1.html %}
+      {% include bio-awards-1.html %}
     </div>
   </div>
-     
 
-<div class="row">
-  <div style="text-align: left; margin-bottom: 20px;" class="ui stackable grid container">
-    {% include bio-interests-1.html %}
-    {% include bio-skills-1.html %}
-    {% include bio-education-1.html %}
-    {% include bio-work-1.html %}
-    {% include bio-volunteer-1.html %}
-    {% include bio-publications-1.html %}
-    {% include bio-awards-1.html %}
-  </div>
-</div>
-  
 </div>
