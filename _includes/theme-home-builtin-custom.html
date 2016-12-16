@@ -8,14 +8,14 @@
 
   <div style="text-align: center;" class="column">
     <div  class="ui rounded image">
-      <img style="max-width: 200px; border-radius: 50%; padding:5px; border:1px solid #021a40; background-color:#fff;" src="{{ site.data.bio.basics.picture }}">
+      <img style="max-width: 300px; padding:5px; border:1px solid #021a40; background-color:#fff;" src="{{ site.data.bio.basics.picture }}">
     </div>
   </div>
 
   <div class="column">
     <h2 class="header no-bottom">{{ site.data.bio.basics.name }}</h2>
-    <p class="">{{ site.data.bio.basics.label }}</p>
-    <p class="">{{ site.data.bio.basics.location }}</p>
+    <p class="no-bottom">{{ site.data.bio.basics.label }}</p>
+    <p class="">{% include bio-address.html %}</p>
     <p class="">
       {{ site.data.bio.basics.summary }}
     </p>
@@ -32,7 +32,7 @@
     </p>
   </div>
 
-<hr />
+ <div class="ui divider"></div>
 
 <div class="row">
   <div style="text-align: left; margin-bottom: 20px;" class="ui stackable grid container">
