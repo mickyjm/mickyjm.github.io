@@ -24,3 +24,4 @@ With coding standards making code easier to read, it also made learning a progra
 <img class="ui medium right floated image" src="../images/bugs-everywhere.jpg">
 
 Having already learned other professor's coding standards, using ESLint with Intellij over the past week does not bother me at all. Since I already have learned some form of coding standard from my previous ICS courses, I do not run into errors from ESLint. Having ESLint enabled is, more or less, just there to keep me in check. Though ESLint does not do too much for me now, it will start to shine later on throughout the semester. Having a coding standard for the class will make group projects much easier to collaborate and learn from.
+<div style="height:50px;"></div>
