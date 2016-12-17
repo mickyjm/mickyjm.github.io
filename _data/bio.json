@@ -6,7 +6,7 @@
     "email": "micky.jm4@gmail.com",
     "phone": "",
     "website": "https://mickyjm.github.io",
-    "summary": "I am a student attending University of Hawaii at Manoa and am currently studying for a B.S. in Computer Science in the Department of Information and Computer Sciences. I expect to graduate in Spring, 2018. When I graduate, I am hoping to work in one of my field of interests. Much like my degree, this site is in progress!",
+    "summary": "I am a student currently attending University of Hawaii at Manoa studying for a B.S. in Computer Science in the Department of Information and Computer Sciences. I also currently work as a Teaching Assistant for the ICS 101 course. I expect to graduate in Spring, 2018. When I graduate, I am hoping to work in one of my field of interests. Much like my degree, this site is in progress!",
     "location": {
       "address": "",
       "postalCode": "96822",
@@ -50,6 +50,11 @@
     },
     {
       "name": "Database Management",
+      "keywords": [
+      ]
+    },
+    {
+      "name": "Intellectual Property Law",
       "keywords": [
       ]
     }
