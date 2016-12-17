@@ -26,11 +26,11 @@ Moar Chow is a web app that my team and I developed for ICS 314. The app require
 
 My team and I developed the app during the last few weeks of the semester as a final project. During this time I designed the user interface. Although it may not look like much, I did spend a lot of time researching modern website layouts and figuring out how to set them up with Semantic UI and Meteor's Blaze Templates.
 
-Looking back on this experience, I probably did not contribute as much as I would have wanted to for my team, but I did gain a better understanding of Web Development, from both the front-end and back-end. The experience has also helped me realize that I enjoy doing Web Development.
-
 <div align="middle">
   <img class="ui image" src="../images/moarchow.png" >
 </div>
+
+Looking back on this experience, I probably did not contribute as much as I would have wanted to for my team, but I did gain a better understanding of Web Development, from both the front-end and back-end. The experience has also helped me realize that I enjoy doing Web Development.
 
 ## Other Moar Chow Members
 
