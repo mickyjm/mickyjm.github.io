@@ -27,3 +27,4 @@ Whether the navigation was through a dense forest or an open ocean, they had to 
 ## Beginner Friendly
 
 Navigation through the use of the sky still fascinates me to this day, which is what I find cool about <em>Meteor</em> and its use of <em>MongoDB</em>. Though I do not dislike SQL, I really enjoy <em>Meteor's</em> way of interacting with the database versus writing SQL statements. Although <em>Meteor</em> may be my first client-server application, but I would have to say that it is great as an application architecture, especially for those using one for the first time.
+<div style="height:50px;"></div>
