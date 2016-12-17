@@ -20,3 +20,4 @@ During my first year of pursuing a Computer Science degree, I had already heard 
 ## Is git or GitHub more popular?
 
 I guess my question now is, "Do you mean back then or now?", because Git and GitHub really complement each other. I would have to say that, back then, git was popular because it was the preferred choice for configuration management. With git being the preferred choice, this made GitHub popular. While now, since GitHub has become really popular and used a lot throughout the programming community, a lot of people decide learn git because it just makes their work that much easier. In the end, depending on how you look at this question, there really is no right or wrong answer.
+<div style="height:50px;"></div>
