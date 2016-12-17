@@ -1,0 +1,27 @@
+---
+layout: project
+type: project
+published: true
+image: images/moarfood.png
+title: Moar Chow
+permalink: projects/moarchow
+date: 2016
+labels:
+  - HTML
+  - CSS
+  - Semantic UI
+  - Meteor
+  - MongoDB
+  - IntelliJ IDEA
+summary: A website about myself that I created for ICS 101.
+---
+
+<div align="middle">
+  <img class="ui image" src="../images/ics101-website-preview.png" >
+</div>
+
+ICS 101 is an introductory course that goes over a lot of software. Although not a requirement for the ICS program, I took this course to open myself to the ungrad Teaching Assistant opportunity. Throughout ICS 101 we go through the use of Microsoft Word, PowerPoint, Excel, Photoshop and my two personal favorites SSH and Dreamweaver. During the Dreamweaver section we went over HTML and CSS. We then had to create a small website about ourselves using Dreamweaver.
+
+The website I created is rather basic. There is five pages total, not including the references page. The homepage features my logo that I made through Photoshop. The other pages features my education, hobbies and projects. 
+
+To view the website or just read a little more about me you can click [here](http://www2.hawaii.edu/~mjm4/me/).
