@@ -45,5 +45,4 @@ Looking back on this experience, I probably did not contribute as much as I woul
 </ul>
 
 The website is no longer running but you can find the source code [here](https://moarchow.github.io/).
-
-<div style="height:15px;"></div>
+<div style="height:50px;"></div>
