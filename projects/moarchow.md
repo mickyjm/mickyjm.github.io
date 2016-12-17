@@ -34,9 +34,9 @@ Looking back on this experience, I probably did not contribute as much as I woul
 
 ## Other Moar Chow Members
 <ul>
-<li>[Kasey Hagi](https://kaseyhagi.github.io/)</li>
-<li>[Ryan Theriot](https://rctheriot.github.io/)</li>
-<li>[William Siu](https://williamycsiu.github.io/)</li>
+<li><a href="https://kaseyhagi.github.io/">Kasey Hagi</a></li>
+<li><a href="https://rctheriot.github.io/">Ryan Theriot</a></li>
+<li><a href="https://williamycsiu.github.io/">William Siu</a></li>
 </ul>
 
 The website is no longer running but you can find the source code [here](https://moarchow.github.io/).
