@@ -18,7 +18,7 @@ Learning and using a framework is very important when it comes to building anyth
 
 ## There is U and I in UI Frameworks
 
-A creation is not the only thing that needs a framework to build around, a team needs one too. Software Engineering is about working together as a team and a team needs support, not just from one person but everybody else! As the saying goes, there is no I in team, but there is an U and I in UI Frameworks, so we need to help each other. If a team does not help each other they will not hold it together, which just means that the team will eventually fall apart.
+A creation is not the only thing that needs a framework to build around, a team needs one too. Software Engineering is about working together as a team and a team needs support, not just from one person but everybody else! As the saying goes, there is no I in team, but there is a U and I in UI Frameworks, so we need to help each other. If a team does not help each other they will not hold it together, which just means that the team will eventually fall apart.
 
 ## Raw HTML and CSS? Just, No
 
