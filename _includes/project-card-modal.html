@@ -1,9 +1,23 @@
 <!-- Used by theme-projects-builtin-1a, entire card is the link. -->
 
 
-<a class="card" href="{% if page.projecturl %}{{ page.projecturl }}{% else %}{{ site.baseurl}}{{ include.page.url }}{% endif %}">
+<div class="card">
   {% if include.page.image %}
-  <div class="image">
+  <div class="blurring dimmable image">
+    <div class="ui dimmer">
+        <div class="content">
+          <div class="center">
+            <div class="ui blue inverted button">Read More</div>
+              <div id="modalView" class="ui basic modal">
+              <div class="header"><h2>Terms and Conditions</h2></div>
+              <div class="content">{% if page.projecturl %}{{ page.projecturl }}{% else %}{{ site.baseurl}}{{ include.page.url }}{% endif %}</div>
+              <div class="actions">
+                <div class="ui button cancel"><i class="remove icon"></i>Close</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     <img src="{{ site.baseurl }}/{{ include.page.image }}">
   </div>
   {% endif %}
@@ -26,4 +40,24 @@
     </div>
   </div>
 
-</a>
+</div>
+
+<script>
+  $('#modalView')
+        .modal({
+          selector: {
+          close: '.actions',
+          approve  : '.actions .ok',
+          deny: '.actions .cancel'
+        },
+          closable  : false,
+          onDeny    : function(){
+            return true;
+          },
+          onApprove : function() {
+            return true;
+          }
+        })
+        .modal('show')
+    ;
+</script>
