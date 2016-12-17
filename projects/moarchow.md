@@ -9,19 +9,34 @@ date: 2016
 labels:
   - HTML
   - CSS
+  - Git
+  - GitHub
   - Semantic UI
   - Meteor
   - MongoDB
   - IntelliJ IDEA
-summary: A website about myself that I created for ICS 101.
+summary: A Meteor Application that my team and I made for UH Manoa faculty and students to find food on campus.
 ---
 
 <div align="middle">
-  <img class="ui image" src="../images/ics101-website-preview.png" >
+  <img class="ui image" src="../images/moarfood.png" >
 </div>
 
-ICS 101 is an introductory course that goes over a lot of software. Although not a requirement for the ICS program, I took this course to open myself to the ungrad Teaching Assistant opportunity. Throughout ICS 101 we go through the use of Microsoft Word, PowerPoint, Excel, Photoshop and my two personal favorites SSH and Dreamweaver. During the Dreamweaver section we went over HTML and CSS. We then had to create a small website about ourselves using Dreamweaver.
+Moar Chow is a web app that my team and I developed for ICS 314. The app required users to have a University of Hawaii account, as this was made for UH faculty and students. Moar Chow allowed the UH members to search and find the many different types of food offered throughout the campus. The app utilized HTML, CSS, Semantic UI, Meteor, MongoDB and even the Google Maps API so they could find the location of the vendors!
 
-The website I created is rather basic. There is five pages total, not including the references page. The homepage features my logo that I made through Photoshop. The other pages features my education, hobbies and projects. 
+My team and I developed the app during the last few weeks of the semester as a final project. During this time I designed the user interface. Although it may not look like much, I did spend a lot of time researching modern website layouts and figuring out how to set them up with Semantic UI and Meteor's Blaze Templates.
 
-To view the website or just read a little more about me you can click [here](http://www2.hawaii.edu/~mjm4/me/).
+Looking back on this experience, I probably did not contribute as much as I would have wanted to for my team, but I did gain a better understanding of Web Development, from both the front-end and back-end. The experience has also helped me realize that I enjoy doing Web Development.
+
+<div align="middle">
+  <img class="ui medium image" src="../images/moarchow.png" >
+</div>
+
+## Other Moar Chow Members
+<ul>
+<li>[Kasey Hagi](https://kaseyhagi.github.io/)</li>
+<li>[Ryan Theriot](https://rctheriot.github.io/)</li>
+<li>[William Siu](https://williamycsiu.github.io/)</li>
+</ul>
+
+The website is no longer running but you can find the source code [here](https://moarchow.github.io/).
