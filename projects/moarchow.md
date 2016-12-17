@@ -29,7 +29,7 @@ My team and I developed the app during the last few weeks of the semester as a f
 Looking back on this experience, I probably did not contribute as much as I would have wanted to for my team, but I did gain a better understanding of Web Development, from both the front-end and back-end. The experience has also helped me realize that I enjoy doing Web Development.
 
 <div align="middle">
-  <img class="ui image" src="../images/moarchow1.png" >
+  <img class="ui image" src="../images/moarchow.png" >
 </div>
 
 ## Other Moar Chow Members
