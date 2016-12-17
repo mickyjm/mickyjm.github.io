@@ -23,3 +23,4 @@ A creation is not the only thing that needs a framework to build around, a team 
 ## Raw HTML and CSS? Just, No
 
 Having already learned HTML and CSS previously, it was frustrating enough trying to get everything into the perfect position. After learning Semantic UI, I thought to myself, "Why did we not learn this earlier?" as it was that awesome, in my opinion. Semantic UI made me appreciate HTML and CSS more because of how easy it handles all the positioning for you. The only difficult thing about learning Semantic UI was learning how to use it efficiently and how to use its functions. After this past week of learning my first framework, Semantic UI, I am very interested in learning other frameworks for HTML and CSS.
+<div style="height:50px;"></div>
