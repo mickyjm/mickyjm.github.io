@@ -12,6 +12,8 @@ labels:
   - Learning
 ---
 
+<div style="background-color: rgba(255, 255, 255, 0.75);">
+
 ## Holding it Together
 
 Learning and using a framework is very important when it comes to building anything really. Without a framework you have no support for your creation and with no support everything else just starts to fall apart. Though it may be a frustrating experience to learn, it does reward itself in the end with a much better experience and less time wasted. You would end up wasting more time and be even more frustrated trying to put the pieces back together only to have it fall apart once more.
@@ -23,3 +25,5 @@ Learning and using a framework is very important when it comes to building anyth
 ## Raw HTML and CSS? Just, No
 
 Having already learned HTML and CSS previously, it was frustrating enough trying to get everything into the perfect position. After learning Semantic UI, I thought to myself, "Why did we not learn this earlier?" as it was that awesome, in my opinion. Semantic UI made me appreciate HTML and CSS more because of how easy it handles all the positioning for you. The only difficult thing about learning Semantic UI was learning how to use it efficiently and how to use its functions. After this past week of learning my first framework, Semantic UI, I am very interested in learning other frameworks for HTML and CSS.
+
+</div>
