@@ -33,6 +33,11 @@ Looking back on this experience, I probably did not contribute as much as I woul
 </div>
 
 ## Other Moar Chow Members
+
+<div align="middle">
+  <img class="ui image" src="../images/teammoarchow.png" >
+</div>
+
 <ul>
 <li><a href="https://kaseyhagi.github.io/">Kasey Hagi</a></li>
 <li><a href="https://rctheriot.github.io/">Ryan Theriot</a></li>
