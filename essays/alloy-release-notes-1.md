@@ -23,7 +23,7 @@ Since majority of <i>Alloy</i> has already been developed, most of my time spent
   <li><strong>Moved inline styles to global CSS</strong>
   While majority of the project was developed, they mostly kept their CSS inline with the HTML code. I was suggested to move the inline CSS to the global CSS file to for easier editting and debugging.
   </li>
-  <ul><strong>Mobile Scaling</strong>
+  <li><strong>Mobile Scaling</strong>
   The layout of the project was well done for desktop viewing, but did not scale so well for mobile.
   </li>
 </ul>
