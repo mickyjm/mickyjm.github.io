@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-published: false
+published: true
 title: Alloy Release Notes 1
 date: 2017-01-15
 labels:
