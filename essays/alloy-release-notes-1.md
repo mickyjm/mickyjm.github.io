@@ -13,7 +13,7 @@ labels:
   - Meteor
 ---
 
-This semester (Spring 2017) I teamed up with [Ed White] (https://spyhi.github.io/) and [Neil Teves] (https://neilnthings.github.io/) to help out them develop and improve their app <i>Alloy</i>. <i>Alloy</i> aims to connect people through their skills and help them organize and collaborate projects together. In its current state, the app is limited to University of Hawaii faculty and students. To read more about <i>Alloy</i> click [here] (https://alloyteams.github.io/).
+This semester (Spring 2017) I teamed up with [Ed White](https://spyhi.github.io/) and [Neil Teves](https://neilnthings.github.io/) to help out them develop and improve their app <i>Alloy</i>. <i>Alloy</i> aims to connect people through their skills and help them organize and collaborate projects together. In its current state, the app is limited to University of Hawaii faculty and students. To read more about <i>Alloy</i> click [here](https://alloyteams.github.io/).
 
 ## My Contribution So Far
 
@@ -35,7 +35,7 @@ Since majority of <i>Alloy</i> has already been developed, most of my time spent
 <ul>
   <li><strong>Object-Oriented Templates</strong>
   <br />
-  Find similarities within the HTML to turn into templates and treat them as objects to pass around the files.
+  While doing simple improvements I also had to find similarities within the HTML to turn into templates and treat them as objects to pass around the files.
   </li>
   <li><strong>Default Profile Images</strong>
   <br />
