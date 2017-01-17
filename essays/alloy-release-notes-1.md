@@ -26,7 +26,7 @@ Since majority of <i>Alloy</i> has already been developed, most of my time spent
   </li>
   <li><strong>Mobile Scaling</strong>
   <br />
-  The layout of the project was well done for desktop viewing, but did not scale so well for mobile.
+  The layout of the project was well done for desktop viewing, but did not scale so well for mobile. I decided to fix this along the way.
   </li>
 </ul>
 
@@ -39,10 +39,10 @@ Since majority of <i>Alloy</i> has already been developed, most of my time spent
   </li>
   <li><strong>Default Profile Images</strong>
   <br />
-  Give users a few images to select from as a profile picture.
+  Give users a few images to select from as a profile picture. Having implemented something similar in a previous project, I will bring over the code and improve it to be able to give users a selection of images to use for their profile.
   </li>
   <li><strong>Ability to Upload a Profile Image</strong>
   <br />
-  Give users the ability to upload their own profile picture.
+  After implementing default images, we want to give people the ability to upload their own image.
   </li>
 </ul>
