@@ -21,9 +21,11 @@ Since majority of <i>Alloy</i> has already been developed, most of my time spent
 
 <ul>
   <li><strong>Moved inline styles to global CSS</strong>
+  <br />
   While majority of the project was developed, they mostly kept their CSS inline with the HTML code. I was suggested to move the inline CSS to the global CSS file to for easier editting and debugging.
   </li>
   <li><strong>Mobile Scaling</strong>
+  <br />
   The layout of the project was well done for desktop viewing, but did not scale so well for mobile.
   </li>
 </ul>
@@ -32,12 +34,15 @@ Since majority of <i>Alloy</i> has already been developed, most of my time spent
 
 <ul>
   <li><strong>Object-Oriented Templates</strong>
+  <br />
   Find similarities within the HTML to turn into templates and treat them as objects to pass around the files.
   </li>
   <li><strong>Default Profile Images</strong>
+  <br />
   Give users a few images to select from as a profile picture.
   </li>
   <li><strong>Ability to Upload a Profile Image</strong>
+  <br />
   Give users the ability to upload their own profile picture.
   </li>
 </ul>
