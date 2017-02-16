@@ -2,7 +2,7 @@
 layout: essay
 type: essay
 published: true
-title: Alloy Release Notes 1
+title: Alloy Release Notes
 date: 2017-01-15
 labels:
   - Software Engineering
