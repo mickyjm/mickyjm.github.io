@@ -35,7 +35,7 @@ Since majority of <i>Alloy</i> has already been developed, most of my time spent
 Been on a bit of a hiatus, but finally fixed my schedule up to allot time for <i>Alloy</i>. The changes are not that big so far, just fixing up some small errors.
 
 <ul>
-  <li><strong>Moved inline styles to global CSS</strong>(again)
+  <li><strong>Moved inline styles to global CSS</strong> (again)
   <br />
   I updated the inline css styles to be global last time and pushed those changes to the master branch. After pulling the  most recent master update I noticed that some of the css styles went back to the inline version. This seems to be a      problem on how pushing and pulling is handled on one of our developer's end. Hopefully we can fix this problem soon.
   </li>
