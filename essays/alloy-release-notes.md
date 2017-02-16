@@ -50,22 +50,23 @@ Been on a bit of a hiatus, but finally fixed my schedule up to allot time for <i
 <ul>
   <li><strong>Object-Oriented Templates</strong>
   <br />
-  <em>Jan 15, 2017</em>: While doing simple improvements I also had to find similarities within the HTML to turn into templates and treat them as objects to pass around the files.
+  <em>Jan 15, 2017:</em> While doing simple improvements I also had to find similarities within the HTML to turn into templates and treat them as objects to pass around the files.
   <br />
-  <em>Feb 16, 2017</em>: I am currently running into some problems on how to handle this. Will get there eventually.
+  <em>Feb 16, 2017:</em> I am currently running into some problems on how to handle this. Will get there eventually.
   </li>
   <li><strong>Default Profile Images</strong>
   <br />
-  <em>Jan 15, 2017</em>: Give users a few images to select from as a profile picture. Having implemented something similar in a previous project, I will bring over the code and improve it to be able to give users a selection of images to use for their profile.
-  <em>Feb 16, 2017</em>: I will be starting this very soon.
+  <em>Jan 15, 2017:</em> Give users a few images to select from as a profile picture. Having implemented something similar in a previous project, I will bring over the code and improve it to be able to give users a selection of images to use for their profile.
+  <em>Feb 16, 2017:</em> I will be starting this very soon.
   </li>
   <li><strong>Ability to Upload a Profile Image</strong>
   <br />
-  <em>Jan 15, 2017</em>: After implementing default images, we want to give people the ability to upload their own image.
-  <em>Feb 16, 2017</em>: Ed White has decided to take on this task.
+  <em>Jan 15, 2017:</em> After implementing default images, we want to give people the ability to upload their own image.
+  <br />
+  <em>Feb 16, 2017:</em> Ed White has decided to take on this task.
   </li>
   <li><strong>Overhaul HTML Code (Semantic UI)</strong>
   <br />
-  <em>Feb 16, 2017</em>: Currently the HTML code for each page is handled poorly. There is a lot of grids or containers within grids or containers. While this works, it is also a very poor way of handling Semantic UI's way of making webpage layouts. I plan to overhaul the code to fix it up a bit.
+  <em>Feb 16, 2017:</em> Currently the HTML code for each page is handled poorly. There is a lot of grids or containers within grids or containers. While this works, it is also a very poor way of handling Semantic UI's way of making webpage layouts. I plan to overhaul the code to fix it up a bit.
   </li>
 </ul>
