@@ -56,7 +56,7 @@ Been on a bit of a hiatus, but finally fixed my schedule up to allot time for <i
   </li>
   <li><strong>Default Profile Images</strong>
   <br />
-  <em>Jan 15, 2017<em>: Give users a few images to select from as a profile picture. Having implemented something similar in a previous project, I will bring over the code and improve it to be able to give users a selection of images to use for their profile.
+  <em>Jan 15, 2017</em>: Give users a few images to select from as a profile picture. Having implemented something similar in a previous project, I will bring over the code and improve it to be able to give users a selection of images to use for their profile.
   <em>Feb 16, 2017</em>: I will be starting this very soon.
   </li>
   <li><strong>Ability to Upload a Profile Image</strong>
