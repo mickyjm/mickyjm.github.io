@@ -52,7 +52,7 @@ February is a short month. Less than two weeks after the 16th with a midterm in 
 <ul>
   <li><strong>Fixed CAS Login/Logout Button</strong>
   <br />
-  When hovering over the Login/Logout button in the menu, the color would change letting the user know they can click the button but it did not work unless you were to click on the text itself. This is a problem in the way the tags were handled, especially since the CAS Login is its own template. The fix was not too bad to handle but I did run into problems with the size of the button in the menu. Turns out, it was a problem with the CSS.
+  When hovering over the Login/Logout button in the menu, the color would change letting the user know they can click the button but it did not work unless you were to click on the text itself. This is a problem in the way the tags were handled, especially since the CAS Login is its own template. The fix was not too bad to handle but I did run into some small problems.
   </li>
   <li><strong>Semantic UI Cleanup</strong>
   <br />
