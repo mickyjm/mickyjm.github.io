@@ -82,6 +82,10 @@ February is a short month. Less than two weeks after the 16th with a midterm in 
   <em>Feb 16, 2017</em>
   <br />
   I will be starting this very soon.
+  <br />
+  <em>Mar 1, 2017</em>
+  <br />
+  Started on this. Slowly making progress.
   </li>
   <li><strong>Ability to Upload a Profile Image</strong>
   <br />
@@ -90,7 +94,8 @@ February is a short month. Less than two weeks after the 16th with a midterm in 
   After implementing default images, we want to give people the ability to upload their own image.
   <br />
   <em>Feb 16, 2017</em>
-  <br />Ed White has decided to take on this task.
+  <br />
+  Ed White has decided to take on this task.
   </li>
   <li><strong>Overhaul HTML Code (Semantic UI)</strong>
   <br />
