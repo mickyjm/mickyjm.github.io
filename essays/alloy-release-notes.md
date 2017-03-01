@@ -45,6 +45,21 @@ Been on a bit of a hiatus, but finally fixed my schedule up to allot time for <i
   </li>
 </ul>
 
+## March 1, 2017 Update
+
+February is a short month. Less than two weeks after the 16th with a midterm in between. Anyway, here are some small updates on what I did.
+
+<ul>
+  <li><strong>Fixed CAS Login/Logout Button</strong>
+  <br />
+  When hovering over the Login/Logout button in the menu, the color would change letting the user know they can click the button but it did not work unless you were to click on the text itself. This is a problem in the way the tags were handled, especially since the CAS Login is its own template. The fix was not too bad to handle but I did run into problems with the size of the button in the menu. Turns out, it was a problem with the CSS.
+  </li>
+  <li><strong>Semantic UI Cleanup</strong>
+  <br />
+  The Semantic UI code in each page is not handled very well. There is a lot of grids/containers within grids/containers. While this works, it is a poor way of handling Semantic UI's way of making webpage layouts. Having so many grids/containers also does make the code a bit harder to read so cleaning this up will make it much easier to read the HTML code and update or add new few features. This will also help in redesigning the UI overall, which I have planned. I have not merged the branch update yet as I have only updated a few pages.
+  </li>
+</ul>
+
 ## Upcoming Features
 
 <ul>
@@ -68,5 +83,9 @@ Been on a bit of a hiatus, but finally fixed my schedule up to allot time for <i
   <li><strong>Overhaul HTML Code (Semantic UI)</strong>
   <br />
   <em>Feb 16, 2017:</em> Currently the HTML code for each page is handled poorly. There is a lot of grids or containers within grids or containers. While this works, it is also a very poor way of handling Semantic UI's way of making webpage layouts. I plan to overhaul the code to fix it up a bit.
+  </li>
+  <li><strong>Update Home and Landing Page UI</strong>
+  <br />
+  <em>Mar 1, 2017:</em> After our group meeting, we decided that there needs to be a change in how the UI looks, mainly the Landing and Home pages. I plan to redesign the layout of both these pages. I also have free reign to redesign the other pages, if I choose to do so. I do like the other page layouts, but we will see what happens after researching webpage layouts for the landing and home pages.
   </li>
 </ul>
