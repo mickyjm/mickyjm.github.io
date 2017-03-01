@@ -83,6 +83,8 @@ February is a short month. Less than two weeks after the 16th with a midterm in 
   <li><strong>Overhaul HTML Code (Semantic UI)</strong>
   <br />
   <em>Feb 16, 2017:</em> Currently the HTML code for each page is handled poorly. There is a lot of grids or containers within grids or containers. While this works, it is also a very poor way of handling Semantic UI's way of making webpage layouts. I plan to overhaul the code to fix it up a bit.
+  <br />
+  <em>Mar 1, 2017:</em> Pages are being updated slowly.
   </li>
   <li><strong>Update Home and Landing Page UI</strong>
   <br />
