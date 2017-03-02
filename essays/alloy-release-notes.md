@@ -13,13 +13,6 @@ labels:
   - Meteor
 ---
 
-## Table of Contents
-<ul>
-  <li>[Introduction](#Introduction)</li>
-</ul>
-
-## Introduction
-
 This semester (Spring 2017) I teamed up with [Ed White](https://spyhi.github.io/) and [Neil Teves](https://neilnthings.github.io/) to help out them develop and improve their app <i>Alloy</i>. <i>Alloy</i> aims to connect people through their skills and help them organize and collaborate projects together. In its current state, the app is limited to University of Hawaii faculty and students. To read more about <i>Alloy</i> click [here](https://alloyteams.github.io/).
 
 ## January 15, 2017 Update
