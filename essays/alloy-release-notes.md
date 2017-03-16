@@ -60,6 +60,17 @@ February is a short month. Less than two weeks after the 16th with a midterm in 
   </li>
 </ul>
 
+## March 15, 2017 Update
+
+Did not do as much updating as I wanted to this time around, but I did spend a good amount of time researching to get inspiration and come up with new ideas when redesigning the interface.
+
+<ul>
+  <li><strong>Overhaul HTML Code (Semantic UI)</strong>
+  <br />
+  Tthe HTML code for each page was handled poorly. There is a lot of grids or containers within grids or containers. While this works, it is also a very poor way of handling Semantic UI's way of making webpage layouts. I fixed the accessible pages Semantic UI code. I did come across some problems such as fixing the horizontal rule on some of the headers. The horizontal rule being used was the default HTML5 version and Semantic UI's. When I tried changing it to Semantic UI's version it messed with the <em>Alloy</em> icon's style. I was able to fix this but then it messed with the icon's positioning. I then decided to just fix this issue when I redesign the pages, which is what this update was mostly about. Having to actually fix the sections of containers/grids within the main grid container allowed me to find what I could move around and even help with my planning of adding or redesigning the sections.
+  </li>
+</ul>
+
 ## Upcoming Features
 
 <ul>
@@ -96,16 +107,6 @@ February is a short month. Less than two weeks after the 16th with a midterm in 
   <em>Feb 16, 2017</em>
   <br />
   Ed White has decided to take on this task.
-  </li>
-  <li><strong>Overhaul HTML Code (Semantic UI)</strong>
-  <br />
-  <em>Feb 16, 2017</em>
-  <br />
-  Currently the HTML code for each page is handled poorly. There is a lot of grids or containers within grids or containers. While this works, it is also a very poor way of handling Semantic UI's way of making webpage layouts. I plan to overhaul the code to fix it up a bit.
-  <br />
-  <em>Mar 1, 2017</em>
-  <br />
-  Pages are being updated slowly.
   </li>
   <li><strong>Update Home and Landing Page UI</strong>
   <br />
