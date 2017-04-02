@@ -79,6 +79,8 @@ During this update I spent an amount of time researching webpage layouts for the
   <li><strong>Update Landing Page and Home Page</strong>
   <br />
   During one of our meetings the team decided that the Landing Page needs to be redesigned along with the Home Page. This had to be done together because the previous person to design the original layout made the landing and home page into one. This was not really much of a problem as I do not mind it, but again, the way it was handled could have been designed better. I separated some parts of the page to be its own template and called it from the main template to better organize the code and make it easier to fix/update in the future. The problems I did come across was the projec cards fixing their size relative to the screen size. When looking at the Semantic UI example, it does not do that. While this is not really much of a problem, it is a slight annoyance to me, but will leave it alone if I am not able to fix it. The other problem is testing the notification cards. This is hard because I can't send invites and requests to myself on Meteor's Local Host, so I will need to user test how this looks to see if it does need fixing.
+  <img class="ui medium leftt image" src="../images/landing-original.png">
+  <img class="ui medium right image" src="../images/landing-draft001.jpg">
   </li>
 </ul>
   
