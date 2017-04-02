@@ -80,9 +80,31 @@ During this update I spent an amount of time researching webpage layouts for the
   <br />
   During one of our meetings the team decided that the Landing Page needs to be redesigned along with the Home Page. This had to be done together because the previous person to design the original layout made the landing and home page into one. This was not really much of a problem as I do not mind it, but again, the way it was handled could have been designed better. I separated some parts of the page to be its own template and called it from the main template to better organize the code and make it easier to fix/update in the future. The problems I did come across was the projec cards fixing their size relative to the screen size. When looking at the Semantic UI example, it does not do that. While this is not really much of a problem, it is a slight annoyance to me, but will leave it alone if I am not able to fix it. The other problem is testing the notification cards. This is hard because I can't send invites and requests to myself on Meteor's Local Host, so I will need to user test how this looks to see if it does need fixing.
   <div class="ui two column grid container">
-    <div class="column">Original<img class="ui medium image" src="../images/landing-original.png"></div>
-    <div class="column">New<img class="ui medium image" src="../images/landing-draft001.png"></div>
+    <div class="column">
+      <em>Original</em>
+      <img class="ui medium image" src="../images/landing-original.png">
+    </div>
+    <div class="column">
+      <em>Current</em>
+      <img class="ui medium image" src="../images/landing-draft001.png">
+    </div>
   </div>
+  As you can see I moved the login header to the top, and also added a big login button. I also moved the "About" and "Features" Sections to the bottom of the suggested projects. My thought was to make the login section pleasing to look at, then as users scroll down, they see interesting projects being made and finally the last section of the landing page tells them more about the site if they are interested.
+  <div class="ui three column grid container">
+    <div class="column">
+      <em>Original</em>
+      <img class="ui medium image" src="../images/home-original.png">
+    </div>
+    <div class="column">
+      <em>First Draft</em>
+      <img class="ui medium image" src="../images/home-draft001.png">
+    </div>
+    <div class="column">
+      <em>Current</em>
+      <img class="ui medium image" src="../images/home-draft002.png">
+    </div>
+  </div>
+  As I said, I did go through a couple drafts, but mainly updated the master with the first draft then the <em>current</em> final draft. At first, you may see a small change, like the spacing between the "Notifications" and "Suggested Projects" from the original and current. It may not look like much, but there has been a lot of change within the HTML code.
   </li>
 </ul>
   
