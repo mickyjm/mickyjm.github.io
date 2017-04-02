@@ -93,7 +93,7 @@ During this update I spent an amount of time researching webpage layouts for the
   <div class="ui three column grid container">
     <div class="column">
       <em>Original</em>
-      <img class="ui medium image" src="../images/home-original.png">
+      <img class="ui medium image" src="../images/home-orginal.png">
     </div>
     <div class="column">
       <em>First Draft</em>
