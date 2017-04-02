@@ -67,9 +67,21 @@ Did not do as much updating as I wanted to this time around, but I did spend a g
 <ul>
   <li><strong>Overhaul HTML Code (Semantic UI)</strong>
   <br />
-  Tthe HTML code for each page was handled poorly. There is a lot of grids or containers within grids or containers. While this works, it is also a very poor way of handling Semantic UI's way of making webpage layouts. I fixed the accessible pages Semantic UI code. I did come across some problems such as fixing the horizontal rule on some of the headers. The horizontal rule being used was the default HTML5 version and Semantic UI's. When I tried changing it to Semantic UI's version it messed with the <em>Alloy</em> icon's style. I was able to fix this but then it messed with the icon's positioning. I then decided to just fix this issue when I redesign the pages, which is what this update was mostly about. Having to actually fix the sections of containers/grids within the main grid container allowed me to find what I could move around and even help with my planning of adding or redesigning the sections.
+  The HTML code for each page was handled poorly. There is a lot of grids or containers within grids or containers. While this works, it is also a very poor way of handling Semantic UI's way of making webpage layouts. I fixed the accessible pages Semantic UI code. I did come across some problems such as fixing the horizontal rule on some of the headers. The horizontal rule being used was the default HTML5 version and Semantic UI's. When I tried changing it to Semantic UI's version it messed with the <em>Alloy</em> icon's style. I was able to fix this but then it messed with the icon's positioning. I then decided to just fix this issue when I redesign the pages, which is what this update was mostly about. Having to actually fix the sections of containers/grids within the main grid container allowed me to find what I could move around and even help with my planning of adding or redesigning the sections.
   </li>
 </ul>
+
+## April 1, 2017
+
+During this update I spent an amount of time researching webpage layouts for the new landing and home page. I did go through a couple iterations, but mainly updated the master with the first rough draft and the "<em>final</em>" draft.
+
+<ul>
+  <li><strong>Update Landing Page and Home Page</strong>
+  <br />
+  During one of our meetings the team decided that the Landing Page needs to be redesigned along with the Home Page. This had to be done together because the previous person to design the original layout made the landing and home page into one. This was not really much of a problem as I do not mind it, but again, the way it was handled could have been designed better. I separated some parts of the page to be its own template and called it from the main template to better organize the code and make it easier to fix/update in the future. The problems I did come across was the projec cards fixing their size relative to the screen size. When looking at the Semantic UI example, it does not do that. While this is not really much of a problem, it is a slight annoyance to me, but will leave it alone if I am not able to fix it. The other problem is testing the notification cards. This is hard because I can't send invites and requests to myself on Meteor's Local Host, so I will need to user test how this looks to see if it does need fixing.
+  </li>
+</ul>
+  
 
 ## Upcoming Features
 
@@ -98,19 +110,9 @@ Did not do as much updating as I wanted to this time around, but I did spend a g
   <br />
   Started on this. Slowly making progress.
   </li>
-  <li><strong>Ability to Upload a Profile Image</strong>
+  <li><strong>Fix UI Problems after User Testing and Update Other Pages UI</strong>
   <br />
-  <em>Jan 15, 2017</em>
-  <br />
-  After implementing default images, we want to give people the ability to upload their own image.
-  <br />
-  <em>Feb 16, 2017</em>
-  <br />
-  Ed White has decided to take on this task.
-  </li>
-  <li><strong>Update Home and Landing Page UI</strong>
-  <br />
-  <em>Mar 1, 2017</em>
-  <br />After our group meeting, we decided that there needs to be a change in how the UI looks, mainly the Landing and Home pages. I plan to redesign the layout of both these pages. I also have free reign to redesign the other pages, if I choose to do so. I do like the other page layouts, but we will see what happens after researching webpage layouts for the landing and home pages.
+  <em>Apr 1, 2017</em>
+  <br />The Landing and and mainly the Home Page does need some user testing after being updated. I can not really view notifications when developing on my end as I can not really send invites to myself. I will need to see how they look with user testing and fix them. I may also update the UI for the other pages.
   </li>
 </ul>
