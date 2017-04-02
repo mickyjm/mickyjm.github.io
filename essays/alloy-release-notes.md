@@ -71,7 +71,7 @@ Did not do as much updating as I wanted to this time around, but I did spend a g
   </li>
 </ul>
 
-## April 1, 2017
+## April 1, 2017 Update
 
 During this update I spent an amount of time researching webpage layouts for the new landing and home page. I did go through a couple iterations, but mainly updated the master with the first rough draft and the "<em>final</em>" draft.
 
