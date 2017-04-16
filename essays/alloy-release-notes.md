@@ -163,8 +163,9 @@ This update is a bit larger than previous updates, but most are small with one o
   </li>
   <li><strong>Updated Create/Edit Project Profile and Edit User Profile UI</strong>
   One of the bigger updates I did. The UI is more or less the same, but I did move things around.
+  <br />
+  <center>Create/Edit Project</center>
   <div class="ui two column grid container">
-    <center>Create/Edit Project</center>
     <div class="column">
       <em>Last Draft</em>
       <img class="ui medium image" src="../images/create-project-old.png">
@@ -174,8 +175,8 @@ This update is a bit larger than previous updates, but most are small with one o
       <img class="ui medium image" src="../images/create-project-draft001.png">
     </div>
   </div>
+  <center>Edit Profile</center>
   <div class="ui two column grid container">
-    <center>Edit Profile</center>
     <div class="column">
       <em>Last Draft</em>
       <img class="ui medium image" src="../images/edit-profile-old.png">
