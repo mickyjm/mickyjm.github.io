@@ -108,6 +108,86 @@ During this update I spent an amount of time researching webpage layouts for the
   </li>
 </ul>
   
+## April 15, 2017 Update
+
+This update is a bit larger than previous updates, but most are small with one or two being big. Though I did spend a few hours struggling and wrapping my head on the "Project Profile" page. On the page I was trying to pull the project member's first and last name. I can not seem to find a fix for it and may end up asking another one of the <i>Alloy</i> members to do it, but it is minor and does not need to be fixed right away. 
+
+<ul>
+  <li><strong>Updated Ribbon Colors on User/Project Profile Page</strong>
+  <br />
+  The update is straight-forward and small. I changed the colors of the ribbons on both the "User Profile" prage and "Project Profile" page. I did this because using CSS on the ribbons did "fully" color it, so you have to use Semantic UI code to get the ribbon to be fully colored.
+  </li>
+  <li><strong>HTML/CSS Cleanup and Mobile Scaling on Admin Pages (Main/Feed Page, Edit Users/Projects/Skills Page)</strong>
+  <br />
+  The update is fairly straight-forward also. I updated the admin pages by cleaning their HTML (Semantic UI) and CSS. I simply removed lines of code that do not really need to be there or simply combined lines of code that could be combined into one. This makes the code easier to read overall and will help when updating the layout of the pages to have each section be moved around.
+  </li>
+  <li><strong>Updated Home Page Feed and Project Card Details</strong>
+  <br />
+  <div class="ui two column grid container">
+    <div class="column">
+      <em>Last Draft</em>
+      <img class="ui medium image" src="../images/home-draft002.png">
+    </div>
+    <div class="column">
+      <em>Current</em>
+      <img class="ui medium image" src="../images/home-draft003.png">
+    </div>
+  </div>
+  Some may not see it at first, but I changed the number of cards that can be displayed on the row of the Home Page. One of the biggest problems in the last draft was that the Project Card came up too small and just squeezed everything into card which did not look nice. I spent hours last on the last update trying to fix this, then it was only until recently I told myself, "What if I just reduce how many cards can be on the row?" This simple fix ended working and making the cards nice and wider to display the information much more neatly.
+  <div class="ui two column grid container">
+    <div class="column">
+      <em>Last Draft</em>
+      <img class="ui medium image" src="../images/project-card-old.png">
+    </div>
+    <div class="column">
+      <em>Current</em>
+      <img class="ui medium image" src="../images/project-card.png">
+    </div>
+  </div>
+  As you can see the project card is much more legible to read. You can even see that I made the skills wanted into labels once more. I had to remove the labels on the skills last time because they overlapped and overflowed out of the card, instead of moving onto a new line if needed to. As you can see now, the skill labels fit neatly in the card and will move onto a new line if needed.
+  </li>
+  <li><strong>Modified User Card Layout</strong>
+  <br />
+  The User Card has been slightly modified, not much to change on it when it is mainly used as a search result.
+  <div class="ui two column grid container">
+    <div class="column">
+      <em>Last Draft</em>
+      <img class="ui medium image" src="../images/user-card-old.png">
+    </div>
+    <div class="column">
+      <em>Current</em>
+      <img class="ui medium image" src="../images/user-card-draft001.png">
+    </div>
+  </div>
+  As you can see I switched the places of the username and the user's first and last name. I did this just as a standard edit, since most social media websites display the person's name first and make it the hyperlink, followed by other information such as their email in the following description. I also made the skills into their own section and updated the grammar on the number of projects.
+  </li>
+  <li><strong>Updated Create/Edit Project Profile and Edit User Profile UI</strong>
+  One of the bigger updates I did. The UI is more or less the same, but I did move things around.
+  <div class="ui two column grid container">
+    <center>Create/Edit Project</center>
+    <div class="column">
+      <em>Last Draft</em>
+      <img class="ui medium image" src="../images/create-project-old.png">
+    </div>
+    <div class="column">
+      <em>Current</em>
+      <img class="ui medium image" src="../images/create-project-draft001.png">
+    </div>
+  </div>
+  <div class="ui two column grid container">
+    <center>Edit Profile</center>
+    <div class="column">
+      <em>Last Draft</em>
+      <img class="ui medium image" src="../images/edit-profile-old.png">
+    </div>
+    <div class="column">
+      <em>Current</em>
+      <img class="ui medium image" src="../images/edit-profile-draft001.png">
+    </div>
+  </div>
+  As you can see I move the tite of the page and the "Submit" button out of the segment for the Create/Edit Project pages (do note that these pages look similar) and moved the URL form up. I also added a segment in the Edit User page, to keep it looking consistent. I did this because most websites now days like to have their edit profile pages looking exactly like what they will look when finished editing. This is also the reason why I moved the title and button out of the segment and added a segment to the Edit User page. The segment is to help the user visual that this is what the page will look like without the title. As you can see there is also buttons that either have the words "default" or "upload", this is in preparation for selectable default images or uploadable images.
+  </li>
+</ul>
 
 ## Upcoming Features
 
@@ -117,10 +197,10 @@ During this update I spent an amount of time researching webpage layouts for the
   <em>Jan 15, 2017</em>
   <br />
   While doing simple improvements I also had to find similarities within the HTML to turn into templates and treat them as objects to pass around the files.
+  <br>
+  <em>Apr 15, 2017</em>
   <br />
-  <em>Feb 16, 2017</em>
-  <br />
-  I am currently running into some problems on how to handle this. Will get there eventually.
+  This update will always happen as I come across them.
   </li>
   <li><strong>Default Profile Images</strong>
   <br />
@@ -128,17 +208,16 @@ During this update I spent an amount of time researching webpage layouts for the
   <br />
   Give users a few images to select from as a profile picture. Having implemented something similar in a previous project, I will bring over the code and improve it to be able to give users a selection of images to use for their profile.
   <br />
-  <em>Feb 16, 2017</em>
-  <br />
-  I will be starting this very soon.
-  <br />
-  <em>Mar 1, 2017</em>
-  <br />
-  Started on this. Slowly making progress.
+  <em>Apr 15, 2017</em>
+  Prepared the "Edit Profile Page" for this.
   </li>
   <li><strong>Fix UI Problems after User Testing and Update Other Pages UI</strong>
   <br />
   <em>Apr 1, 2017</em>
   <br />The Landing and and mainly the Home Page does need some user testing after being updated. I can not really view notifications when developing on my end as I can not really send invites to myself. I will need to see how they look with user testing and fix them. I may also update the UI for the other pages.
+  <br />
+  <em>Apr 15, 2017</em>
+  <br />
+  This update will happen when problems occur and when I see fit.
   </li>
 </ul>
