@@ -162,6 +162,7 @@ This update is a bit larger than previous updates, but most are small with one o
   As you can see I switched the places of the username and the user's first and last name. I did this just as a standard edit, since most social media websites display the person's name first and make it the hyperlink, followed by other information such as their email in the following description. I also made the skills into their own section and updated the grammar on the number of projects.
   </li>
   <li><strong>Updated Create/Edit Project Profile and Edit User Profile UI</strong>
+  <br />
   One of the bigger updates I did. The UI is more or less the same, but I did move things around.
   <br />
   <center>Create/Edit Project</center>
