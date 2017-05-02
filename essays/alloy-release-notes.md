@@ -192,7 +192,7 @@ This update is a bit larger than previous updates, but most are small with one o
 </ul>
 
 ## May 1, 2017 Update
-This is a smaller update this time around, I was much busier than I expected this past couple of weeks. I did manage to fix a big User Interface problem with the website. Other than that I did not run into much problems other than trying to login because another <em>Alloy</em> developer was playing with the database, luckily I got it fixed.
+This is a smaller update this time around, I was much busier than I expected this past couple of weeks. I did manage to fix a big User Interface problem with the website. Other than that I did not run into much problems other than trying to login because another <em>Alloy</em> developer was testing code around the database, luckily I got it fixed.
 
 <ul>
 <li><strong>Fix Notification Cards</strong>
