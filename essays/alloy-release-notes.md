@@ -191,6 +191,27 @@ This update is a bit larger than previous updates, but most are small with one o
   </li>
 </ul>
 
+## May 1, 2017 Update
+This is a smaller update this time around, I was much busier than I expected this past couple of weeks. I did manage to fix a big User Interface problem with the website. Other than that I did not run into much problems other than trying to login because another <em>Alloy</em> developer was playing with the database, luckily I got it fixed.
+
+<ul>
+<li><strong>Fix Notification Cards</strong>
+<br />
+<div class="ui two column grid container">
+  <div class="column">
+    <em>Before</em>
+    <img class="ui medium image" src="../images/fix-notifications-error.png" />
+  </div>
+  <div class="column">
+    <em>After</em>
+    <img class="ui medium image" src="../images/fix-notifications.png" />
+  </div>
+</div>
+<br />
+As you can see the notification cards were not fitting nicely on the homepage. The error was a pretty simple fix, as it turns out the div tag declaring a set of cards was in the each loop. This made the webpage create a container wanting to fit a set of cards each time when there was only a need of one.
+</li>
+</ul>
+
 ## Upcoming Features
 
 <ul>
