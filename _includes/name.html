@@ -1,0 +1,164 @@
+<div style="padding-top: 10%; height:100%; margin:0px;" class="ui middle aligned gird container">
+
+    <div class="row" id="my-name" style="color:white;">
+        <h4 class="my-name-segment" style="margin:0px; font-size:1.5em;">Hi! My name is</h4>
+        <h1 class="my-name-segment" style="margin:0px; font-size:3em;">Micky Mangrobang</h1>
+        <h4 class="my-name-segment" style="margin:0px; font-size:1.5em;">I am a<span class="txt-rotate" data-period="2000" data-rotate='[ " gamer.", " student?", " soon to be graduate!", "n aspiring developer." ]'></span><span class="caret">|</span></h4>
+    </div>
+
+    <div class="row">
+        <div class="my-name-segment">{% include home-network-links.html %}</div>
+    </div>
+
+</div>
+
+<script>
+
+/*document.addEventListener('DOMContentLoaded', function () {
+
+    $('#my-name .my-name-segment')
+        .transition('hide')
+        .transition({
+            animation : 'fly up',
+            reverse   : 'auto', // default setting
+            interval  : 200
+        })
+    ;
+
+});*/
+
+var beginTyping = function() {
+    var elements = document.getElementsByClassName('txt-rotate');
+    for (var i=0; i<elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-rotate');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+            new TxtRotate(elements[i], JSON.parse(toRotate), period);
+        }
+    }
+
+    // INJECT CSS
+    //var css = document.createElement("style");
+    //css.type = "text/css";
+    //css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+    //document.body.appendChild(css);
+};
+
+var TxtRotate = function(el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 2000;
+    this.txt = '';
+    this.tick();
+    this.isDeleting = false;
+};
+
+TxtRotate.prototype.tick = function() {
+    var i = this.loopNum % this.toRotate.length;
+    var fullTxt = this.toRotate[i];
+
+    if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
+
+    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+    var that = this;
+    //var delta = 300 - Math.random() * 100;
+    var delta = 100;
+
+    if (this.isDeleting) { delta /= 2; }
+
+    if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+    //delta = 500;
+    }
+
+    setTimeout(function() {
+        that.tick();
+    }, delta);
+};
+
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+
+window.onload = function () {
+    $('#my-name .my-name-segment')
+        .transition('hide')
+        .transition({
+            animation   : 'fly up',
+            interval    : 200
+        })
+    ;
+    setTimeout(beginTyping, 1000);
+}
+
+</script>
+
+<style>
+
+.caret {
+  /*font-weight: 100;*/
+  font-size: 24px;
+  color: #FFF;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+</style>

@@ -4,59 +4,41 @@
 {% assign num_essays = essay_pages.size %}
 {% assign num_projects = project_pages.size %}
 
-<div style="padding-top: 50px;" class="ui middle aligned equal width centered stackable grid container">
+<div style="padding-top:10%; height:100%; margin:0px;" class="ui middle aligned centered stackable grid container">
 
-  <div class="row" style="background-color: rgba(255, 255, 255, 0.75);">
-  <div style="text-align: center;" class="column">
-    <div  class="ui rounded image">
-      <img style="max-width: 300px; padding:5px; border:1px solid #021a40; background-color:#fff;" src="{{ site.data.bio.basics.picture }}">
-    </div>
-  </div>
+    {% include name.html %}
 
-  <div class="column">
-    <h2 class="header no-bottom">{{ site.data.bio.basics.name }}</h2>
-    <p class="">{{ site.data.bio.basics.label }}</p>
-    <p class="">
-      {{ site.data.bio.basics.summary }}
-    </p>
-    <p style="text-align: center;">
-      {% include home-network-links.html %}
-    </p>
-    <p style="text-align: center;">
-      <a href="{{ site.baseurl}}/projects/">
-        <button class="ui blue inverted button">Projects ({{ num_projects }})</button>
-      </a>
-      <a href="{{ site.baseurl}}/essays/">
-        <button class="ui blue inverted button">Essays ({{ num_essays }})</button>
-      </a>
-      <a href="{{ site.baseurl}}/downloads/MichaelMangrobangOnlineRésumé.pdf" target="_blank">
-        <button class="ui blue inverted button">Résumé (PDF)</button>
-     </a>
-    </p>
-  </div>
-  </div>
-  
-  <div class="row" style="padding-top:15px; background-color: rgba(255, 255, 255, 0.75);">
-    <div style="text-align: left; margin-bottom: 20px;" class="ui grid container">
-      {% include bio-interests-custom.html %}
-      {% include bio-skills-custom.html %}
-      {% include bio-education-2.html %}
-      {% include bio-work-2.html %}
-      {% include bio-volunteer-2.html %}
-      {% include bio-publications-2.html %}
-      {% include bio-awards-2.html %}
-    </div>
-  </div>
+</div>
 
-  <div class="row">
-    <div class="column"></div>
-    <div class="column">
-      <h4 class="header no-bottom">Michael (Micky) J. Mangrobang</h4>
-      <p class="no-bottom">Techfolio template given by: <a href="http://philipmjohnson.org/" target="_blank">Philip Johnson</a></p>
-      <p class="no-bottom">Template edited by Michael (Micky) J. Mangrobang</p>
-      <p class="no-bottom">Last updated December 2016</p>
+<div style="background-color:silver; height: 100%;">
+
+    <div id="projects" style="padding-top: 10%; height:100%; margin:0px;" class="ui middle aligned equal width centered stackable grid container">
+
+        <div class="row" style="margin-bottom:0px;">
+            <h2>Coming Soon!</h2>
+        </div>
     </div>
-    <div class="column"></div>
-  </div>
-  
+
+</div>
+
+<div style="background-color:purple; height: 100%;">
+
+    <div id="about" style="padding-top: 10%; height:100%; margin:0px;" class="ui middle aligned equal width centered stackable grid container">
+
+      <div class="row" style="margin-bottom:0px;">
+          <h2>Coming Soon!</h2>
+      </div>
+    </div>
+
+</div>
+
+<div style="background-color:silver; height: 100%;">
+
+    <div id="contact" style="padding-top: 10%; height:100%; margin:0px;" class="ui middle aligned equal width centered stackable grid container">
+
+        <div class="row" style="margin-bottom:0px;">
+            <h2>Coming Soon!</h2>
+        </div>
+    </div>
+
 </div>

@@ -1,0 +1,33 @@
+<div class="nonprintable">
+    <nav class="ui fixed menu">
+        <a href="#home" class="brand item">
+            <i class="big home icon"></i>
+        </a>
+        <a href="#projects" class="right item">
+            Projects <!--({{ num_projects }})-->
+        </a>
+        <a class="item" href="#about">
+            About
+        </a>
+        <a class="item" href="#contact">
+            Contact
+        </a>
+        <a href="{{ site.baseurl }}/downloads/MichaelMangrobangOnlineResume.pdf" target="_blank" class="item">Resume</a>
+    </nav>
+</div>
+
+<style>
+
+    .ui.fixed.menu a:hover {
+        color: orange;
+    }
+
+    .ui.fixed.menu .item {
+        color: white;
+    }
+
+    .ui.fixed.menu.scrolled {
+        background-color: midnightblue !important;
+        transition: background-color 200ms linear;
+    }
+</style>

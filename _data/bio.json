@@ -1,6 +1,7 @@
 {
   "basics": {
     "name": "Michael (Micky) J. Mangrobang",
+    "nickname": "Micky",
     "label": "Student/Teaching Assistant",
     "picture": "https://mickyjm.github.io/images/mMangro-1.jpg",
     "email": "micky.jm4@gmail.com",
@@ -52,11 +53,6 @@
       "name": "Database Management",
       "keywords": [
       ]
-    },
-    {
-      "name": "Patent Law",
-      "keywords": [
-      ]
     }
   ],
   "skills": [
@@ -70,7 +66,7 @@
         "Javascript",
         "HTML",
         "Semantic UI",
-        "Meteor",
+        "Lisp (Common)",
         "SQL",
         "PHP"
       ]
@@ -93,7 +89,7 @@
       "startDate": "2014-09-01",
       "endDate": "Present",
       "gpa": "",
-      "courses": [ 
+      "courses": [
         "Introduction to Computer Science I & II",
         "Discrete Mathematics I & II",
         "Program Structure",

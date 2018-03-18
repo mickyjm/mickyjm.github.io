@@ -2,7 +2,7 @@
 
 # REQUIRED CHANGES
 # Edit next line, providing your own name.
-title: Michael Mangrobang | Professional Portfolio
+title: Micky Mangrobang | Online Personal Portfolio
 # Edit next line, replacing 'techfolios' with your github username
 url: "https://mickyjm.github.io"
 # Edit next line so that baseurl is "" if your repo is <username>.github.io
@@ -21,4 +21,3 @@ theme-bio: theme-bio-builtin-1.html
 # YOU NORMALLY NEVER CHANGE THE FOLLOWING
 markdown: kramdown
 include: [_data]
-

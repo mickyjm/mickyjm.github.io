@@ -8,47 +8,22 @@
 // Customize the background color
 body {
   // background-color: #add8e6;;
-  //background: linear-gradient(left, silver, whitesmoke, silver);
-    background: #2980b9 url('https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;
-	-webkit-animation: 10s linear 0s normal none infinite animate;
-	-moz-animation: 10s linear 0s normal none infinite animate;
-	-ms-animation: 10s linear 0s normal none infinite animate;
-	-o-animation: 10s linear 0s normal none infinite animate;
-	animation: 10s linear 0s normal none infinite animate;
+  background: linear-gradient(left, silver, whitesmoke, silver);
+  font-family: 'Ubuntu', sans-serif;
 }
 
 // Customize the menubar color
 .ui.menu {
   // background: $background-start;
-  background: silver;
+  background-color: transparent;
+  color: white;
+}
+
+.item {
+    color: white;
 }
 
 // Customize the home page icon colors
 .icon-color {
-  color: lighten(blue, 25%);
-}
-
-@-webkit-keyframes animate {
-	from {background-position:0 0;}
-	to {background-position: 500px 0;}
-}
-
-@-moz-keyframes animate {
-	from {background-position:0 0;}
-	to {background-position: 500px 0;}
-}
-
-@-ms-keyframes animate {
-	from {background-position:0 0;}
-	to {background-position: 500px 0;}
-}
-
-@-o-keyframes animate {
-	from {background-position:0 0;}
-	to {background-position: 500px 0;}
-}
-
-@keyframes animate {
-	from {background-position:0 0;}
-	to {background-position: 500px 0;}
+  color: lighten(white, 25%);
 }
