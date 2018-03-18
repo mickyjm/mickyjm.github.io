@@ -1,3 +1,9 @@
+---
+---
+/**
+ ** Top part adds jekyll support
+ **/
+
 @keyframes move-twink-back {
     from {background-position:0 0;}
     to {background-position:-10000px 5000px;}
@@ -43,12 +49,12 @@
 }
 
 .stars {
-    background:#000 url(images/stars2.png) repeat top center;
+    background:#000 url({{ site.baseurl }}/images/stars2.png) repeat top center;
     z-index:-3;
 }
 
 .twinkling{
-    background:transparent url(images/twinkling.png) repeat top center;
+    background:transparent url({{ site.baseurl }}/images/twinkling.png) repeat top center;
     z-index:-2;
     -moz-animation:move-twink-back 200s linear infinite;
     -ms-animation:move-twink-back 200s linear infinite;
@@ -58,7 +64,7 @@
 }
 
 .clouds{
-    background:transparent url(images/clouds3.png) repeat top center;
+    background:transparent url({{ site.baseurl }}/images/clouds3.png) repeat top center;
     z-index:-1;
     -moz-animation:move-clouds-back 200s linear infinite;
     -ms-animation:move-clouds-back 200s linear infinite;
