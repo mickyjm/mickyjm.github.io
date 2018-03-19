@@ -14,13 +14,16 @@ body {
 
 // Customize the menubar color
 .ui.menu {
-  // background: $background-start;
   background-color: transparent;
   border-color: transparent;
   color: white;
 }
 
-.fullscreen, .ui.grid {
+.fullscreen {
+    height: 105%;
+}
+
+.ui.grid {
     height: 100%;
 }
 
@@ -31,4 +34,12 @@ body {
 // Customize the home page icon colors
 .icon-color {
   color: lighten(white, 25%);
+}
+
+@keyframes blink {
+   50% { border-color: transparent; }
+}
+
+.wrap { /*or other element you want*/
+    animation: blink .5s step-end infinite alternate;
 }
