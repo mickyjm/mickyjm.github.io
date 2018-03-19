@@ -1,15 +1,11 @@
-<div style="padding-top: 10%; height:100%; margin:0px;" class="ui middle aligned gird container">
+<div class="ui center aligned stackable grid container">
 
-    <div class="row" id="my-name" style="color:white;">
-        <h4 class="my-name-segment" style="margin:0px; font-size:1.5em;">Hi! My name is</h4>
-        <h1 class="my-name-segment" style="margin:0px; font-size:3em;">Micky Mangrobang</h1>
-        <h4 class="my-name-segment" style="margin:0px; font-size:1.5em;">I am a<span class="txt-rotate" data-period="2000" data-rotate='[ " gamer.", " student?", " soon to be graduate!", "n aspiring developer." ]'></span><span class="caret">|</span></h4>
-    </div>
-
-    <div class="row">
-        <div class="my-name-segment">{% include home-network-links.html %}</div>
-    </div>
-
+        <div id="my-name" class="twelve wide middle aligned column" style="color:white;">
+            <h4 class="my-name-segment" style="margin:0px; font-size:1.5em;">Hi! My name is</h4>
+            <h1 class="my-name-segment" style="margin:0px; font-size:3em;">{{ site.data.bio.basics.nickname }}</h1>
+            <h4 class="my-name-segment" style="margin:0px; font-size:1.5em;">I am a<span class="txt-rotate" data-period="2000" data-rotate='[ " gamer.", " student?", " soon to be graduate!", "n aspiring developer." ]'></span><span class="caret">|</span></h4>
+            <div class="my-name-segment">{% include home-network-links.html %}</div>
+        </div>
 </div>
 
 <script>

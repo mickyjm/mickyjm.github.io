@@ -1,0 +1,42 @@
+<!-- Custom Home page design -->
+{% assign essay_pages = site.pages | where: "type", "essay"  | where_exp: "page", "page.draft != true" %}
+{% assign project_pages = site.pages | where: "type", "project" | where_exp: "page", "page.draft != true" %}
+{% assign num_essays = essay_pages.size %}
+{% assign num_projects = project_pages.size %}
+
+<div class="fullscreen">
+    {% include name.html %}
+</div>
+
+<div class="fullscreen" style="background-color:silver;">
+
+    <div id="projects" class="ui middle aligned equal width centered stackable grid container">
+
+        <div class="row" style="margin-bottom:0px;">
+            <h2>Coming Soon!</h2>
+        </div>
+    </div>
+
+</div>
+
+<div class="fullscreen" style="background-color:purple;">
+
+    <div id="about" class="ui middle aligned equal width centered stackable grid container">
+
+      <div class="row" style="margin-bottom:0px;">
+          <h2>Coming Soon!</h2>
+      </div>
+    </div>
+
+</div>
+
+<div class="fullscreen" style="background-color:silver;">
+
+    <div id="contact" style="padding-top: 10%; height:100%; margin:0px;" class="ui middle aligned equal width centered stackable grid container">
+
+        <div class="row" style="margin-bottom:0px;">
+            <h2>Coming Soon!</h2>
+        </div>
+    </div>
+
+</div>

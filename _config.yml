@@ -2,7 +2,7 @@
 
 # REQUIRED CHANGES
 # Edit next line, providing your own name.
-title: Micky Mangrobang | Online Personal Portfolio
+title: Michael (Micky) Mangrobang | Online Personal Portfolio
 # Edit next line, replacing 'techfolios' with your github username
 url: "https://mickyjm.github.io"
 # Edit next line so that baseurl is "" if your repo is <username>.github.io
@@ -13,7 +13,7 @@ baseurl: ""
 bio-page-label: Resume
 # You might want to change the theme associated with one or more sections of the site.
 # Defining your own custom theme variations is easy. See the documentation.
-theme-home: theme-home-builtin-custom.html
+theme-home: home-custom.html
 theme-projects: theme-projects-builtin-custom.html
 theme-essays: theme-essays-builtin-custom.html
 theme-bio: theme-bio-builtin-1.html

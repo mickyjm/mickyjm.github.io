@@ -16,7 +16,12 @@ body {
 .ui.menu {
   // background: $background-start;
   background-color: transparent;
+  border-color: transparent;
   color: white;
+}
+
+.fullscreen, .ui.grid {
+    height: 100%;
 }
 
 .item {
