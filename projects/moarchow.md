@@ -9,12 +9,8 @@ date: 2016
 labels:
   - HTML
   - CSS
-  - Git
-  - GitHub
+  - Git/GitHub
   - Semantic UI
-  - Meteor
-  - MongoDB
-  - IntelliJ IDEA
 summary: A Meteor Application that my team and I made for UH Manoa faculty and students to find food on campus.
 ---
 

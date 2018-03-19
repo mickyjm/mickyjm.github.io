@@ -1,0 +1,22 @@
+<div class="ui fluid card">
+    <div class="content">
+        <div class="header">{{ include.page.title }}</div>
+    </div>
+    <div class="image">
+        <img class="ui big image" src="{{ site.baseurl }}/{{ include.page.image }}">
+    </div>
+    <div class="content">
+        <div class="meta">{{ include.page.date }}</div>
+        <div class="description">{{ include.page.summary }}</div>
+    </div>
+    <div class="extra content">
+        <div class="ui mini labels">
+            {% for label in include.page.labels %}
+                <div class="ui basic label">{{ label }}</div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="ui bottom attached green button">
+        Read More!
+    </div>
+</div>
