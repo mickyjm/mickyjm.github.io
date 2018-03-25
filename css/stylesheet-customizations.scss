@@ -7,7 +7,7 @@
 
 // Customize the background color
 body {
-  // background-color: #add8e6;;
+  // background-color: #add8e6;
   background: linear-gradient(left, silver, whitesmoke, silver);
 }
 
@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .fullscreen {
-    height: 105%;
+    height: 26%;
 }
 
 .ui.grid {
@@ -34,15 +34,16 @@ h1, h2, h3, h4, h5 {
     color: white;
 }
 
-// Customize the home page icon colors
 .icon-color {
   color: white;
 }
 
 @keyframes blink {
-   50% { border-color: transparent; }
+   50% {
+       border-color: transparent;
+   }
 }
 
-.wrap { /*or other element you want*/
+.wrap {
     animation: blink .5s step-end infinite alternate;
 }

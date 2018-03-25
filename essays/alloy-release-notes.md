@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-published: true
+published: false
 title: Alloy Release Notes
 date: 2017-01-15
 labels:
@@ -27,7 +27,7 @@ Since majority of <i>Alloy</i> has already been developed, most of my time spent
   <li><strong>Mobile Scaling</strong>
   <br />
   The layout of the project was well done for desktop viewing, but did not scale so well for mobile. I decided to fix this along the way.
-  </li> 
+  </li>
 </ul>
 
 ## February 16, 2017 Update
@@ -82,35 +82,35 @@ During this update I spent an amount of time researching webpage layouts for the
   <div class="ui two column grid container">
     <div class="column">
       <em>Original</em>
-      <img class="ui medium image" src="../images/landing-original.png">
+      <img class="ui medium image" src="../images/essays/alloy/landing-original.png">
     </div>
     <div class="column">
       <em>Current</em>
-      <img class="ui medium image" src="../images/landing-draft001.png">
+      <img class="ui medium image" src="../images/essays/alloy/landing-draft001.png">
     </div>
   </div>
   As you can see I moved the login header to the top, and also added a big login button. I also moved the "About" and "Features" Sections to the bottom of the suggested projects. My thought was to make the login section pleasing to look at, then as users scroll down, they see interesting projects being made and finally the last section of the landing page tells them more about the site if they are interested.
   <div class="ui three column grid container">
     <div class="column">
       <em>Original</em>
-      <img class="ui medium image" src="../images/home-orginal.png">
+      <img class="ui medium image" src="../images/essays/alloy/home-orginal.png">
     </div>
     <div class="column">
       <em>First Draft</em>
-      <img class="ui medium image" src="../images/home-draft001.png">
+      <img class="ui medium image" src="../images/essays/alloy/home-draft001.png">
     </div>
     <div class="column">
       <em>Current</em>
-      <img class="ui medium image" src="../images/home-draft002.png">
+      <img class="ui medium image" src="../images/essays/alloy/home-draft002.png">
     </div>
   </div>
   As I said, I did go through a couple drafts, but mainly updated the master with the first draft then the <em>current</em> final draft. At first, you may see a small change, like the spacing between the "Notifications" and "Suggested Projects" from the original and current. It may not look like much, but there has been a lot of change within the HTML code.
   </li>
 </ul>
-  
+
 ## April 15, 2017 Update
 
-This update is a bit larger than previous updates, but most are small with one or two being big. Though I did spend a few hours struggling and wrapping my head on the "Project Profile" page. On the page I was trying to pull the project member's first and last name. I can not seem to find a fix for it and may end up asking another one of the <i>Alloy</i> members to do it, but it is minor and does not need to be fixed right away. 
+This update is a bit larger than previous updates, but most are small with one or two being big. Though I did spend a few hours struggling and wrapping my head on the "Project Profile" page. On the page I was trying to pull the project member's first and last name. I can not seem to find a fix for it and may end up asking another one of the <i>Alloy</i> members to do it, but it is minor and does not need to be fixed right away.
 
 <ul>
   <li><strong>Updated Ribbon Colors on User/Project Profile Page</strong>
@@ -126,22 +126,22 @@ This update is a bit larger than previous updates, but most are small with one o
   <div class="ui two column grid container">
     <div class="column">
       <em>Last Draft</em>
-      <img class="ui medium image" src="../images/home-draft002.png">
+      <img class="ui medium image" src="../images/essays/alloy/home-draft002.png">
     </div>
     <div class="column">
       <em>Current</em>
-      <img class="ui medium image" src="../images/home-draft003.png">
+      <img class="ui medium image" src="../images/essays/alloy/home-draft003.png">
     </div>
   </div>
   Some may not see it at first, but I changed the number of cards that can be displayed on the row of the Home Page. One of the biggest problems in the last draft was that the Project Card came up too small and just squeezed everything into card which did not look nice. I spent hours last on the last update trying to fix this, then it was only until recently I told myself, "What if I just reduce how many cards can be on the row?" This simple fix ended working and making the cards nice and wider to display the information much more neatly.
   <div class="ui two column grid container">
     <div class="column">
       <em>Last Draft</em>
-      <img class="ui medium image" src="../images/project-card-old.png">
+      <img class="ui medium image" src="../images/essays/alloy/project-card-old.png">
     </div>
     <div class="column">
       <em>Current</em>
-      <img class="ui medium image" src="../images/project-card.png">
+      <img class="ui medium image" src="../images/essays/alloy/project-card.png">
     </div>
   </div>
   As you can see the project card is much more legible to read. You can even see that I made the skills wanted into labels once more. I had to remove the labels on the skills last time because they overlapped and overflowed out of the card, instead of moving onto a new line if needed to. As you can see now, the skill labels fit neatly in the card and will move onto a new line if needed.
@@ -152,11 +152,11 @@ This update is a bit larger than previous updates, but most are small with one o
   <div class="ui two column grid container">
     <div class="column">
       <em>Last Draft</em>
-      <img class="ui medium image" src="../images/user-card-old.png">
+      <img class="ui medium image" src="../images/essays/alloy/user-card-old.png">
     </div>
     <div class="column">
       <em>Current</em>
-      <img class="ui medium image" src="../images/user-card-draft001.png">
+      <img class="ui medium image" src="../images/essays/alloy/user-card-draft001.png">
     </div>
   </div>
   As you can see I switched the places of the username and the user's first and last name. I did this just as a standard edit, since most social media websites display the person's name first and make it the hyperlink, followed by other information such as their email in the following description. I also made the skills into their own section and updated the grammar on the number of projects.
@@ -169,22 +169,22 @@ This update is a bit larger than previous updates, but most are small with one o
   <div class="ui two column grid container">
     <div class="column">
       <em>Last Draft</em>
-      <img class="ui medium image" src="../images/create-project-old.png">
+      <img class="ui medium image" src="../images/essays/alloy/create-project-old.png">
     </div>
     <div class="column">
       <em>Current</em>
-      <img class="ui medium image" src="../images/create-project-draft001.png">
+      <img class="ui medium image" src="../images/essays/alloy/create-project-draft001.png">
     </div>
   </div>
   <center>Edit Profile</center>
   <div class="ui two column grid container">
     <div class="column">
       <em>Last Draft</em>
-      <img class="ui medium image" src="../images/edit-profile-old.png">
+      <img class="ui medium image" src="../images/essays/alloy/edit-profile-old.png">
     </div>
     <div class="column">
       <em>Current</em>
-      <img class="ui medium image" src="../images/edit-profile-draft001.png">
+      <img class="ui medium image" src="../images/essays/alloy/edit-profile-draft001.png">
     </div>
   </div>
   As you can see I move the tite of the page and the "Submit" button out of the segment for the Create/Edit Project pages (do note that these pages look similar) and moved the URL form up. I also added a segment in the Edit User page, to keep it looking consistent. I did this because most websites now days like to have their edit profile pages looking exactly like what they will look when finished editing. This is also the reason why I moved the title and button out of the segment and added a segment to the Edit User page. The segment is to help the user visual that this is what the page will look like without the title. As you can see there is also buttons that either have the words "default" or "upload", this is in preparation for selectable default images or uploadable images.
@@ -200,11 +200,11 @@ This is a smaller update this time around, I was much busier than I expected thi
   <div class="ui two column grid container">
     <div class="column">
       <em>Before</em>
-      <img class="ui medium image" src="../images/fix-notifications-error.png">
+      <img class="ui medium image" src="../images/essays/alloy/fix-notifications-error.png">
     </div>
     <div class="column">
       <em>After</em>
-      <img class="ui medium image" src="../images/fix-notifications.png">
+      <img class="ui medium image" src="../images/essays/alloy/fix-notifications.png">
     </div>
   </div>
 <br />

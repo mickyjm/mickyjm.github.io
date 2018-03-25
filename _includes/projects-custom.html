@@ -1,78 +1,13 @@
-<div class="ui center aligned stackable grid container">
-    <div class="sixteen wide middle aligned column">
-
+<div class="ui center aligned stackable grid container" style="padding-top:50px;padding-bottom:50px;">
+    <div class="twelve wide middle aligned column">
         <h2>Projects</h2>
-
-
-        <div class="ui cards">
-
+        <div class="ui three stackable cards">
             {% assign project_pages = site.pages | where: "type", "project" | sort: "date" | reverse %}
             {% for page in project_pages %}
                 {% unless page.draft %}
-                    <div style="padding:10px;">{% include project-card-custom.html page=page %}</div>
+                    {% include project-card-custom.html page=page %}
                 {% endunless %}
             {% endfor %}
-
         </div>
-
-
     </div>
 </div>
-
-<style>
-
-</style>
-
-<script>$(document).ready(function(){
-  $('.cards').slick({
-  centerMode: true,
-  centerPadding: '60px',
-  dots: true,
-  autoplay: true,
-  autoplaySpeed: 1000,
-  speed: 2000,
-  slidesToShow: 3,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
-  });
-});
-
-</script>
-
-<style>
-.cards:before, .cards:after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    top: 0;
-    height: 100%;
-}
-.cards:before {
-    left: 0;
-    background: linear-gradient(to right,  	#D7D7D7, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), #D7D7D7);
-    pointer-events: none;
-}
-.cards:after {
-    right: 0;
-    background: linear-gradient(to left, silver, rgba(0, 0, 0, 0));
-}
-</style>

@@ -1,15 +1,13 @@
-<div class="ui fluid card">
+<div class="ui card">
     <div class="image">
-        <img class="ui big image" src="{{ site.baseurl }}/{{ include.page.image }}">
+        <img class="ui small image" src="{{ site.baseurl }}/{{ include.page.image }}">
     </div>
     <div class="content">
         <div class="header">{{ include.page.title }}</div>
     </div>
-    <div class="extra content">
-        <div class="ui mini labels">
-            {% for label in include.page.labels %}
-                <div class="ui basic label">{{ label }}</div>
-            {% endfor %}
-        </div>
+    <div class="ui mini labels">
+        {% for label in include.page.labels %}
+            <div class="ui basic label">{{ label }}</div>
+        {% endfor %}
     </div>
 </div>

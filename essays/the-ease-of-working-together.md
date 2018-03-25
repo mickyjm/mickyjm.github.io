@@ -1,6 +1,7 @@
 ---
 layout: essay
 type: essay
+published: false
 title: The Ease of Working Together
 date: 2016-09-15
 labels:

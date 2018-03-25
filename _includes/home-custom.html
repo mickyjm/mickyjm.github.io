@@ -1,28 +1,24 @@
 <!-- Custom Home page design -->
-{% assign essay_pages = site.pages | where: "type", "essay"  | where_exp: "page", "page.draft != true" %}
-{% assign project_pages = site.pages | where: "type", "project" | where_exp: "page", "page.draft != true" %}
-{% assign num_essays = essay_pages.size %}
-{% assign num_projects = project_pages.size %}
-
-<div class="fullscreen">
+<section class="fullscreen">
     {% include name.html %}
-</div>
+</section>
 
-<div id="projects" class="fullscreen" style="background-color:#D7D7D7;">
+<section id="projects" style="background-color:#4c4c4c;">
     {% include projects-custom.html %}
-</div>
+</section>
 
-<div id="about" class="fullscreen" style="background-color:purple;">
+<section id="about" class="fullscreen" style="background-color:purple;">
     {% include bio-custom.html %}
-</div>
+</section>
 
-<div id="contact" class="fullscreen" style="background-color:silver;">
+<section id="contact" class="fullscreen" style="background-color:silver;">
 
-    <div style="padding-top: 10%; height:100%; margin:0px;" class="ui middle aligned equal width centered stackable grid container">
+    <div class="ui middle aligned equal width centered stackable grid container">
 
         <div class="row" style="margin-bottom:0px;">
             <h2>Coming Soon!</h2>
         </div>
+
     </div>
 
-</div>
+</section>

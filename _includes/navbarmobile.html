@@ -1,0 +1,71 @@
+
+    <div class="ui sidebar inverted fixed vertical menu">
+        <a href="#home" class="brand item">
+            Home
+        </a>
+        <a href="#projects" class="right item">
+            Projects
+        </a>
+        <a class="item" href="#about">
+            About
+        </a>
+        <a class="item" href="#contact">
+            Contact
+        </a>
+        <a href="{{ site.baseurl }}/downloads/MichaelMangrobangOnlineResume.pdf" target="_blank" class="item">Resume</a>
+    </div>
+    <div class="ui fixed secondary menu">
+        <a class="item">
+            <i class="big sidebar icon"></i>
+        </a>
+    </div>
+
+<style>
+
+.ui.fixed.menu .item {
+    color: white;
+}
+
+.ui.fixed.menu .item:hover {
+    color:orange;
+}
+
+</style>
+
+<script>
+
+    $('.ui.sidebar').sidebar({
+        transition: 'overlay',
+        scrollLock: true
+    });
+
+    $('.ui.sidebar').sidebar('attach events', '.sidebar.icon');
+
+/*$('.ui.sidebar').sidebar('setting', 'transition', 'overlay');
+$('.ui.sidebar').first().sidebar('attach events', '.ui.fixed.menu .item');
+$('.ui.fixed.menu .item').removeClass('disabled');*/
+
+$(document).ready(function () {
+
+   $(this).scrollTop(0);
+
+   /*$('nav.ui.fixed.menu').find('a.item').click(function(){
+       $('.ui.sidebar').sidebar('toggle');
+       return false;
+   });*/
+
+   $('.ui.sidebar.menu').find('a.item').click(function(){
+       var href = $(this).attr('href');
+       //var $anchor = $('#'+$href).offset();
+       if (href == '#home') {
+           $('html, body').animate({ scrollTop: 0 }, 500);
+       } else {
+           var anchor = $(href).offset();
+           $('html, body').animate({ scrollTop: anchor.top }, 500);
+       }
+       return false;
+   });
+
+});
+
+</script>

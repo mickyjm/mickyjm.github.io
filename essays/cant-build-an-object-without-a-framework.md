@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-published: true
+published: false
 title: Can't Build an Object Without a Framework
 date: 2016-10-06
 labels:

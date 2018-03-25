@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
     {% include head.html %}
-    <body>
-        {% include nightsky.html %}
+    <body style="height:400%;">
         {% include navbar.html %}
-        {{ content }}
-        {% include footer.html %}
+        <div class="pusher" style="height:100%;">
+            {% include nightsky.html %}
+            {{ content }}
+            {% include footer.html %}
+        </div>
+            <!--{% include navbarmobile.html %}-->
     </body>
 </html>
