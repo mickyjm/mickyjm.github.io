@@ -3,7 +3,7 @@ window.onbeforeunload = function () {
 }
 
 $(document).ready(function () {
-//window.onload = function () {
+
     $('#my-name .my-name-segment')
         .transition('hide')
         .transition({
@@ -12,7 +12,15 @@ $(document).ready(function () {
         })
     ;
     setTimeout(beginTyping, 1000);
-//}
+
+    $('#homeToProjects').click(function(){
+        var href = $(this).attr('href');
+        var anchor = $(href).offset();
+        var menuHeight = $('.ui.fixed.borderless.menu').height();
+        $('html, body').animate({ scrollTop: anchor.top - menuHeight }, 500);
+       return false;
+    });
+    
 });
 
 var beginTyping = function() {
