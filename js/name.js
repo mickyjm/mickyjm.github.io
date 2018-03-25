@@ -1,5 +1,5 @@
 window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
+  window.scrollTo(0, 0);    // refresh back to top of screen
 }
 
 $(document).ready(function () {
@@ -20,7 +20,7 @@ $(document).ready(function () {
         $('html, body').animate({ scrollTop: anchor.top - menuHeight }, 500);
        return false;
     });
-    
+
 });
 
 var beginTyping = function() {
@@ -38,6 +38,7 @@ var beginTyping = function() {
     css.type = "text/css";
     css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #FFF }";
     document.body.appendChild(css);
+
 };
 
 var TxtRotate = function(el, toRotate, period) {

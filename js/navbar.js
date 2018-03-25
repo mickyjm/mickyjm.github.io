@@ -6,7 +6,7 @@ $(document).ready(function () {
 
     $(this).scrollTop(0);
 
-    $('nav.ui.fixed.menu').find('a.item').click(function(){
+    $('nav.ui.fixed.borderless.menu').find('a.item').click(function(){
         var href = $(this).attr('href');
         //var $anchor = $('#'+$href).offset();
         if (href == '#home') {
@@ -20,7 +20,7 @@ $(document).ready(function () {
     });
 
     $(document).scroll(function () {
-        var $nav = $(".ui.fixed.menu");
+        var $nav = $(".ui.fixed.borderless.menu");
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
     });
 

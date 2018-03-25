@@ -9,10 +9,31 @@
 body {
   // background-color: #add8e6;
   background: linear-gradient(left, silver, whitesmoke, silver);
+  color: white;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Ubuntu', sans-serif !important;
+}
+
+@media screen and (min-width: 501px) {
+
+    #mobileSidebar{
+        display:none;
+    }
+
+    #mobileMenu {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    #desktopMenu {
+        display: none;
+    }
+
 }
 
 // Customize the menubar color

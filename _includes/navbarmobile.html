@@ -1,24 +1,15 @@
-
-    <div class="ui sidebar inverted fixed vertical menu">
-        <a href="#home" class="brand item">
-            Home
-        </a>
-        <a href="#projects" class="right item">
-            Projects
-        </a>
-        <a class="item" href="#about">
-            About
-        </a>
-        <a class="item" href="#contact">
-            Contact
-        </a>
-        <a href="{{ site.baseurl }}/downloads/MichaelMangrobangOnlineResume.pdf" target="_blank" class="item">Resume</a>
-    </div>
-    <div class="ui fixed secondary menu">
-        <a class="item">
-            <i class="big sidebar icon"></i>
-        </a>
-    </div>
+<div id="mobileSidebar" class="ui sidebar inverted vertical menu">
+    <a class="item" href="#home">Home</a>
+    <a class="item" href="#projects">Projects</a>
+    <a class="item" href="#about">About</a>
+    <a class="item" href="#contact">Contact</a>
+    <a href="{{ site.baseurl }}/downloads/MichaelMangrobangOnlineResume.pdf" target="_blank" class="item">Resume</a>
+</div>
+<div id="mobileMenu" class="ui fixed secondary menu">
+    <a class="item">
+        <i class="big sidebar icon" style="background-color: black; border-radius: 3px 7px;"></i>
+    </a>
+</div>
 
 <style>
 
@@ -26,7 +17,7 @@
     color: white;
 }
 
-.ui.fixed.menu .item:hover {
+.ui.fixed.secondary.menu .item:active {
     color:orange;
 }
 
@@ -34,27 +25,13 @@
 
 <script>
 
-    $('.ui.sidebar').sidebar({
-        transition: 'overlay',
-        scrollLock: true
-    });
-
-    $('.ui.sidebar').sidebar('attach events', '.sidebar.icon');
-
-/*$('.ui.sidebar').sidebar('setting', 'transition', 'overlay');
-$('.ui.sidebar').first().sidebar('attach events', '.ui.fixed.menu .item');
-$('.ui.fixed.menu .item').removeClass('disabled');*/
-
 $(document).ready(function () {
 
    $(this).scrollTop(0);
-
-   /*$('nav.ui.fixed.menu').find('a.item').click(function(){
-       $('.ui.sidebar').sidebar('toggle');
-       return false;
-   });*/
+   $('.ui.sidebar').sidebar('attach events', '.sidebar.icon');
 
    $('.ui.sidebar.menu').find('a.item').click(function(){
+       $('.ui.sidebar').sidebar('hide');
        var href = $(this).attr('href');
        //var $anchor = $('#'+$href).offset();
        if (href == '#home') {
