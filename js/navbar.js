@@ -13,7 +13,8 @@ $(document).ready(function () {
             $('html, body').animate({ scrollTop: 0 }, 500);
         } else {
             var anchor = $(href).offset();
-            $('html, body').animate({ scrollTop: anchor.top }, 500);
+            var menuHeight = $('.ui.fixed.borderless.menu').height();
+            $('html, body').animate({ scrollTop: anchor.top - menuHeight }, 500);
         }
         return false;
     });

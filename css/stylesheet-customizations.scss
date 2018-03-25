@@ -16,14 +16,19 @@ h1, h2, h3, h4, h5 {
 }
 
 // Customize the menubar color
-.ui.menu {
+.ui.fixed.borderless.menu {
   background-color: transparent;
   border-color: transparent;
   color: white;
+  height: 7.5vh;
+}
+
+#home {
+    height: 104vh;
 }
 
 .fullscreen {
-    height: 26%;
+    height: 94.5vh;
 }
 
 .ui.grid {
