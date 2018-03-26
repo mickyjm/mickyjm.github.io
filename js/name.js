@@ -14,7 +14,7 @@ $(document).ready(function () {
     $('#homeToProjects').click(function(){
         var href = $(this).attr('href');
         var anchor = $(href).offset();
-        var menuHeight = $('.ui.fixed.borderless.menu').height();
+        var menuHeight = $('#desktopMenu').is(":visible") ? $('#desktopMenu').height() : 0;
         $('html, body').animate({ scrollTop: anchor.top - menuHeight }, 500);
        return false;
     });
