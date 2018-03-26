@@ -17,12 +17,12 @@
     },
     "profiles": [
       {
-        "network": "github",
+        "network": "GitHub",
         "username": "mickyjm",
         "url": "http://github.com/mickyjm"
       },
       {
-        "network": "linkedin",
+        "network": "LinkedIn",
         "username": "mickyjm",
         "url": "http://linkedin.com/in/mickyjm"
       }

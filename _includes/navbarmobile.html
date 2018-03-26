@@ -1,12 +1,18 @@
 <nav id="mobileSidebar" class="ui inverted vertical menu" style="background-color:black;">
-    <div class="item" style="text-align:center;">
-        Micky
+    <div class="item" style="text-align:center;padding: 8px 8px 8px 32px;">
+        Micky's Portfolio
     </div>
-    <a class="item" href="#home">Home</a>
-    <a class="item" href="#projects">Projects</a>
-    <a class="item" href="#about">About</a>
-    <a class="item" href="#contact">Contact</a>
-    <a href="{{ site.baseurl }}/downloads/MichaelMangrobangOnlineResume.pdf" target="_blank" class="item">Resume</a>
+    <a class="item" href="#home"><span><i class="home icon"></i>Home</span></a>
+    <a class="item" href="#projects"><span><i class="white folder open icon"></i>Projects</span></a>
+    <a class="item" href="#about"><span><i class="white user icon"></i>About</span></a>
+    <a class="item" href="#contact"><span><i class="white comment alternate icon"></i>Contact</span></a>
+    <a class="item" href="{{ site.baseurl }}/downloads/MichaelMangrobangOnlineResume.pdf" target="_blank"><span><i class="white file icon"></i>Resume</span></a>
+    {% for profile in site.data.bio.basics.profiles %}
+        <a class="item" href="{{ profile.url }}"><span><i class="white {{ profile.network | downcase }} {% if profile.network == 'github' %}alternate {% elsif profile.network == 'linkedin' %}in {% endif %}icon"></i>{{ profile.network }}</span></a>
+    {% endfor %}
+    {% if site.data.bio.basics.email %}
+        <a class="item" href="mailto:{{ site.data.bio.basics.email }}"><span><i class="white envelope icon"></i>Email</span></a>
+    {% endif %}
 </nav>
 
 <div id="mobileMenu" class="ui fixed secondary menu">
@@ -117,10 +123,6 @@
 #mobileSidebar a:hover {
     color: orange;
 }
-
-#mobileSidebar .closebtn {
-    font-size: 36px;
-}
 </style>
 <script>
 
@@ -129,11 +131,20 @@ $(document).ready(function () {
         $(this).toggleClass('opened');
         let toggleWidth = $('#mobileSidebar').width() == 0 ? "100vw" : "0";
         $('#mobileSidebar').animate({ width: toggleWidth }, 500);
+        if (toggleWidth == "100vw") {
+            $('#mobileSidebar .item').transition('hide').transition({
+                animation   : 'fade down',
+                interval    : 100
+            });
+        } else {
+            $('#mobileSidebar .item').transition('hide');
+        }
     });
 
     $('#mobileSidebar').find('a.item').click(function(){
         //closeNav();
         $('.menu-icon').toggleClass('opened');
+            $('#mobileSidebar .item').transition('hide');
         $('#mobileSidebar').animate({ width: 0 }, 500);
         var href = $(this).attr('href');
         //var $anchor = $('#'+$href).offset();

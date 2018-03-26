@@ -4,13 +4,11 @@ window.onbeforeunload = function () {
 
 $(document).ready(function () {
 
-    $('#my-name .my-name-segment')
-        .transition('hide')
-        .transition({
-            animation   : 'fly up',
-            interval    : 200
-        })
-    ;
+    $('#my-name .my-name-segment').transition('hide').transition({
+        animation   : 'fly up',
+        interval    : 200
+    });
+
     setTimeout(beginTyping, 1000);
 
     $('#homeToProjects').click(function(){
