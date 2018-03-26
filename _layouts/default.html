@@ -2,12 +2,10 @@
 <html>
     {% include head.html %}
     <body>
+        {% include navbarmobile.html %}
         {% include navbar.html %}
-        <div class="pusher">
-            {% include nightsky.html %}
-            {{ content }}
-            {% include footer.html %}
-        </div>
-            {% include navbarmobile.html %}
+        {% include nightsky.html %}
+        {{ content }}
+        {% include footer.html %}
     </body>
 </html>
