@@ -1,204 +1,36 @@
-<nav id="mobileSidebar" class="ui inverted vertical menu" style="background-color:black;">
-    <div class="item" style="text-align:center;padding: 8px 8px 8px 32px;">
-        Micky's Portfolio
+<nav id="mobileSidebar" class="ui inverted vertical menu" style="padding-top:10px;">
+    <div class="item" style="text-align:center; padding: 8px 8px 8px 32px; font-size:25px; color:orange; border-bottom: 1px orange solid;">
+        Micky's Online Portfolio
     </div>
-    <a class="item" href="#home"><span><i class="home icon"></i>Home</span></a>
-    <a class="item" href="#projects"><span><i class="white folder open icon"></i>Projects</span></a>
-    <a class="item" href="#about"><span><i class="white user icon"></i>About</span></a>
-    <a class="item" href="#contact"><span><i class="white comment alternate icon"></i>Contact</span></a>
-    <a class="item" href="{{ site.baseurl }}/downloads/MichaelMangrobangOnlineResume.pdf" target="_blank"><span><i class="white file icon"></i>Resume</span></a>
+    <a class="item" href="#home">
+        <span><i class="home icon"></i>Home</span>
+    </a>
+    <a class="item" href="#projects">
+        <span><i class="white folder open icon"></i>Projects</span>
+    </a>
+    <a class="item" href="#about">
+        <span><i class="white user icon"></i>About</span>
+    </a>
+    <a class="item" style="border-bottom: 1px orange solid;" href="#contact">
+        <span><i class="white comment alternate icon"></i>Contact</span>
+    </a>
     {% for profile in site.data.bio.basics.profiles %}
-        <a class="item" href="{{ profile.url }}"><span><i class="white {{ profile.network | downcase }} {% if profile.network == 'github' %}alternate {% elsif profile.network == 'linkedin' %}in {% endif %}icon"></i>{{ profile.network }}</span></a>
+        <a class="item" href="{{ profile.url }}"><span><i class="white {{ profile.network | downcase }} {% if profile.network == 'GitHub' %}alternate {% elsif profile.network == 'LinkedIn' %}in {% endif %}icon"></i>{{ profile.network }}</span></a>
     {% endfor %}
     {% if site.data.bio.basics.email %}
-        <a class="item" href="mailto:{{ site.data.bio.basics.email }}"><span><i class="white envelope icon"></i>Email</span></a>
+        <a class="item" style="border-bottom: 1px orange solid;" href="mailto:{{ site.data.bio.basics.email }}">
+            <span><i class="white envelope icon"></i>Email</span>
+        </a>
     {% endif %}
+    <a class="item" style="border-bottom: 1px orange solid;" href="{{ site.baseurl }}/downloads/MichaelMangrobangOnlineResume.pdf" target="_blank">
+        <span><i class="white file icon"></i>Resume</span>
+    </a>
 </nav>
 
-<div id="mobileMenu" class="ui fixed secondary menu">
-    <!--<a class="item" style="height:50px;width:50px;" onclick="openNav()">-->
-        <!--<div class="menu-icon menu-icon-5">-->
-        <a class="menu-icon menu-icon-5">
-            <div class="bar bar-1"></div>
-            <div class="bar bar-2"></div>
-            <div class="bar bar-3"></div>
-        </a>
-        <!--</div>-->
-                <!--<i class="big black sidebar icon" style="background-color: white; border-radius: 5px 5px;"></i>-->
-    <!--</a>-->
+<div id="mobileMenu" class="ui fixed secondary menu" style="padding-top:10px;padding-left:10px;">
+    <a class="sidebar-icon sidebar-icon-t">
+        <div class="bar bar-1"></div>
+        <div class="bar bar-2"></div>
+        <div class="bar bar-3"></div>
+    </a>
 </div>
-
-<style>
-
-/* icon basic styles !!!YOU NEED THEM  */
-.menu-icon {
-    height: 25px;
-    cursor: pointer;
-    width: 30px;
-    position: relative;
-    margin: 5px;
-}
-.menu-icon .bar {
-    width: 100%;
-    height: 8px;
-    background-color: white;
-}
-.menu-icon .bar-1 {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border: 1.5px solid black;
-}
-.menu-icon .bar-2 {
-    position: absolute;
-    top: 35%;
-    left: 0px;
-    border: 1.5px solid black;
-}
-.menu-icon .bar-3 {
-    position: absolute;
-    top: 70%;
-    left: 0px;
-    border: 1.5px solid black;
-}
-
-/* icon #5  */
-.menu-icon.menu-icon-5 {
-    -webkit-transition: all 0.2s linear 0s;
-    transition: all 0.2s linear 0s;
-}
-.menu-icon.menu-icon-5 .bar {
-    -webkit-transition: all 0.2s linear 0.2s;
-    transition: all 0.2s linear 0.2s;
-}
-.menu-icon.menu-icon-5.opened {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-}
-.menu-icon.menu-icon-5.opened .bar-2 {
-    opacity: 0;
-}
-.menu-icon.menu-icon-5.opened .bar-1 {
-    background-color: white;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-    position: absolute;
-    top: 40%;
-    left: 0;
-    border: 0px solid black;
-    border-radius: 0px;
-}
-.menu-icon.menu-icon-5.opened .bar-3 {
-    background-color: white;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    position: absolute;
-    top: 40%;
-    left: 0;
-    border: 0px solid black;
-    border-radius: 0px;
-}
-
-
-#mobileSidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    /*transition: 0.5s;*/
-}
-
-#mobileSidebar .item {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-    /*transition: 0.3s;*/
-}
-
-#mobileSidebar a:hover {
-    color: orange;
-}
-</style>
-<script>
-
-$(document).ready(function () {
-    $('.menu-icon').click(function() {
-        $(this).toggleClass('opened');
-        let toggleWidth = $('#mobileSidebar').width() == 0 ? "100vw" : "0";
-        $('#mobileSidebar').animate({ width: toggleWidth }, 500);
-        if (toggleWidth == "100vw") {
-            $('#mobileSidebar .item').transition('hide').transition({
-                animation   : 'fade down',
-                interval    : 100
-            });
-        } else {
-            $('#mobileSidebar .item').transition('hide');
-        }
-    });
-
-    $('#mobileSidebar').find('a.item').click(function(){
-        //closeNav();
-        $('.menu-icon').toggleClass('opened');
-            $('#mobileSidebar .item').transition('hide');
-        $('#mobileSidebar').animate({ width: 0 }, 500);
-        var href = $(this).attr('href');
-        //var $anchor = $('#'+$href).offset();
-        if (href == '#home') {
-            $('html, body').animate({ scrollTop: 0 }, 500);
-        } else {
-            var anchor = $(href).offset();
-            $('html, body').animate({ scrollTop: anchor.top }, 500);
-        }
-        return false;
-    });
-
-});
-
-function openNav() {
-    document.getElementById('mobileSidebar').style.width = "100vw";
-}
-
-function closeNav() {
-    document.getElementById('mobileSidebar').style.width = "0";
-}
-</script>
-<!--<style>
-
-.ui.fixed.menu .item {
-    color: white;
-}
-
-.ui.fixed.secondary.menu .item:active {
-    color:orange;
-}
-
-</style>
-
-<script>
-
-$(document).ready(function () {
-
-   $(this).scrollTop(0);
-   $('.ui.sidebar').sidebar('attach events', '.sidebar.icon');
-
-   $('.ui.sidebar.menu').find('a.item').click(function(){
-       $('.ui.sidebar').sidebar('hide');
-       var href = $(this).attr('href');
-       //var $anchor = $('#'+$href).offset();
-       if (href == '#home') {
-           $('html, body').animate({ scrollTop: 0 }, 500);
-       } else {
-           var anchor = $(href).offset();
-           $('html, body').animate({ scrollTop: anchor.top }, 500);
-       }
-       return false;
-   });
-
-});
-
-</script>-->

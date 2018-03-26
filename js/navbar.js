@@ -7,21 +7,31 @@ $(document).ready(function () {
     $(this).scrollTop(0);
 
     $('nav.ui.fixed.borderless.menu').find('a.item').click(function(){
-        var href = $(this).attr('href');
-        //var $anchor = $('#'+$href).offset();
-        if (href == '#home') {
+
+        let h = '#home';
+        let href = $(this).attr('href');
+
+        if (href == h) {
+
             $('html, body').animate({ scrollTop: 0 }, 500);
+
         } else {
-            var anchor = $(href).offset();
-            var menuHeight = $('.ui.fixed.borderless.menu').height();
+
+            let anchor = $(href).offset();
+            let menuHeight = $('.ui.fixed.borderless.menu').height();
             $('html, body').animate({ scrollTop: anchor.top - menuHeight }, 500);
+
         }
+
         return false;
+
     });
 
     $(document).scroll(function () {
-        var $nav = $(".ui.fixed.borderless.menu");
-        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+
+        let nav = $('.ui.fixed.borderless.menu');
+        $nav.toggleClass('scrolled', $(this).scrollTop() > nav.height());
+
     });
 
 });
