@@ -1,5 +1,10 @@
+/**
+ ** JS file for landing screen
+ ** @author Michael Mangrobang
+ **/
+
 window.onbeforeunload = function () {
-  window.scrollTo(0, 0);    // refresh back to top of screen
+    window.scrollTo(0, 0);    // refresh back to top of screen
 }
 
 $(document).ready(function () {
@@ -12,11 +17,14 @@ $(document).ready(function () {
     setTimeout(beginTyping, 1000);
 
     $('#homeToProjects').click(function(){
-        var href = $(this).attr('href');
-        var anchor = $(href).offset();
-        var menuHeight = $('#desktopMenu').is(":visible") ? $('#desktopMenu').height() : 0;
+
+        let menu = '#desktopMenu';
+        let href = $(this).attr('href');
+        let anchor = $(href).offset();
+        let menuHeight = ($(menu).is(':visible')) ? $(menu).height() : 0;
         $('html, body').animate({ scrollTop: anchor.top - menuHeight }, 500);
        return false;
+
     });
 
 });

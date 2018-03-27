@@ -1,27 +1,20 @@
 /**
+ ** JS file for Desktop Navigation Menu
  ** @author: Micky Mangrobang
  **/
 
 $(document).ready(function () {
 
-    $(this).scrollTop(0);
-
     $('nav.ui.fixed.borderless.menu').find('a.item').click(function(){
 
+        // variables, in case ID & class names were to change
         let h = '#home';
+        let menu = 'nav.ui.fixed.borderless.menu';
         let href = $(this).attr('href');
+        let anchor = $(href).offset();
+        let menuHeight = (href == h) ? 0 : $(menu).height();
 
-        if (href == h) {
-
-            $('html, body').animate({ scrollTop: 0 }, 500);
-
-        } else {
-
-            let anchor = $(href).offset();
-            let menuHeight = $('.ui.fixed.borderless.menu').height();
-            $('html, body').animate({ scrollTop: anchor.top - menuHeight }, 500);
-
-        }
+        $('html, body').animate({ scrollTop: anchor.top - menuHeight }, 500);
 
         return false;
 
@@ -29,8 +22,10 @@ $(document).ready(function () {
 
     $(document).scroll(function () {
 
-        let menu = $('.ui.fixed.borderless.menu');
-        menu.toggleClass('scrolled', $(this).scrollTop() > menu.height());
+        // variables, in case ID & class names were to change
+        let menu = 'nav.ui.fixed.borderless.menu';
+        let m = $(menu);
+        m.toggleClass('scrolled', $(this).scrollTop() > m.height());
 
     });
 
