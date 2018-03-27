@@ -1,6 +1,8 @@
+<!-- Icons for online profile links & email -->
+
 {% for profile in site.data.bio.basics.profiles %}
-   <a href="{{ profile.url }}" target="_blank"><i class="big white circular {{ profile.network | downcase }} {% if profile.network == 'GitHub' %}alternate {% elsif profile.network == 'LinkedIn' %}in {% endif %}icon icon-color"></i></a>
+   <a href="{{ profile.url }}" target="_blank"><i class="big white circular {{ profile.network | downcase }} {% if profile.network == 'GitHub' %}alternate {% elsif profile.network == 'LinkedIn' %}in {% endif %}icon"></i></a>
 {% endfor %}
 {% if site.data.bio.basics.email %}
-    <a href="mailto:{{ site.data.bio.basics.email }}"><i class="big white circular envelope icon icon-color"></i></a>
+    <a href="mailto:{{ site.data.bio.basics.email }}"><i class="big white circular envelope icon"></i></a>
 {% endif %}

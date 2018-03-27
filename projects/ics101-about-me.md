@@ -2,7 +2,7 @@
 layout: project
 type: project
 published: true
-image: images/MichaelMangrobang.jpg
+image: ics101/MichaelMangrobang.jpg
 title: ICS101 About Me Website
 permalink: projects/ics101website
 date: 2015
@@ -13,7 +13,7 @@ summary: The first time I touched HTML was during ICS 101 as We had to make a we
 ---
 
 <div align="middle">
-  <img class="ui image" src="../images/ics101-website-preview.png" >
+  <img class="ui image" src="../images/projects/ics101/ics101-website-preview.png" >
 </div>
 
 ICS 101 is an introductory course that goes over a lot of software. Although not a requirement for the ICS program, I took this course to open myself to the undergraduate Teaching Assistant opportunity. Throughout ICS 101 we go through the use of Microsoft Word, PowerPoint, Excel, Photoshop and my two personal favorites SSH and Dreamweaver. During the Dreamweaver section we went over HTML and CSS. We then had to create a small website about anything that relates to us using Dreamweaver.

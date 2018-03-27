@@ -1,5 +1,7 @@
-<nav id="mobileSidebar" class="ui inverted vertical menu" style="padding-top:10px;">
-    <div class="item" style="text-align:center; padding: 8px 8px 8px 32px; font-size:25px; color:orange; border-bottom: 1px orange solid;">
+<!-- Menu & Sidebar for Mobile Users -->
+
+<nav id="mobileSidebar" class="ui inverted vertical menu">
+    <div class="item">
         Micky's Online Portfolio
     </div>
     <a class="item" href="#home">
@@ -11,23 +13,23 @@
     <a class="item" href="#about">
         <span><i class="white user icon"></i>About</span>
     </a>
-    <a class="item" style="border-bottom: 1px orange solid;" href="#contact">
+    <a class="sidebar-section item" href="#contact">
         <span><i class="white comment alternate icon"></i>Contact</span>
     </a>
     {% for profile in site.data.bio.basics.profiles %}
         <a class="item" href="{{ profile.url }}"><span><i class="white {{ profile.network | downcase }} {% if profile.network == 'GitHub' %}alternate {% elsif profile.network == 'LinkedIn' %}in {% endif %}icon"></i>{{ profile.network }}</span></a>
     {% endfor %}
     {% if site.data.bio.basics.email %}
-        <a class="item" style="border-bottom: 1px orange solid;" href="mailto:{{ site.data.bio.basics.email }}">
+        <a class="sidebar-section item" href="mailto:{{ site.data.bio.basics.email }}">
             <span><i class="white envelope icon"></i>Email</span>
         </a>
     {% endif %}
-    <a class="item" style="border-bottom: 1px orange solid;" href="{{ site.baseurl }}/downloads/MichaelMangrobangOnlineResume.pdf" target="_blank">
+    <a class="sidebar-section item" href="{{ site.data.bio.basics.resume }}" target="_blank">
         <span><i class="white file icon"></i>Resume</span>
     </a>
 </nav>
 
-<div id="mobileMenu" class="ui fixed secondary menu" style="padding-top:10px;padding-left:10px;">
+<div id="mobileMenu" class="ui fixed secondary menu">
     <a class="sidebar-icon sidebar-icon-t">
         <div class="bar bar-1"></div>
         <div class="bar bar-2"></div>

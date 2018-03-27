@@ -2,40 +2,80 @@
 # Provide front matter so Jekyll processes this file as SASS.
 ---
 /**
- ** Top part adds jekyll support
+ ** CSS file for nightsky.html (landing screen background)
+ ** @author Michael (Micky) Mangrobang
  **/
 
 @keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
+    from {
+        background-position:0 0;
+    }
+    to {
+        background-position:-10000px 5000px;
+    }
 }
+
 @-webkit-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
+    from {
+        background-position:0 0;
+    }
+    to {
+        background-position:-10000px 5000px;
+    }
 }
+
 @-moz-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
+    from {
+        background-position:0 0;
+    }
+    to {
+        background-position:-10000px 5000px;
+    }
 }
+
 @-ms-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
+    from {
+        background-position:0 0;
+    }
+    to {
+        background-position:-10000px 5000px;
+    }
 }
+
 @keyframes move-clouds-back {
-    from {background-position:0 0;}
-    to {background-position:10000px 0;}
+    from {
+        background-position:0 0;
+    }
+    to {
+        background-position:10000px 0;
+    }
 }
+
 @-webkit-keyframes move-clouds-back {
-    from {background-position:0 0;}
-    to {background-position:10000px 0;}
+    from {
+        background-position:0 0;
+    }
+    to {
+        background-position:10000px 0;
+    }
 }
+
 @-moz-keyframes move-clouds-back {
-    from {background-position:0 0;}
-    to {background-position:10000px 0;}
+    from {
+        background-position:0 0;
+    }
+    to {
+        background-position:10000px 0;
+    }
 }
+
 @-ms-keyframes move-clouds-back {
-    from {background-position: 0;}
-    to {background-position:10000px 0;}
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position:10000px 0;
+    }
 }
 
 .stars, .twinkling, .clouds {
@@ -50,12 +90,12 @@
 }
 
 .stars {
-    background:#000 url({{ site.baseurl }}/images/stars2.png) repeat top center;
+    background:#000 url({{ site.baseurl }}/images/nightsky/stars2.png) repeat top center;
     z-index:-3;
 }
 
 .twinkling{
-    background:transparent url({{ site.baseurl }}/images/twinkling.png) repeat top center;
+    background:transparent url({{ site.baseurl }}/images/nightsky/twinkling.png) repeat top center;
     z-index:-2;
     -moz-animation:move-twink-back 200s linear infinite;
     -ms-animation:move-twink-back 200s linear infinite;
@@ -65,7 +105,7 @@
 }
 
 .clouds{
-    background:transparent url({{ site.baseurl }}/images/clouds3.png) repeat top center;
+    background:transparent url({{ site.baseurl }}/images/nightsky/clouds3.png) repeat top center;
     z-index:-1;
     -moz-animation:move-clouds-back 200s linear infinite;
     -ms-animation:move-clouds-back 200s linear infinite;

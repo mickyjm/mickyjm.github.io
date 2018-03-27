@@ -1,0 +1,34 @@
+/**
+ ** CSS file for Destkop Navigation Menu
+ ** @author Michael (Micky) Mangrobang
+ **/
+
+/** Hide when width <= 500px for mobile clients **/
+@media screen and (max-width: 500px) {
+
+    #desktopMenu {
+        display: none;
+    }
+
+}
+
+#desktopMenu {
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    height: 7.5vh;
+}
+
+#desktopMenu.scrolled {
+    background-color: midnightblue !important;
+    transition: background-color 200ms linear;
+}
+
+#desktopMenu .item {
+    color: white;
+    font-size: calc(1em + 0.2vw);
+}
+
+#desktopMenu .item:hover {
+    color: orange;
+}

@@ -1,6 +1,6 @@
 /**
  ** JS file for Mobile Navigation Menu
- ** @author: Micky Mangrobang
+ ** @author Micky (Micky) Mangrobang
  **/
 
 $(document).ready(function () {

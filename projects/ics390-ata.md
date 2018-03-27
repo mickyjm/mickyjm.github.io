@@ -2,7 +2,7 @@
 layout: project
 type: project
 published: true
-image: images/teaching.jpg
+image: ics390/teaching.jpg
 title: Assistant Teaching Assistant
 permalink: projects/ics390
 date: 2016
@@ -14,7 +14,7 @@ summary: A semester long "project" that has us help assist a lab session twice a
 ---
 
 <div align="middle">
-  <img class="ui image" src="../images/room.jpg" >
+  <img class="ui image" src="../images/projects/ics390/room.jpg" >
 </div>
 
 During the Spring Semester of 2016, I took a course on Computing Ethics. In this course we went over many ethical problems involving technology. The class comprised of mainly CS and Business majors, but there were also other majors that University of Hawaii offered.

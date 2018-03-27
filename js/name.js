@@ -1,6 +1,6 @@
 /**
  ** JS file for landing screen
- ** @author Michael Mangrobang
+ ** @author Michael (Micky) Mangrobang
  **/
 
 window.onbeforeunload = function () {

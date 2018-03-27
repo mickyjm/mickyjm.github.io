@@ -1,37 +1,72 @@
-body {
+/**
+ ** Main CSS file
+ ** @author Michael (Micky) Mangrobang
+ **/
+
+/** Global CSS code **/
+
+body, h1, h2, h3, h4, h5, p {
     font-family: 'Ubuntu', sans-serif !important;
 }
 
-h1, h2, h3, h4, h5 {
-}
-
-// Customize the menubar color
-.ui.menu {
-  background-color: transparent;
-  border-color: transparent;
-  color: white;
-}
-
-.pusher-content.fullscreen {
-    height: 105%;
-}
-
-.pusher-content.ui.grid {
+.ui.center.aligned.stackable.grid.container {
     height: 100%;
 }
 
-.item {
+/** Landing CSS code **/
+
+#home {
+    height: 104vh;
     color: white;
 }
 
-.icon-color {
-  color: white;
+#my-name h1.my-name-segment {
+    margin: 5px;
+    font-size: calc(3em + 0.5vw);
 }
 
+#my-name h4.my-name-segment {
+    margin: 5px;
+    font-size: calc(1em + 0.5vw);
+}
+
+/** Blinking caret code **/
 @keyframes blink {
-   50% { border-color: transparent; }
+   50% {
+        border-color: transparent;
+    }
 }
 
-.wrap { /*or other element you want*/
+.wrap {
     animation: blink .5s step-end infinite alternate;
+}
+
+a i.white.circular.icon {
+    color: white;
+    border: 1px solid white;
+}
+
+div.my-name-segment.network-icons {
+    margin-top: 10px;
+}
+
+a#homeToProjects.my-name-segment {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2.5vh;
+}
+
+a#homeToProjects.my-name-segment h4 {
+    font-size: calc(1em + 0.1vw);
+}
+
+/** Projects CSS code **/
+
+#projects {
+    background-color: #4c4c4c;
+}
+
+.fullscreen {
+    height: 94.5vh;
 }

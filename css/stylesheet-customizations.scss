@@ -7,41 +7,14 @@
 
 // Customize the background color
 body {
-  // background-color: #add8e6;
-  background: linear-gradient(left, silver, whitesmoke, silver);
-  color: white;
+    // background-color: #add8e6;
+    background: linear-gradient(left, silver, whitesmoke, silver);
+    color: white;
+    font-family: 'Ubuntu', sans-serif !important;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Ubuntu', sans-serif !important;
-}
-
-@media screen and (min-width: 501px) {
-
-    #mobileSidebar{
-        display:none;
-    }
-
-    #mobileMenu {
-        display: none;
-    }
-
-}
-
-@media screen and (max-width: 500px) {
-
-    #desktopMenu {
-        display: none;
-    }
-
-}
-
-// Customize the menubar color
-.ui.fixed.borderless.menu {
-  background-color: transparent;
-  border-color: transparent;
-  color: white;
-  height: 7.5vh;
 }
 
 #home {
@@ -62,14 +35,4 @@ h1, h2, h3, h4, h5 {
 
 .icon-color {
   color: white;
-}
-
-@keyframes blink {
-   50% {
-       border-color: transparent;
-   }
-}
-
-.wrap {
-    animation: blink .5s step-end infinite alternate;
 }

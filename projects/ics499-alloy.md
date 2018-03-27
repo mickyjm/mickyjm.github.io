@@ -2,10 +2,10 @@
 layout: project
 type: project
 published: true
-image: images/moarfood.png
+image: ics314/moarfood.png
 title: Aloy
 permalink: projects/moarchow
-date: 2016
+date: 2017
 labels:
   - HTML
   - CSS
@@ -15,7 +15,7 @@ summary: A Meteor Application that my team and I made for UH Manoa faculty and s
 ---
 
 <div align="middle">
-  <img class="ui image" src="../images/moarfood.png" >
+  <img class="ui image" src="../images/projects/ics314/moarfood.png" >
 </div>
 
 Moar Chow is a web app that my team and I developed for ICS 314. The app required users to have a University of Hawaii account, as this was made for UH faculty and students. Moar Chow allowed the UH members to search and find the many different types of food offered throughout the campus. The app utilized HTML, CSS, Semantic UI, Meteor, MongoDB and even the Google Maps API so they could find the location of the vendors!
@@ -23,7 +23,7 @@ Moar Chow is a web app that my team and I developed for ICS 314. The app require
 My team and I developed the app during the last few weeks of the semester as a final project. During this time, I designed the user interface. Although it may not look like much, I did spend a lot of time researching modern website layouts and figuring out how to set them up with Semantic UI and Meteor's Blaze Templates.
 
 <div align="middle">
-  <img class="ui image" src="../images/moarchow.png" >
+  <img class="ui image" src="../images/projects/ics314/moarchow.png" >
 </div>
 
 Looking back on this experience, I probably did not contribute as much as I would have wanted to for my team, but I did gain a better understanding of Web Development, from both the front-end and back-end. The experience has also helped me realize that I enjoy doing Web Development.
@@ -31,7 +31,7 @@ Looking back on this experience, I probably did not contribute as much as I woul
 ## Other Moar Chow Members
 
 <div align="middle">
-  <img class="ui image" src="../images/teammoarchow.png" >
+  <img class="ui image" src="../images/projects/ics314/teammoarchow.png" >
 </div>
 
 <ul>

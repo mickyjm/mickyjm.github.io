@@ -1,9 +1,14 @@
+<!-- Landing segment -->
+
 <div id="my-name" class="ui center aligned stackable grid container">
-    <div class="twelve wide middle aligned column" style="color:white;">
-        <h4 class="my-name-segment" style="margin:0px; font-size: calc(1em + 0.5vw);">Hi! My name is</h4>
-        <h1 class="my-name-segment" style="margin:0px; font-size: calc(3em + 0.5vw);">{{ site.data.bio.basics.nickname }}</h1>
-        <h4 class="my-name-segment" style="margin:0px; font-size: calc(1em + 0.5vw);">I am a<span class="txt-rotate" data-period="2000" data-rotate='[ " gamer.", " student?", " soon to be graduate!", "n aspiring developer." ]'></span></h4>
-        <div class="my-name-segment">{% include network-links-custom.html %}</div>
+
+    <div class="twelve wide middle aligned column">
+        <h4 class="my-name-segment">Hi! My name is</h4>
+        <h1 class="my-name-segment">{{ site.data.bio.basics.nickname }}</h1>
+        <h4 class="my-name-segment">I am a<span class="txt-rotate" data-period="2000" data-rotate='[ " gamer.", " student?", " soon to be graduate!", "n aspiring developer." ]'></span></h4>
+        <div class="my-name-segment network-icons">{% include network-links-custom.html %}</div>
     </div>
-    <a id="homeToProjects" class="my-name-segment" href="#projects" style="color: white; position: absolute; bottom: 0; margin-bottom: 2.5vh;"><h4 class="no-bottom">MY PROJECTS</h4><i class="big angle double down icon"></i></a>
+
+    <a id="homeToProjects" class="my-name-segment" href="#projects"><h4 class="no-bottom">MY PROJECTS</h4><i class="big angle double down icon"></i></a>
+    
 </div>
