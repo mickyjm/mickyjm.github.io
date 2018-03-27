@@ -29,8 +29,8 @@ $(document).ready(function () {
 
     $(document).scroll(function () {
 
-        let nav = $('.ui.fixed.borderless.menu');
-        $nav.toggleClass('scrolled', $(this).scrollTop() > nav.height());
+        let menu = $('.ui.fixed.borderless.menu');
+        menu.toggleClass('scrolled', $(this).scrollTop() > menu.height());
 
     });
 
