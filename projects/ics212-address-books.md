@@ -1,16 +1,15 @@
 ---
 layout: project
 type: project
-published: false
+published: true
 image: ics314/moarfood.png
-title: Moar Chow
-permalink: projects/moarchow
-date: 2016
+title: C & C++ Address Books
+permalink: projects/ics212projects
+date: 2015-12-11
 labels:
-  - HTML
-  - CSS
-  - Git/GitHub
-  - Semantic UI
+    - C
+    - C++
+    - Linked List
 summary: A Meteor Application that my team and I made for UH Manoa faculty and students to find food on campus.
 ---
 

@@ -3,9 +3,9 @@ layout: project
 type: project
 published: true
 image: ics314/moarfood.png
-title: Aloy
-permalink: projects/moarchow
-date: 2017
+title: Alloy
+permalink: projects/ics499alloy
+date: 2017-05-12
 labels:
   - HTML
   - CSS

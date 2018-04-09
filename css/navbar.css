@@ -4,7 +4,7 @@
  **/
 
 /** Hide when width <= 500px for mobile clients **/
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
 
     #desktopMenu {
         display: none;

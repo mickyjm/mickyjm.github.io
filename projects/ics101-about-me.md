@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-published: true
+published: false
 image: ics101/MichaelMangrobang.jpg
 title: ICS101 About Me Website
 permalink: projects/ics101website

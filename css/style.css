@@ -7,6 +7,27 @@
 
 body, h1, h2, h3, h4, h5, p {
     font-family: 'Ubuntu', sans-serif !important;
+    color: white;
+}
+
+h1 {
+    font-size: calc(3em + 0.5vw);
+}
+
+h2 {
+    font-size: calc(2.5em + 0.5vw);
+}
+
+h3 {
+    font-size: calc(2em + 0.5vw);
+}
+
+h4 {
+    font-size: calc(1.5em + 0.5vw);
+}
+
+h5 {
+    font-size: calc(1em + 0.5vw);
 }
 
 .ui.center.aligned.stackable.grid.container {
@@ -17,17 +38,14 @@ body, h1, h2, h3, h4, h5, p {
 
 #home {
     height: 104vh;
-    color: white;
 }
 
 #my-name h1.my-name-segment {
     margin: 5px;
-    font-size: calc(3em + 0.5vw);
 }
 
-#my-name h4.my-name-segment {
+#my-name h5.my-name-segment {
     margin: 5px;
-    font-size: calc(1em + 0.5vw);
 }
 
 /** Blinking caret code **/
@@ -57,7 +75,7 @@ a#homeToProjects.my-name-segment {
     margin-bottom: 2.5vh;
 }
 
-a#homeToProjects.my-name-segment h4 {
+a#homeToProjects.my-name-segment h5 {
     font-size: calc(1em + 0.1vw);
 }
 

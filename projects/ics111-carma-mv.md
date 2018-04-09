@@ -5,7 +5,7 @@ published: true
 image: ics111/carma-final-thumb.png
 title: ICS111 Music Video
 permalink: projects/ics111final
-date: 2014
+date: 2014-12-12
 labels:
   - Java
   - Object Oriented Programming

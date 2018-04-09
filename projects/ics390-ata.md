@@ -1,11 +1,11 @@
 ---
 layout: project
 type: project
-published: true
+published: false
 image: ics390/teaching.jpg
 title: Assistant Teaching Assistant
 permalink: projects/ics390
-date: 2016
+date: 2016-05-07
 labels:
   - Teaching
   - Learning

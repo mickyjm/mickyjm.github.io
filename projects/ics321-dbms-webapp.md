@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-published: true
+published: false
 image: ics321/ics321-dbms.png
 title: Student Registration App
 permalink: projects/ics321final

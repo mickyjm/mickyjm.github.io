@@ -9,12 +9,25 @@ window.onbeforeunload = function () {
 
 $(document).ready(function () {
 
-    $('#my-name .my-name-segment').transition('hide').transition({
+    /*$('#my-name .my-name-segment').transition('hide').transition({
         animation   : 'fly up',
         interval    : 200
-    });
+    });*/
 
-    setTimeout(beginTyping, 1000);
+    if ($(window).width() > 768) {
+
+        $('#my-name .my-name-segment').transition('hide').transition({
+            animation   : 'fly up',
+            interval    : 200
+        });
+
+        setTimeout(beginTyping, 1000);
+
+    } else {
+
+        beginTyping();
+
+    }
 
     $('#homeToProjects').click(function(){
 
