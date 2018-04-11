@@ -2,8 +2,9 @@
 layout: project
 type: project
 published: true
-image: ics111/carma-final-thumb.png
-title: ICS111 Music Video
+id: ics111f
+image: ics111/carma-card.png
+title: ICS 111 Music Video
 permalink: projects/ics111final
 date: 2014-12-12
 labels:

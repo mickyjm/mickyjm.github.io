@@ -1,13 +1,16 @@
-<div class="ui card">
+<div class="ui raised card">
     <div class="image">
         <img class="ui small image" src="{{ site.baseurl }}/images/projects/{{ include.page.image }}">
     </div>
-    <div class="content">
+    <!--<div class="content">
         <div class="header">{{ include.page.title }}</div>
-    </div>
-    <div class="ui mini labels">
+    </div>-->
+    <!--<div class="ui mini labels" style="padding-top: 5px; padding-bottom: 5px;">
         {% for label in include.page.labels %}
             <div class="ui basic label">{{ label }}</div>
         {% endfor %}
+    </div>-->
+    <div id="{{ include.page.id }}" class="ui bottom attached grey button">
+        <h5>{{ include.page.title }}</h5>
     </div>
 </div>

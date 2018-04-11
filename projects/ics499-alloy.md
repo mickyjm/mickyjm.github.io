@@ -2,7 +2,8 @@
 layout: project
 type: project
 published: true
-image: ics314/moarfood.png
+id: ics499a
+image: ics499/alloy-card.png
 title: Alloy
 permalink: projects/ics499alloy
 date: 2017-05-12
@@ -11,7 +12,7 @@ labels:
   - CSS
   - Git/GitHub
   - Semantic UI
-summary: A Meteor Application that my team and I made for UH Manoa faculty and students to find food on campus.
+summary: A Meteor Application that my team and I made for UH Manoa faculty and students to create, find, and collaborate on projects.
 ---
 
 <div align="middle">

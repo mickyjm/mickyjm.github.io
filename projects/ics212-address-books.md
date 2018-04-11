@@ -2,7 +2,8 @@
 layout: project
 type: project
 published: true
-image: ics314/moarfood.png
+id: ics212p
+image: ics212/book-card.png
 title: C & C++ Address Books
 permalink: projects/ics212projects
 date: 2015-12-11
@@ -10,7 +11,7 @@ labels:
     - C
     - C++
     - Linked List
-summary: A Meteor Application that my team and I made for UH Manoa faculty and students to find food on campus.
+summary: A Command Line Interface (CLI) application that utilizes linked lists to store data along with saving the data into text files.
 ---
 
 <div align="middle">

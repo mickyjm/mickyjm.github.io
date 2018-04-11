@@ -2,7 +2,8 @@
 layout: project
 type: project
 published: true
-image: ics485/playto-start-menu.png
+id: ics485kp
+image: ics485/kp-card.png
 title: Kaiju Pinball
 permalink: projects/ics485pinball
 date: 2017-09-20
@@ -10,7 +11,7 @@ labels:
     - C Sharp
     - Unity
     - Video Game
-summary: 2D Puzzle Platformer.
+summary: A pinball-themed game that lets you fight monsters, built with Unity using C#.
 ---
 
 <div align="middle">

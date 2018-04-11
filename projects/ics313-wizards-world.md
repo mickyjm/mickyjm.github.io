@@ -2,7 +2,8 @@
 layout: project
 type: project
 published: true
-image: ics314/moarfood.png
+id: ics313ww
+image: ics313/ww-card.jpg
 title: Wizards World
 permalink: projects/ics313wizardsworld
 date: 2018-03-08
@@ -10,7 +11,7 @@ labels:
     - Common Lisp
     - Learning
     - Text-based Game
-summary: A Meteor Application that my team and I made for UH Manoa faculty and students to find food on campus.
+summary: A Command Line Interface (CLI) text-based game, that lets you explore a small game world.
 ---
 
 <div align="middle">

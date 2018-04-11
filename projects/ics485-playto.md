@@ -2,7 +2,8 @@
 layout: project
 type: project
 published: true
-image: ics485/playto-start-menu.png
+id: ics485p
+image: ics485/playto-card.png
 title: Playto
 permalink: projects/ics485final
 date: 2017-12-13
@@ -10,7 +11,7 @@ labels:
     - C Sharp
     - Unity
     - Video Game
-summary: 2D Puzzle Platformer.
+summary: A 2D puzzle/platform game, built with Unity using C#.
 ---
 
 <div align="middle">
