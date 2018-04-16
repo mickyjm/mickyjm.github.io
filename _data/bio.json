@@ -1,183 +1,196 @@
 {
-  "basics": {
-    "name": "Michael (Micky) Mangrobang",
-    "nickname": "Micky Mangrobang",
-    "label": "Student/Teaching Assistant",
-    "picture": "https://mickyjm.github.io/images/self/mMangro-1.jpg",
-    "email": "micky.jm4@gmail.com",
-    "resume" : "https://mickyjm.github.io/downloads/MichaelMangrobangOnlineResume.pdf",
-    "phone": "",
-    "website": "https://mickyjm.github.io",
-    "summary": "A student currently attending University of Hawaii at Manoa studying for a B.S. in Computer Science. Expected to graduate in Spring, 2018.",
-    "location": {
-      "address": "",
-      "postalCode": "96822",
-      "city": "Honolulu",
-      "countryCode": "USA",
-      "region": "Hawaii"
+    "basics": {
+        "name": "Michael (Micky) Mangrobang",
+        "nickname": "Micky Mangrobang",
+        "label": "Student/Teaching Assistant",
+        "picture": "https://mickyjm.github.io/images/self/mMangro-1.jpg",
+        "email": "micky.jm4@gmail.com",
+        "resume" : "https://mickyjm.github.io/downloads/MichaelMangrobangOnlineResume.pdf",
+        "phone": "",
+        "website": "https://mickyjm.github.io",
+        "summary": "I'm a soon to be graduate, new to the industry. I have experience in software engineering and front-end development with an interest in giving users a better experience through efficiency, control, and design.",
+        "location": {
+            "address": "",
+            "postalCode": "96822",
+            "city": "Honolulu",
+            "countryCode": "USA",
+            "region": "Hawaii"
+        },
+        "profiles": [
+            {
+                "network": "GitHub",
+                "username": "mickyjm",
+                "url": "http://github.com/mickyjm"
+            },
+            {
+                "network": "LinkedIn",
+                "username": "mickyjm",
+                "url": "http://linkedin.com/in/mickyjm"
+            }
+        ]
     },
-    "profiles": [
-      {
-        "network": "GitHub",
-        "username": "mickyjm",
-        "url": "http://github.com/mickyjm"
-      },
-      {
-        "network": "LinkedIn",
-        "username": "mickyjm",
-        "url": "http://linkedin.com/in/mickyjm"
-      }
+    "interests": [
+        {
+            "name": "Video Game Development",
+            "keywords": [
+            ]
+        },
+        {
+            "name": "Artificial Intelligence",
+            "keywords": [
+            ]
+        },
+        {
+            "name": "Web Development",
+            "keywords": [
+            ]
+        },
+        {
+            "name": "Software Engineering",
+            "keywords": [
+            ]
+        }
+    ],
+    "programming": {
+        "name": "Programming",
+        "list": [
+            "C/C++",
+            "Java",
+            "Python",
+            "Lisp (Common)",
+            "C#"
+        ]
+    },
+    "web": {
+        "name": "Web Development",
+        "list": [
+            "HTML/CSS",
+            "JavaScript",
+            "Semantic UI",
+            "Jekyll",
+            "jQuery",
+            "PHP/MySQL"
+        ]
+    },
+    "tools": {
+        "name": "Tools",
+        "list": [
+            "Command Line Interface",
+            "Git/GitHub",
+            "Secure Shell",
+            "Unity",
+            "Eclipse",
+            "Visual Studio",
+            "Atom"
+        ]
+    },
+    "skills": [
+        {
+            "name": "Languages",
+            "level": "",
+            "keywords": [
+                "C/C++",
+                "Java",
+                "Javascript",
+                "Python",
+                "Lisp (Common)",
+                "C#"
+            ]
+        },
+        {
+            "name": "Toolsets/OS",
+            "level": "",
+            "keywords": [
+                "Windows",
+                "Linux (Ubuntu)",
+                "Git/GitHub"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "University of Hawaii at Manoa, Honolulu, HI",
+            "area": "Computer Science (expected Spring 2018)",
+            "studyType": "B.S.",
+            "startDate": "2014-09-01",
+            "endDate": "Present",
+            "gpa": "",
+            "courses": [
+                "bullet point",
+                "bullet point"
+            ]
+        },
+        {
+            "institution": "Kauai Community College, Lihue, HI",
+            "area": "Liberal Arts",
+            "studyType": "A.A.",
+            "startDate": "2011-09-01",
+            "endDate": "2014-05-31",
+            "gpa": "",
+            "courses": [
+            ]
+        }
+    ],
+    "work": [
+        {
+            "company": "University of Hawaii at Manoa Information and Computer Sciences Department",
+            "position": "Teaching Assistant",
+            "website": "http://www.ics.hawaii.edu/",
+            "startDate": "2016-08-17",
+            "endDate": "Present",
+            "summary": "summary",
+            "highlights": [
+                "bullet point",
+                "bullet point",
+                "bullet point"
+            ]
+        },
+        {
+            "company": "County of Kauai Finance Department (Information Technology)",
+            "position": "IT Intern",
+            "website": "http://www.kauai.gov/Government/Departments/Finance/IT",
+            "startDate": "2016-06-16",
+            "endDate": "2016-07-29",
+            "summary": "summary",
+            "highlights": [
+                "bullet point"
+            ]
+        },
+        {
+            "company": "University of Hawaii at Manoa Information and Computer Sciences Department",
+            "position": "Assistant Teaching Assistant",
+            "website": "http://www.ics.hawaii.edu/",
+            "startDate": "2016-01-16",
+            "endDate": "2016-05-15",
+            "summary": "summary",
+            "highlights": [
+                "bullet point"
+            ]
+        },
+        {
+            "company": "County of Kauai Fire Department",
+            "position": "Fire Intern",
+            "website": "http://www.kauai.gov/fire",
+            "startDate": "2015-06-16",
+            "endDate": "2015-07-31",
+            "summary": "summary",
+            "highlights": [
+                "bullet point"
+            ]
+        }
+    ],
+    "awards": [
+        {
+            "title": "Certificate of Achievement - 4th Place",
+            "date": "2016-11-05",
+            "awarder": "International Collegiate Programming Contest",
+            "summary": "bullet point"
+        }
+    ],
+    "references": [
+        {
+            "name": "Available upon request",
+            "reference": ""
+        }
     ]
-  },
-  "interests": [
-    {
-      "name": "Video Game Development",
-      "keywords": [
-      ]
-    },
-    {
-      "name": "Artificial Intelligence",
-      "keywords": [
-      ]
-    },
-    {
-      "name": "Web Development",
-      "keywords": [
-      ]
-    },
-    {
-      "name": "Software Engineering",
-      "keywords": [
-      ]
-    },
-    {
-      "name": "Database Management",
-      "keywords": [
-      ]
-    }
-  ],
-  "skills": [
-    {
-      "name": "Languages and Frameworks",
-      "level": "",
-      "keywords": [
-        "C++",
-        "C",
-        "Java",
-        "Javascript",
-        "HTML",
-        "Semantic UI",
-        "Lisp (Common)",
-        "SQL",
-        "PHP"
-      ]
-    },
-    {
-      "name": "Toolsets/OS",
-      "level": "",
-      "keywords": [
-        "Windows",
-        "Linux (Ubuntu)",
-        "Git/GitHub"
-      ]
-    }
-  ],
-  "education": [
-    {
-      "institution": "University of Hawaii at Manoa, Honolulu, HI",
-      "area": "Computer Science (expected Spring 2018)",
-      "studyType": "B.S.",
-      "startDate": "2014-09-01",
-      "endDate": "Present",
-      "gpa": "",
-      "courses": [
-        "Introduction to Computer Science I & II",
-        "Discrete Mathematics I & II",
-        "Program Structure",
-        "Software Engineering I",
-        "Data Storage & Retrievel",
-        "Logic Design & Microprocessors",
-        "Computing Ethics for Lab Assistants"
-      ]
-    },
-    {
-      "institution": "Kauai Community College, Lihue, HI",
-      "area": "Liberal Arts",
-      "studyType": "A.A.",
-      "startDate": "2011-09-01",
-      "endDate": "2014-05-31",
-      "gpa": "",
-      "courses": [
-      ]
-    }
-  ],
-  "work": [
-    {
-      "company": "University of Hawaii at Manoa Information and Computer Sciences Department",
-      "position": "Teaching Assistant",
-      "website": "http://www.ics.hawaii.edu/",
-      "startDate": "2016-08-17",
-      "endDate": "Present",
-      "summary": "Undergraduate teaching assistant for ICS 101 (Digital Tools for the Information World), teaching the use of various software including Microsoft Office, SSH and Adobe Dreamweaver",
-      "highlights": [
-        "Conducted 75-minute lab sessions twice a week",
-        "Developed full lesson plans including class format and material for each lab session",
-        "Handled student grades including grading homework, quizzes and overall course grade"
-      ]
-    },
-    {
-      "company": "County of Kauai Finance Department (Information Technology)",
-      "position": "IT Intern",
-      "website": "http://www.kauai.gov/Government/Departments/Finance/IT",
-      "startDate": "2016-06-16",
-      "endDate": "2016-07-29",
-      "summary": "Interned for the County of Kauai IT Department, handling various technical support issues",
-      "highlights": [
-        "Built and deployed new shipment of computers for county employees that needed an upgrade",
-        "Repaired computers that did not need to be upgraded",
-        "Handled technical calls weekly",
-        "Expanded a local area network",
-        "Securely erased hard drives"
-      ]
-    },
-    {
-      "company": "University of Hawaii at Manoa Information and Computer Sciences Department",
-      "position": "Assistant Teaching Assistant",
-      "website": "http://www.ics.hawaii.edu/",
-      "startDate": "2016-01-16",
-      "endDate": "2016-05-15",
-      "summary": "Assistant teaching assistant for ICS101 (Digital Tools for the Information World), assisting both the teaching assistant and students",
-      "highlights": [
-        "Supported a lab session twice a week helping the teaching assistant throughout their lesson",
-        "Conducted a week of lab",
-        "Developed a week's worth of lesson plans including class format and material"
-      ]
-    },
-    {
-      "company": "County of Kauai Fire Department",
-      "position": "Fire Intern",
-      "website": "http://www.kauai.gov/fire",
-      "startDate": "2015-06-16",
-      "endDate": "2015-07-31",
-      "summary": "Interned for the County of Kauai Fire Department, managing the Fire Department's database",
-      "highlights": [
-        "Database management using DBMS software",
-        "Created and digitized new forms using a variety of software"
-      ]
-    }
-  ],
-  "awards": [
-    {
-      "title": "Certificate of Achievement - 4th Place",
-      "date": "2016-11-05",
-      "awarder": "International Collegiate Programming Contest",
-      "summary": "Recieved a Certificate of Achievement for placing in 4th place statewide with my team in the International Collegiate Programming Contest, sponsored by IBM."
-    }
-  ],
-  "references": [
-    {
-      "name": "Available upon request",
-      "reference": ""
-    }
-  ]
 }

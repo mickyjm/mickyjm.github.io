@@ -1,7 +1,67 @@
 <!-- About Me segment -->
 
 <div class="ui center aligned stackable grid container">
-    <div class="row" style="margin-bottom:0px;">
-        <h2>Coming Soon!</h2>
+    <div class="row">
+
+        <div class="ui center aligned mobile reversed stackable grid" style="width:100%;">
+            <div class="four wide middle aligned center aligned column">
+                <!--<img style="float:left;" class="ui medium circular image" src="{{ site.data.bio.basics.picture }}"/>-->
+                <img id="desktopSelfie" class="ui medium circular centered image" src="{{ site.baseurl }}/images/self/mMangro-5.jpg"/>
+                <img id="mobileSelfie" class="ui small circular centered image" src="{{ site.baseurl }}/images/self/mMangro-5.jpg"/>
+            </div>
+            <div class="four wide middle aligned column">
+                <h2>About Me</h2>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+
+        <div class="six wide left aligned column">
+                <h5>{{ site.data.bio.basics.summary}}</h5>
+        </div>
+        <div class="eight wide left aligned column">
+            <div class="ui grid" style="width:100%;">
+                <div class="equal width row">
+                    <div class="column">
+                        <div class="ui list">
+                            <div class="header">
+                                <h5>{{ site.data.bio.programming.name }}</h5>
+                            </div>
+                            {% for item in site.data.bio.programming.list %}
+                            <div class="item skill-item">
+                                <i class="check icon"></i>{{ item }}
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="ui list">
+                            <div class="header">
+                                <h5>{{ site.data.bio.web.name }}</h5>
+                            </div>
+                            {% for item in site.data.bio.web.list %}
+                            <div class="item skill-item">
+                                <i class="check icon"></i>{{ item }}
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="sixteen wide column">
+                    <div class="header">
+                        <h5>{{ site.data.bio.tools.name }}</h5>
+                    </div>
+                    <div class="ui relaxed horizontal list">
+                        {% for item in site.data.bio.tools.list %}
+                        <div class="item skill-item">
+                            <i class="check icon"></i>{{ item }}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>

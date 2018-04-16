@@ -1,3 +1,7 @@
+---
+# Provide front matter so Jekyll processes this file as SASS.
+---
+
 /**
  ** Main CSS file
  ** @author Michael (Micky) Mangrobang
@@ -87,6 +91,64 @@ a#homeToProjects.my-name-segment h5 {
 
 #projects {
     background-color: #4c4c4c;
+}
+
+/** About Me CSS code **/
+
+#about {
+    background-image: url("{{ site.baseurl }}/images/background/pexels-cityscape001.jpeg ");
+    /*background-image: url("{{ site.baseurl }}/images/background/pexels-night-silhouette.jpeg ");*/
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#about .section-cover {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+#desktopSelfie {
+    padding: 5px;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+#mobileSelfie {
+    padding: 1px;
+    border:1px solid #000;
+    background-color: #fff;
+}
+
+.skills-item {
+    font-size: calc(0.5em + 0.5vw);
+}
+
+/** Remove fullscreen height and switch pictures when in mobile mode **/
+@media screen and (min-width: 769px) {
+
+    #about{
+        height: 94.5vh;
+    }
+
+    #about .section-cover {
+        height: 100%;
+    }
+
+    #mobileSelfie {
+        display: none;
+    }
+
+}
+
+/** Add fullscreen height and switch pitures when in desktop mode **/
+@media screen and (max-width: 768px) {
+
+    #desktopSelfie {
+        display: none;
+    }
+
 }
 
 .fullscreen {
