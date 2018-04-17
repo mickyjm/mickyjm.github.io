@@ -94,7 +94,7 @@
     z-index:-3;
 }
 
-.twinkling{
+.twinkling {
     background:transparent url({{ site.baseurl }}/images/nightsky/twinkling.png) repeat top center;
     z-index:-2;
     -moz-animation:move-twink-back 200s linear infinite;
@@ -104,7 +104,7 @@
     animation:move-twink-back 200s linear infinite;
 }
 
-.clouds{
+.clouds {
     background:transparent url({{ site.baseurl }}/images/nightsky/clouds3.png) repeat top center;
     z-index:-1;
     -moz-animation:move-clouds-back 200s linear infinite;

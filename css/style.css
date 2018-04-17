@@ -9,6 +9,11 @@
 
 /** Global CSS code **/
 
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 body, h1, h2, h3, h4, h5, h6, p {
     font-family: 'Ubuntu', sans-serif !important;
     color: white;
@@ -40,12 +45,15 @@ h6 {
 
 .ui.center.aligned.stackable.grid.container {
     height: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /** Landing CSS code **/
 
 #home {
-    height: 104vh;
+    height: 100vh;
+    position: relative;
 }
 
 #my-name h1.my-name-segment {
@@ -90,7 +98,7 @@ a#homeToProjects.my-name-segment h5 {
 /** Projects CSS code **/
 
 #projects {
-    background-color: #4c4c4c;
+    background: linear-gradient(to bottom, #181818, #121212, #000030);
 }
 
 /** About Me CSS code **/
@@ -104,8 +112,11 @@ a#homeToProjects.my-name-segment h5 {
     background-repeat: no-repeat;
 }
 
-#about .section-cover {
+#about .section-cover, #about-row {
     width: 100%;
+}
+
+#about .section-cover {
     background: rgba(0, 0, 0, 0.4);
 }
 
@@ -129,7 +140,7 @@ a#homeToProjects.my-name-segment h5 {
 @media screen and (min-width: 769px) {
 
     #about{
-        height: 94.5vh;
+        height: 94vh;
     }
 
     #about .section-cover {
