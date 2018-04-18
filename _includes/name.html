@@ -1,14 +1,10 @@
 <!-- Landing segment -->
-
 <div id="my-name" class="ui center aligned stackable grid container">
-
     <div class="twelve wide middle aligned column">
-        <h5 class="my-name-segment">Hi! My name is</h5>
+        <p class="my-name-segment">Hi! My name is</p>
         <h1 class="my-name-segment">{{ site.data.bio.basics.nickname }}</h1>
-        <h5 class="my-name-segment">I am a<span class="txt-rotate" data-period="2000" data-rotate='[ " gamer.", " student?", " soon to be graduate!", "n aspiring software engineer." ]'></span></h5>
-        <div class="my-name-segment network-icons">{% include network-links-custom.html %}</div>
+        <p class="my-name-segment">I am a<span class="txt-rotate" data-period="2000" data-rotate='[ " gamer.", " student?", " soon to be graduate!", "n aspiring software engineer." ]'></span></p>
+        <div class="my-name-segment network-icons">{% include network-links-custom.html size="big" email="true" %}</div>
     </div>
-
     <a id="homeToProjects" class="my-name-segment" href="#projects"><h5 class="no-bottom">MY PROJECTS</h5><i class="big angle double down icon"></i></a>
-
 </div>

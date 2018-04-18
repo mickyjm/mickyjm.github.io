@@ -3,7 +3,7 @@ layout: project
 type: project
 published: true
 id: ics485p
-image: ics485/playto-card.png
+image: images/projects/ics485/playto-card.png
 title: Playto
 permalink: projects/ics485final
 date: 2017-12-13

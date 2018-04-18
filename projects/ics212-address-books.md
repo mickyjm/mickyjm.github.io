@@ -3,8 +3,8 @@ layout: project
 type: project
 published: true
 id: ics212p
-image: ics212/book-card.png
-title: C & C++ Address Books
+image: images/projects/ics212/book-card.png
+title: C/C++ Address Books
 permalink: projects/ics212projects
 date: 2015-12-11
 labels:

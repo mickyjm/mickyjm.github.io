@@ -3,7 +3,7 @@ layout: project
 type: project
 published: true
 id: ics499a
-image: ics499/alloy-card.png
+image: images/projects/ics499/alloy-card.png
 title: Alloy
 permalink: projects/ics499alloy
 date: 2017-05-12

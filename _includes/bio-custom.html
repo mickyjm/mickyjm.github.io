@@ -1,23 +1,19 @@
 <!-- About Me segment -->
-
 <div class="ui center aligned stackable grid container">
     <div class="sixteen wide row">
-
         <div id="about-row" class="ui center aligned mobile reversed stackable grid">
             <div class="four wide middle aligned center aligned column">
-                <img id="desktopSelfie" class="ui medium circular centered image" src="{{ site.data.bio.basics.picture }}"/>
-                <img id="mobileSelfie" class="ui small circular centered image" src="{{ site.data.bio.basics.picture }}"/>
+                <img id="desktopSelfie" class="ui medium circular centered image" src="{{ site.baseurl }}/{{ site.data.bio.basics.picture }}"/>
+                <img id="mobileSelfie" class="ui small circular centered image" src="{{ site.baseurl }}/{{ site.data.bio.basics.picture }}"/>
             </div>
             <div class="four wide middle aligned column">
                 <h2>About Me</h2>
             </div>
         </div>
-
     </div>
     <div class="row">
-
         <div class="six wide left aligned column">
-                <h5>{{ site.data.bio.basics.summary}}</h5>
+                <p id="bio-summary">{{ site.data.bio.basics.summary}}</p>
         </div>
         <div class="eight wide left aligned column">
             <div class="ui grid" style="width:100%;">
@@ -29,7 +25,7 @@
                             </div>
                             {% for item in site.data.bio.programming.list %}
                             <div class="item skill-item">
-                                <i class="check icon"></i>{{ item }}
+                                <i class="check icon"></i> {{ item }}
                             </div>
                             {% endfor %}
                         </div>
@@ -61,6 +57,5 @@
                 </div>
             </div>
         </div>
-
     </div>
 </div>

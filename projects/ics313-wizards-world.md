@@ -3,7 +3,7 @@ layout: project
 type: project
 published: true
 id: ics313ww
-image: ics313/ww-card.jpg
+image: images/projects/ics313/ww-card.jpg
 title: Wizards World
 permalink: projects/ics313wizardsworld
 date: 2018-03-08

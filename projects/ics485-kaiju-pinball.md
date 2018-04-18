@@ -3,7 +3,7 @@ layout: project
 type: project
 published: true
 id: ics485kp
-image: ics485/kp-card.png
+image: images/projects/ics485/kp-card.png
 title: Kaiju Pinball
 permalink: projects/ics485pinball
 date: 2017-09-20

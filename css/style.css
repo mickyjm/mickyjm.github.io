@@ -41,6 +41,7 @@ h5 {
 
 h6 {
     font-size: calc(0.5em + 0.5vw);
+    margin: 0;
 }
 
 .ui.center.aligned.stackable.grid.container {
@@ -53,20 +54,21 @@ h6 {
 
 #home {
     height: 100vh;
+    min-height: 400px;
     position: relative;
 }
 
-#my-name h1.my-name-segment {
+#my-name h1.my-name-segment, #my-name p.my-name-segment {
     margin: 5px;
 }
 
-#my-name h5.my-name-segment {
-    margin: 5px;
+#my-name p.my-name-segment {
+    font-size: calc(1em + 0.5vw);
 }
 
 /** Blinking caret code **/
 @keyframes blink {
-   50% {
+    50% {
         border-color: transparent;
     }
 }
@@ -78,10 +80,18 @@ h6 {
 a i.white.circular.icon {
     color: white;
     border: 1px solid white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+a i.white.circular.icon:hover {
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
 }
 
 div.my-name-segment.network-icons {
-    margin-top: 10px;
+    margin-top: 25px;
 }
 
 a#homeToProjects.my-name-segment {
@@ -98,26 +108,37 @@ a#homeToProjects.my-name-segment h5 {
 /** Projects CSS code **/
 
 #projects {
+    padding-bottom: calc(10px + 1vh);
     background: linear-gradient(to bottom, #181818, #121212, #000030);
+}
+
+/** Mobile view padding **/
+@media screen and (max-width: 768px) {
+
+    #projects .middle.aligned.row {
+        padding-top: calc(10px + 1vh);
+        padding-bottom: calc(10px + 1vh);
+    }
+
 }
 
 /** About Me CSS code **/
 
 #about {
     background-image: url("{{ site.baseurl }}/images/background/pexels-cityscape001.jpeg ");
-    /*background-image: url("{{ site.baseurl }}/images/background/pexels-night-silhouette.jpeg ");*/
     background-attachment: fixed;
-    background-position: center;
+    background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-#about .section-cover, #about-row {
+.section-cover, #about-row {
     width: 100%;
 }
 
-#about .section-cover {
-    background: rgba(0, 0, 0, 0.4);
+.section-cover {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 #desktopSelfie {
@@ -132,6 +153,10 @@ a#homeToProjects.my-name-segment h5 {
     background-color: #fff;
 }
 
+#bio-summary {
+    font-size: calc(1em + 0.5vw);
+}
+
 .skills-item {
     font-size: calc(0.5em + 0.5vw);
 }
@@ -139,8 +164,9 @@ a#homeToProjects.my-name-segment h5 {
 /** Remove fullscreen height and switch pictures when in mobile mode **/
 @media screen and (min-width: 769px) {
 
-    #about{
-        height: 94vh;
+    #about {
+        height: calc(100vh - 55px);
+        min-height: 650px;
     }
 
     #about .section-cover {
@@ -153,7 +179,7 @@ a#homeToProjects.my-name-segment h5 {
 
 }
 
-/** Add fullscreen height and switch pitures when in desktop mode **/
+/** Switch pictures when in desktop mode **/
 @media screen and (max-width: 768px) {
 
     #desktopSelfie {
@@ -162,6 +188,62 @@ a#homeToProjects.my-name-segment h5 {
 
 }
 
-.fullscreen {
-    height: 94.5vh;
+/** Contact CSS code **/
+
+#contact {
+    height:75vh;
+    background: linear-gradient(to bottom, #000030, #181818, #181818, #121212);
+}
+
+.contact-segment {
+    font-size: calc(1em + 1vw);
+}
+
+#contact-button {
+    padding-bottom: 20px;
+}
+
+footer {
+    background-image: url("{{ site.baseurl }}/images/background/pexels-night-silhouette.jpeg ");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+div.ui.list .item a, div.ui.list a.item {
+    color: grey;
+}
+
+div.ui.list .item a:hover, div.ui.list a.item:hover {
+    color: orange;
+}
+
+@media screen and (min-width: 769px) {
+
+    #contact {
+        height: calc(100vh - 255px);
+        min-height: 400px;
+    }
+
+    footer {
+        min-height: 200px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    #contact {
+        height: 100vh;
+    }
+
+    footer {
+        height: 100vh;
+    }
+
+    div.five.wide.right.aligned.bottom.aligned.column {
+        text-align: left;
+    }
+
 }
