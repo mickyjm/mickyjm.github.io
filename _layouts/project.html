@@ -8,9 +8,11 @@
     <body>
         {% include navbarmobile.html %}
         {% include navbar.html %}
-        <div id="projectsLayout" class="ui center aligned stackable grid container">
-        {{ content }}
-        </div>
+        <section id="project">
+            <div class="ui center aligned stackable grid container" style="padding-top: 75px;padding-bottom: 75px;">
+                {{ content }}
+            </div>
+        </section>
         {% include footer.html %}
     </body>
     <!-- If you have any questions about what is used, feel free to email me or visit the links in my references page -->

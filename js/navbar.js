@@ -24,10 +24,10 @@ $(document).ready(function () {
 
         // variables, in case ID & class names were to change
         let menu = 'nav.ui.fixed.borderless.menu';
-        let div = 'div#my-name div.twelve.wide.middle.aligned.column';
+        //let div = 'div#my-name div.twelve.wide.middle.aligned.column';
         let m = $(menu);
-        let d = $(div)
-        m.toggleClass('scrolled', $(this).scrollTop() > d.height());
+        //let d = $(div)
+        m.toggleClass('scrolled', $(this).scrollTop() > m.height());
 
     });
 
