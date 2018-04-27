@@ -9,7 +9,7 @@ $(document).ready(function () {
 
         // variables, in case ID & class names were to change
         let h = '#home';
-        let menu = '#footer-nav';
+        let menu = '#desktopMenu';
         let href = $(this).attr('href');
         let anchor = $(href).offset();
         let menuHeight = ($(menu).is(':visible') || href == h) ? $(menu).height() : 0;
