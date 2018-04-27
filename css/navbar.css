@@ -14,6 +14,7 @@
 
 #desktopMenu {
     background-color: transparent;
+    transition: background-color 200ms linear;
     border-color: transparent;
     color: white;
     height: 55px;

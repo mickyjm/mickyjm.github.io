@@ -12,6 +12,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    background: linear-gradient(to bottom, #000030, #181818, #181818, #121212);
 }
 
 body, h1, h2, h3, h4, h5, h6, p {
@@ -140,10 +141,12 @@ div.section-cover {
     height: 100%;
     min-height: 200px;
     background: rgba(0, 0, 0, 0.5);
+    transition: background 200ms linear;
 }
 
 footer div.section-cover:hover {
     background: rgba(0, 0, 0, 0.75);
+    transition: background 200ms linear;
 }
 
 #desktopSelfie {

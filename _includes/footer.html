@@ -1,5 +1,5 @@
 <!-- Always create iframes to embed videos if present. See: http://semantic-ui.com/modules/embed.html -->
-
+<!-- Footer Segment -->
 <footer>
     <div class="section-cover">
         <div class="ui center aligned stackable grid container mobile reversed">
@@ -27,10 +27,10 @@
             <div class="five wide right aligned bottom aligned column">
                 <h5>Navigation</h5>
                 <div id="footer-nav" class="ui list">
-                    <a class="item" href="#home">Home</a>
-                    <a class="item" href="#projects">Projects</a>
-                    <a class="item" href="#about">About</a>
-                    <a class="item" href="#contact">Contact</a>
+                    <a class="item" href="{% if page.layout != 'default' %}/{% endif %}#home">Home</a>
+                    <a class="item" href="{% if page.layout != 'default' %}/{% endif %}#projects">Projects</a>
+                    <a class="item" href="{% if page.layout != 'default' %}/{% endif %}#about">About</a>
+                    <a class="item" href="{% if page.layout != 'default' %}/{% endif %}#contact">Contact</a>
                 </div>
             </div>
         </div>
