@@ -1,6 +1,6 @@
 <!-- Menu & Sidebar for Mobile Users -->
 <nav id="mobileSidebar" class="ui inverted vertical menu">
-    <div class="item">Micky's Online Portfolio</div>
+    <div class="header item">Micky's Online Portfolio</div>
     <a class="item" href="#home"><span><i class="home icon"></i>Home</span></a>
     <a class="item" href="#projects"><span><i class="white folder open icon"></i>Projects</span></a>
     <a class="item" href="#about"><span><i class="white user icon"></i>About</span></a>
@@ -9,7 +9,7 @@
     <a class="item" href="{{ profile.url }}"><span><i class="white {{ profile.network | downcase }} {% if profile.network == 'GitHub' %}alternate {% elsif profile.network == 'LinkedIn' %}in {% endif %}icon"></i>{{ profile.network }}</span></a>
     {% endfor %}
     {% if site.data.bio.basics.email %}
-    <a class="sidebar-section item" href="mailto:{{ site.data.bio.basics.email }}"><span><i class="white envelope icon"></i>Email</span></a>
+    <a class="sidebar-section item" href="mailto:{{ site.data.bio.basics.email }}" target="_blank"><span><i class="white envelope icon"></i>Email</span></a>
     {% endif %}
     <a class="sidebar-section item" href="{{ site.baseurl }}/{{ site.data.bio.basics.resume }}" target="_blank"><span><i class="white file alternate icon"></i>Resume</span></a>
 </nav>

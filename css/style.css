@@ -136,9 +136,14 @@ a#homeToProjects.my-name-segment h5 {
     width: 100%;
 }
 
-.section-cover {
+div.section-cover {
     height: 100%;
+    min-height: 200px;
     background: rgba(0, 0, 0, 0.5);
+}
+
+footer div.section-cover:hover {
+    background: rgba(0, 0, 0, 0.75);
 }
 
 #desktopSelfie {
@@ -203,16 +208,19 @@ a#homeToProjects.my-name-segment h5 {
     padding-bottom: 20px;
 }
 
+/** Footer **/
+
 footer {
-    background-image: url("{{ site.baseurl }}/images/background/pexels-night-silhouette.jpeg ");
+    background-image: url("{{ site.baseurl }}/images/background/pexels-night-silhouette.jpeg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    font-size: 14px;
 }
 
 div.ui.list .item a, div.ui.list a.item {
-    color: grey;
+    color: orange;
 }
 
 div.ui.list .item a:hover, div.ui.list a.item:hover {
@@ -240,6 +248,10 @@ div.ui.list .item a:hover, div.ui.list a.item:hover {
 
     footer {
         height: 100vh;
+    }
+
+    footer div.ui.list {
+        font-size: calc(14px + 1vw);
     }
 
     div.five.wide.right.aligned.bottom.aligned.column {
