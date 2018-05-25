@@ -1,6 +1,3 @@
----
-# Provide front matter so Jekyll processes this file as SASS.
----
 /**
  ** CSS file for nightsky.html (landing screen background)
  ** @author Michael (Micky) Mangrobang
@@ -90,12 +87,12 @@
 }
 
 .stars {
-    background: #000 url({{ site.baseurl }}/images/nightsky/stars2.png) repeat top center;
+    background: #000 url(../images/nightsky/stars2.png) repeat top center;
     z-index: -3;
 }
 
 .twinkling {
-    background: transparent url({{ site.baseurl }}/images/nightsky/twinkling.png) repeat top center;
+    background: transparent url(../images/nightsky/twinkling.png) repeat top center;
     z-index:-2;
     -moz-animation: move-twink-back 200s linear infinite;
     -ms-animation: move-twink-back 200s linear infinite;
@@ -105,7 +102,7 @@
 }
 
 .clouds {
-    background: transparent url({{ site.baseurl }}/images/nightsky/clouds3.png) repeat top center;
+    background: transparent url(../images/nightsky/clouds3.png) repeat top center;
     z-index: -1;
     -moz-animation: move-clouds-back 200s linear infinite;
     -ms-animation: move-clouds-back 200s linear infinite;

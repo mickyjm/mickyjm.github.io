@@ -1,10 +1,12 @@
 <!-- Menu & Sidebar for Mobile Users -->
 <nav id="mobileSidebar" class="ui inverted vertical menu">
     <div class="header item">Micky's Online Portfolio</div>
-    <a class="item" href="{% if page.layout != 'default' %}/{% endif %}#home"><span><i class="home icon"></i>Home</span></a>
+    <a class="item" href="{% if page.layout != 'default' %}/{% else %}#home{% endif %}"><span><i class="home icon"></i>Home</span></a>
+    {% if page.layout == 'default' %}
     <a class="item" href="{% if page.layout != 'default' %}/{% endif %}#projects"><span><i class="white folder open icon"></i>Projects</span></a>
     <a class="item" href="#about"><span><i class="white user icon"></i>About</span></a>
     <a class="sidebar-section item" href="{% if page.layout != 'default' %}/{% endif %}#contact"><span><i class="white comment alternate icon"></i>Contact</span></a>
+    {% endif %}
     {% for profile in site.data.bio.basics.profiles %}
     <a class="item" href="{{ profile.url }}"><span><i class="white {{ profile.network | downcase }} {% if profile.network == 'GitHub' %}alternate {% elsif profile.network == 'LinkedIn' %}in {% endif %}icon"></i>{{ profile.network }}</span></a>
     {% endfor %}

@@ -3,13 +3,14 @@ layout: project
 type: project
 published: true
 id: ics212p
-image: images/projects/ics212/book-card.png
+imagecard: images/projects/ics212/book-card.png
 title: C/C++ Address Books
 permalink: projects/ics212projects
 date: 2015-12-11
-labels:
+tech:
     - C
     - C++
+    - Command Line Interface
     - Linked List
 summary: A Command Line Interface (CLI) application that utilizes linked lists to store data along with saving the data into text files.
 ---

@@ -1,13 +1,45 @@
 <!-- Project Modal -->
 <div id="{{ include.page.id }}Modal" class="ui modal">
   <div class="header">{{ include.page.title }}</div>
-  <div class="content" style="color:black;font-color:black;">
-    <div class="description" style="color:black;font-color:black;">
-      <p style="color:black;font-color:black;">{{ include.page.summary }}</p>
-    </div>
+  <div class="scrolling content" style="color:black;font-color:black;">
+        {% if include.page.video %}
+        <div class="video-wrap">
+            <iframe src="{{ include.page.video }}" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <br />
+        <p style="color:black;font-color:black;">If the embedded video does not work, you can view the video <a href="{{ include.page.videolink }}" target="_blank">here</a>.</p>
+        {% else %}
+            <img class="ui centered bordered large image" src="{{ base.url }}/{{ include.page.imagecard }}" />
+            <br />
+        {% endif %}
+        <div class="description" style="color:black;font-color:black;">
+            <div class="ui two column grid">
+                <div class="six wide column">
+                    <div class="ui header">Technology Stack</div>
+                    <div class="ui relaxed list">
+                        {% for item in include.page.tech %}
+                        <div class="item">
+                            <i class="check icon"></i> {{ item }}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="ten wide column">
+                    <div class="ui header">Description</div>
+                    <p style="color:black;font-color:black;">{{ include.page.summary }}</p>
+                    {% if include.page.references == true %}
+                    <p style="color:black;font-color:black;">The project uses the <a href="{{ include.page.refitemlink }}" targer="_blank">{{ include.page.refitem }}</a> framework and is created by <a href="{{ include.page.refauthorlink }}" target="_blank">{{ page.refauthor }}</a>.</p>
+                    {% endif %}
+                    {% if include.page.award %}
+                    <p>{{ include.page.award }}</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
   </div>
 
     <div class="actions">
+        <a href="{{ site.baseurl }}/{{ include.page.permalink }}" target="_bank" class="ui button">View in new window</a>
         <div class="ui cancel right labeled icon button">
             Close
             <i class="x icon"></i>

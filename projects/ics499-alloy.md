@@ -3,15 +3,16 @@ layout: project
 type: project
 published: true
 id: ics499a
-image: images/projects/ics499/alloy-card.png
+imagecard: images/projects/ics499/alloy-card.png
 title: Alloy
 permalink: projects/ics499alloy
 date: 2017-05-12
-labels:
-  - HTML
-  - CSS
-  - Git/GitHub
-  - Semantic UI
+tech:
+    - HTML
+    - CSS
+    - Git/GitHub
+    - Semantic UI
+    - MongoDB
 summary: A Meteor Application that my team and I made for UH Manoa faculty and students to create, find, and collaborate on projects.
 ---
 

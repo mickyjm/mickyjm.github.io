@@ -1,9 +1,9 @@
 <!-- Project Card -->
-<div class="ui raised card">
+<div id="{{ include.page.id }}" class="ui raised card">
     <div class="image">
-        <img class="ui small image" src="{{ site.baseurl }}/{{ include.page.image }}">
+        <img class="ui small image" src="{{ site.baseurl }}/{{ include.page.imagecard }}">
     </div>
-    <div id="{{ include.page.id }}" class="ui bottom attached grey button">
+    <div class="ui bottom attached orange button">
         {{ include.page.title }}
     </div>
 </div>

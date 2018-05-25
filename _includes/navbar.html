@@ -1,9 +1,11 @@
 <!-- Menu for Desktop Users -->
 <nav id="desktopMenu" class="ui fixed borderless menu">
-    <a class="item" href="{% if page.layout != 'default' %}/{% endif %}#home"><i class="large home icon"></i></a>
-    <a class="right item" href="{% if page.layout != 'default' %}/{% endif %}#home">Home</a>
-    <a class="item" href="{% if page.layout != 'default' %}/{% endif %}#projects">Projects</a>
-    <a class="item" href="{% if page.layout != 'default' %}/{% endif %}#about">About</a>
-    <a class="item" href="{% if page.layout != 'default' %}/{% endif %}#contact">Contact</a>
+    <a class="item" href="{% if page.layout != 'default' %}/{% else %}#home{% endif %}"><i class="large home icon"></i></a>
+    <a class="right item" href="{% if page.layout != 'default' %}/{% else %}#home{% endif %}">Home</a>
+    {% if page.layout == 'default' %}
+    <a class="item" href="#projects">Projects</a>
+    <a class="item" href="#about">About</a>
+    <a class="item" href="#contact">Contact</a>
+    {% endif %}
     <a class="item" href="{{ site.baseurl }}/{{ site.data.bio.basics.resume }}" target="_blank">Resume</a>
 </nav>

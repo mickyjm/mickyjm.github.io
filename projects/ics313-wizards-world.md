@@ -3,14 +3,14 @@ layout: project
 type: project
 published: true
 id: ics313ww
-image: images/projects/ics313/ww-card.jpg
+imagecard: images/projects/ics313/ww-card.jpg
 title: Wizards World
 permalink: projects/ics313wizardsworld
 date: 2018-03-08
-labels:
+tech:
     - Common Lisp
-    - Learning
-    - Text-based Game
+    - Command Line Interface
+    - CLISP
 summary: A Command Line Interface (CLI) text-based game, that lets you explore a small game world.
 ---
 
