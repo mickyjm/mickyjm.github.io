@@ -1,7 +1,3 @@
----
-# Provide front matter so Jekyll processes this file as SASS.
----
-
 /**
  ** Main CSS file
  ** @author Michael (Micky) Mangrobang
@@ -143,7 +139,7 @@ a#homeToProjects.my-name-segment h5 {
 /** About Me CSS code **/
 
 #about {
-    background-image: url("{{ site.baseurl }}/images/background/pexels-cityscape001.jpeg ");
+    background-image: url("../images/background/pexels-cityscape001.jpeg ");
     background-attachment: fixed;
     background-position: right;
     background-size: cover;
@@ -235,7 +231,7 @@ footer div.section-cover:hover {
 /** Footer **/
 
 footer {
-    background-image: url("{{ site.baseurl }}/images/background/pexels-night-silhouette.jpeg");
+    background-image: url("../images/background/pexels-night-silhouette.jpeg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -299,4 +295,8 @@ div.ui.list .item a:hover, div.ui.list a.item:hover {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.black-font {
+    color: black;
 }

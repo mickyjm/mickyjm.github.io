@@ -10,7 +10,52 @@
         {% include navbar.html %}
         <section id="project">
             <div class="ui center aligned stackable grid container" style="padding-top: 75px;padding-bottom: 75px;">
-            {{ content }}
+
+                <div class="row">
+                    <h3>{{ page.title }}</h3>
+                </div>
+
+                <div class="row">
+                    <div class="twelve wide column">
+                    {% if page.video %}
+                        <div class="video-wrap">
+                            <iframe src="{{ page.video }}" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <br />
+                        <p>If the embedded video does not work, you can view the video <a href="{{ page.videolink }}" target="_blank">here</a>.</p>
+                        {% else %}
+                        <img class="ui centered bordered big image" src="{{ base.url }}/{{ page.image }}" />
+                        <br />
+                        {% endif %}
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="six wide left aligned column">
+                        <div class="ui header" style="color: white;">Technology Stack</div>
+                        <div class="ui relaxed list">
+                            {% for item in page.tech %}
+                            <div class="item">
+                                <i class="check icon"></i> {{ item }}
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="ten wide left aligned column">
+                        <div class="ui header" style="color: white;">Description</div>
+                        <p>{{ page.summary }}</p>
+                        {% if page.award %}
+                        <p>{{ page.award }}</p>
+                        {% endif %}
+                        {% if page.website %}
+                        <p>Read more at <a href="{{ page.website }}" target="_blank">{{ page.website }}.</a></p>
+                        {% endif %}
+                        {% if page.references == true %}
+                        <p>The project uses the <a href="{{ page.refitemlink }}" targer="_blank">{{ page.refitem }}</a> framework and is created by <a href="{{ page.refauthorlink }}" target="_blank">{{ page.refauthor }}</a>.</p>
+                        {% endif %}
+                    </div>
+                </div>
+
             </div>
         </section>
         {% include footer.html %}

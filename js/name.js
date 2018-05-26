@@ -4,7 +4,7 @@
  **/
 
 window.onbeforeunload = function () {
-    window.scrollTo(0, 0);    // refresh back to top of screen
+    window.scrollTo(0, 0);      // refresh back to top of screen
 }
 
 $(document).ready(function () {
@@ -42,25 +42,31 @@ $(document).ready(function () {
 
 });
 
-var beginTyping = function() {
-    var elements = document.getElementsByClassName('txt-rotate');
-    for (var i=0; i<elements.length; i++) {
-        var toRotate = elements[i].getAttribute('data-rotate');
-        var period = elements[i].getAttribute('data-period');
-        if (toRotate) {
-            new TxtRotate(elements[i], JSON.parse(toRotate), period);
-        }
-    }
+let beginTyping = function() {
+    //data-period="2000" data-rotate='[ " gamer.", " recent graduate!", "n aspiring software engineer." ]'
+
+    let elements = document.getElementsByClassName('txt-rotate');
+    //for (let i = 0; i<elements.length; i += 1) {
+        //console.log("elements length: " + elements.length);
+        //let toRotate = elements[0].getAttribute('data-rotate');
+        //let period = elements[0].getAttribute('data-period');
+        let toRotate = [" gamer.", " recent graduate!", "n aspiring software engineer."];
+        let period = 2000;
+        /*if (toRotate) {
+            new TxtRotate(elements[0], JSON.parse(toRotate), period);
+        }*/
+        if (toRotate) new TxtRotate(elements[0], toRotate, period);
+    //}
 
     // INJECT CSS
-    var css = document.createElement("style");
+    let css = document.createElement("style");
     css.type = "text/css";
     css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #FFF }";
     document.body.appendChild(css);
 
 };
 
-var TxtRotate = function(el, toRotate, period) {
+let TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
     this.loopNum = 0;
@@ -71,8 +77,9 @@ var TxtRotate = function(el, toRotate, period) {
 };
 
 TxtRotate.prototype.tick = function() {
-    var i = this.loopNum % this.toRotate.length;
-    var fullTxt = this.toRotate[i];
+    //var i = this.loopNum % this.toRotate.length;
+    let i = this.loopNum;
+    let fullTxt = this.toRotate[i];
 
     if (this.isDeleting) {
         this.txt = fullTxt.substring(0, this.txt.length - 1);
@@ -82,15 +89,15 @@ TxtRotate.prototype.tick = function() {
 
     this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
-    var that = this;
+    let that = this;
     //var delta = 300 - Math.random() * 100;
-    var delta = 100;
+    let delta = 100;
 
     if (this.isDeleting) { delta /= 2; }
 
     if (!this.isDeleting && this.txt === fullTxt) {
         delta = this.period;
-        this.isDeleting = true;
+        if (i != this.toRotate.length - 1) this.isDeleting = true;
     } else if (this.isDeleting && this.txt === '') {
         this.isDeleting = false;
         this.loopNum++;

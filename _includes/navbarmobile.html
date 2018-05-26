@@ -8,7 +8,7 @@
     <a class="sidebar-section item" href="{% if page.layout != 'default' %}/{% endif %}#contact"><span><i class="white comment alternate icon"></i>Contact</span></a>
     {% endif %}
     {% for profile in site.data.bio.basics.profiles %}
-    <a class="item" href="{{ profile.url }}"><span><i class="white {{ profile.network | downcase }} {% if profile.network == 'GitHub' %}alternate {% elsif profile.network == 'LinkedIn' %}in {% endif %}icon"></i>{{ profile.network }}</span></a>
+    <a class="item" href="{{ profile.url }}" target="_blank"><span><i class="white {{ profile.network | downcase }} {% if profile.network == 'GitHub' %}alternate {% elsif profile.network == 'LinkedIn' %}in {% endif %}icon"></i>{{ profile.network }}</span></a>
     {% endfor %}
     {% if site.data.bio.basics.email %}
     <a class="sidebar-section item" href="mailto:{{ site.data.bio.basics.email }}" target="_blank"><span><i class="white envelope icon"></i>Email</span></a>

@@ -1,3 +1,4 @@
+<!-- Test Head -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,8 +17,16 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="{{ site.baseurl }}/semantic/dist/semantic.min.js"></script>
 
+    <!-- Load Default Techfolio CSS
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/stylesheet-default.css"> -->
+
     <!-- Load Custom CSS -->
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/globalstyle.min.css">
+    <!-- Test CSS before minifying -->
+    <!--<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/navbarmobile.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/nightsky.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/style.css">-->
 
     <!-- Load Custom JS -->
     {% if page.layout == 'default' %}
@@ -25,6 +34,10 @@
     {% else %}
     <script src="{{ site.baseurl }}/js/sub.min.js"></script>
     {% endif %}
+    <!--<script src="{{ site.baseurl }}/js/navbarmobile.js"></script>
+    <script src="{{ site.baseurl }}/js/navbar.js"></script>
+    <script src="{{ site.baseurl }}/js/name.js"></script>
+    <script src="{{ site.baseurl }}/js/footer.js"></script>-->
     <!-- Load Liquid JS -->
     <script src="{{ site.baseurl }}/js/projects.js"></script>
 
