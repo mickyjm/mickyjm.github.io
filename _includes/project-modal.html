@@ -7,13 +7,13 @@
             <iframe id="{{ include.page.id }}Video" src="{{ include.page.video }}?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
         </div>
         <br />
-        <p class="black-font">If the embedded video does not work, you can view the video <a class="link-font" href="{{ include.page.videolink }}" target="_blank">here</a>.</p>
-        {% else %}
-            <img class="ui centered bordered large image" src="{{ base.url }}/{{ include.page.image }}" />
+        <p>If the embedded video does not work, you can view the video <a class="link-font" href="{{ include.page.videolink }}" target="_blank">here</a>.</p>
+        {% else %}"
+        <img class="ui centered bordered large image" src="{{ base.url }}/{{ include.page.image }}" />
             <br />
         {% endif %}
         <div class="description">
-            <div class="ui two column grid">
+            <div class="ui two column stackable grid">
 
                 <div class="six wide column">
                     <div class="ui raised segment">

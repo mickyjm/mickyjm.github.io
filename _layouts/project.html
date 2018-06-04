@@ -11,17 +11,17 @@
             <div class="ui center aligned stackable grid container" style="padding-top: 75px;padding-bottom: 75px;">
 
                 <div class="row">
-                    <h3>{{ page.title }}</h3>
+                    <h1 class="ui header">{{ page.title }}</h1>
                 </div>
 
                 <div class="row">
-                    <div class="twelve wide column">
+                    <div class="twelve wide left aligned column">
                     {% if page.video %}
                         <div class="video-wrap">
                             <iframe src="{{ page.video }}" frameborder="0" allowfullscreen></iframe>
                         </div>
                         <br />
-                        <p>If the embedded video does not work, you can view the video <a href="{{ page.videolink }}" target="_blank">here</a>.</p>
+                        <p>If the embedded video does not work, you can view the video <a class="link-font" href="{{ page.videolink }}" target="_blank">here</a>.</p>
                         {% else %}
                         <img class="ui centered bordered big image" src="{{ base.url }}/{{ page.image }}" />
                         <br />
@@ -30,8 +30,12 @@
                 </div>
 
                 <div class="row">
+                    <div class="ui stackable grid container">
+
                     <div class="six wide left aligned column">
-                        <div class="ui header" style="color: white;">Technology Stack</div>
+                        <div class="ui segment">
+                        <h3 class="ui header">Technology Stack</h3>
+                        <div class="ui divider"></div>
                         <div class="ui relaxed list">
                             {% for item in page.tech %}
                             <div class="item">
@@ -39,19 +43,24 @@
                             </div>
                             {% endfor %}
                         </div>
+                        </div>
                     </div>
+
                     <div class="ten wide left aligned column">
-                        <div class="ui header" style="color: white;">Description</div>
+                        <h3 class="ui header">Description</h3>
+                        <div class="ui divider"></div>
                         <p>{{ page.summary }}</p>
                         {% if page.award %}
                         <p>{{ page.award }}</p>
                         {% endif %}
                         {% if page.website %}
-                        <p>Read more at <a href="{{ page.website }}" target="_blank">{{ page.website }}.</a></p>
+                        <p>Read more at <a class="link-font" href="{{ page.website }}" target="_blank">{{ page.website }}.</a></p>
                         {% endif %}
                         {% if page.references == true %}
-                        <p>The project uses the <a href="{{ page.refitemlink }}" targer="_blank">{{ page.refitem }}</a> framework and is created by <a href="{{ page.refauthorlink }}" target="_blank">{{ page.refauthor }}</a>.</p>
+                        <p>The project uses the <a class="link-font" href="{{ page.refitemlink }}" targer="_blank">{{ page.refitem }}</a> framework and is created by <a class="link-font" href="{{ page.refauthorlink }}" target="_blank">{{ page.refauthor }}</a>.</p>
                         {% endif %}
+                    </div>
+
                     </div>
                 </div>
 
