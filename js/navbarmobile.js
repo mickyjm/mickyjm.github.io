@@ -54,7 +54,7 @@ $(document).ready(function () {
         let h = '#home';
         let href = $(this).attr('href');
 
-        $(i).transition({
+        /*$(i).transition({
             animation   : 'fade down',
             interval    : 50,
             reverse     : true
@@ -63,8 +63,9 @@ $(document).ready(function () {
         setTimeout(function() {
             $(s).animate({ width: 0 }, 500);
             $(t).toggleClass(o);
-        }, 500);
+        }, 500);*/
 
+                //$('.ui.accordion').accordion('close', 0);
         if (href == h) {
 
             $('html, body').animate({ scrollTop: 0 }, 500);

@@ -1,39 +1,73 @@
-<!-- Always create iframes to embed videos if present. See: http://semantic-ui.com/modules/embed.html -->
-<!-- Footer Segment -->
+<!-- Footer Segment; displays copyright and additional navigaton -->
 <footer>
-    <div class="section-cover">
-        <div class="ui center aligned stackable grid container mobile reversed">
-            <div class="five wide left aligned bottom aligned column">
-                <h5>Credit</h5>
-                <div class="ui list">
-                    <div class="item">
-                        Techfolio template given by <a href="http://philipmjohnson.org/" target="_blank">Philip Johnson</a>.
-                    </div>
-                    <div class="item">
-                        Last updated May 2018.
-                    </div>
-                    <div class="item">
-                        Template edited by me <i class="copyright icon"></i> 2018.
-                    </div>
+    <div class="ui stackable two column grid container mobile reversed">
+
+        <div class="left aligned column">
+            <h3 class="ui inverted header">Credit</h3>
+            <div class="ui inverted divider"></div>
+            <div class="ui list whitesmoke-font">
+                <div class="item">
+                    Techfolio template given by <a class="link-font" href="http://philipmjohnson.org/" target="_blank">Philip Johnson</a>.
                 </div>
-            </div>
-            <div class="six wide center aligned bottom aligned column">
-                <h5>{{ site.data.bio.basics.name }}</h5>
-                {% include network-links-custom.html email="true" resume="true" %}
-            </div>
-            <div class="five wide right aligned bottom aligned column">
-                <h5>Navigation</h5>
-                <div id="footer-nav" class="ui list">
-                    <a class="item" href="{% if page.layout != 'default' %}/{% else %}#home{% endif %}">Home</a>
-                    <a class="item" href="{% if page.layout != 'default' %}/{% else %}#projects{% endif %}">Projects</a>
-                    <a class="item" href="{% if page.layout != 'default' %}/{% else %}#about{% endif %}">About</a>
-                    <a class="item" href="{% if page.layout != 'default' %}/{% else %}#contact{% endif %}">Contact</a>
+                <div class="item">
+                    Last updated June 2018.
+                </div>
+                <div class="item">
+                    Template edited by me <i class="copyright outline icon"></i> 2018.
+                </div>
+                <div class="item">
+                    Made with <a class="link-font" href="https://semantic-ui.com/" target="_blank">Semantic UI</a>. Powered by <a class="link-font" href="https://jekyllrb.com/" target="_blank">Jekyll</a>.
                 </div>
             </div>
         </div>
+
+        <div class="column">
+            <h3 class="ui inverted header">{{ site.data.bio.basics.name }}</h3>
+            <div class="ui inverted divider"></div>
+
+            <div class="ui two column grid">
+
+                <div class="column">
+                    <div id="footer-nav" class="ui list">
+                        <div class="item">
+                            <a class="link-font" href="{% if page.layout != 'default' %}/{% else %}#home{% endif %}">Home</a>
+                        </div>
+                        <div class="item">
+                            <a class="link-font" href="{% if page.layout != 'default' %}/{% else %}#projects{% endif %}">Projects</a>
+                        </div>
+                        <div class="item">
+                            <a class="link-font" href="{% if page.layout != 'default' %}/{% else %}#about{% endif %}">About</a>
+                        </div>
+                        <div class="item">
+                            <a class="link-font" href="{% if page.layout != 'default' %}/{% else %}#contact{% endif %}">Contact</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="ui list">
+                        <div class="item">
+                            <a class="link-font" href="mailto:{{ site.data.bio.basics.email }}">Email</a>
+                        </div>
+                        {% for profile in site.data.bio.basics.profiles %}
+                        <div class="item">
+                            <a class="link-font" href="{{ profile.url }}" target="_blank">{{ profile.network }}</a>
+                        </div>
+                        {% endfor %}
+                        <div class="item">
+                            <a class="link-font" href="{{ site.baseurl }}/{{ site.data.bio.basics.resume }}" target="_blank">Resume</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 </footer>
 
+<!-- Always create iframes to embed videos if present. See: http://semantic-ui.com/modules/embed.html -->
 <script>
   $('.ui.embed').embed();
 </script>

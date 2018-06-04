@@ -1,6 +1,8 @@
-<!-- Menu for Desktop Users -->
-<nav id="desktopMenu" class="ui fixed borderless menu">
-    <a class="item" href="{% if page.layout != 'default' %}/{% else %}#home{% endif %}"><i class="large home icon"></i></a>
+<!-- Navigation Menu Segment -->
+<nav>
+    <!-- Desktop Navigation Menu; appears only when width > 768px -->
+    <div id="desktop-menu" class="ui fixed borderless inverted secondary menu desktop-only{% if page.layout != 'default' %} scrolled{% endif %}">
+    <a class="item" href="{% if page.layout != 'default' %}/{% else %}#home{% endif %}"><img class="ui mini image" src="{{ site.baseurl }}/images/icon/icon.png" /></a>
     <a class="right item" href="{% if page.layout != 'default' %}/{% else %}#home{% endif %}">Home</a>
     {% if page.layout == 'default' %}
     <a class="item" href="#projects">Projects</a>
@@ -8,4 +10,28 @@
     <a class="item" href="#contact">Contact</a>
     {% endif %}
     <a class="item" href="{{ site.baseurl }}/{{ site.data.bio.basics.resume }}" target="_blank">Resume</a>
+    </div>
+    <!-- Mobile Navigation Menu; appears only when width <= 768 -->
+    <div id="mobile-menu" class="ui fixed borderedless inverted secondary menu mobile-only">
+        <div class="ui fluid inverted accordion">
+            <div class="title">
+                <i class="big bars icon"></i>
+            </div>
+            <div class="content">
+                <div class="ui stackable secondary menu">
+                    <a class="item" href="{% if page.layout != 'default' %}/{% else %}#home{% endif %}">Home</a>
+                    {% if page.layout == 'default' %}
+                    <a class="item" href="#projects">Projects</a>
+                    <a class="item" href="#about">About</a>
+                    <a class="item" href="#contact">Contact</a>
+                    {% endif %}
+                    <a class="item" href="{{ site.data.bio.basics.email }}">Email</a>
+                    {% for profile in site.data.bio.basics.profiles %}
+                    <a class="item" href="{{ profile.url }}" target="_blank">{{ profile.network }}</a>
+                    {% endfor %}
+                    <a class="item" href="{{ site.baseurl }}/{{ site.data.bio.basics.resume }}" target="_blank">Resume</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </nav>

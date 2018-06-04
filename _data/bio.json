@@ -3,8 +3,7 @@
         "name": "Michael (Micky) Mangrobang",
         "nickname": "Micky Mangrobang",
         "label": "Student/Teaching Assistant",
-        "picture": "images/self/mMangro-5.jpg",
-        "mpicture": "images/self/mMangro-7.jpg",
+        "picture": "images/self/mMangro-7.jpg",
         "email": "micky.jm4@gmail.com",
         "resume" : "downloads/MichaelMangrobangOnlineResume.pdf",
         "phone": "",
@@ -59,6 +58,7 @@
             "Java",
             "Python",
             "Lisp (Common)",
+            "Assembly (x86)",
             "C#"
         ]
     },
@@ -70,19 +70,20 @@
             "Semantic UI",
             "Jekyll",
             "jQuery",
-            "PHP/MySQL"
+            "PHP",
+            "SQL"
         ]
     },
     "tools": {
         "name": "Tools",
         "list": [
-            "Command Line Interface",
+            "Terminal",
             "Git/GitHub",
+            "Atom",
             "Secure Shell",
             "Unity",
             "Eclipse",
-            "Visual Studio",
-            "Atom"
+            "Visual Studio"
         ]
     },
     "skills": [

@@ -8,46 +8,30 @@
 html, body {
     margin: 0;
     padding: 0;
+    /*color: white !important;*/
+    font-size: 16px;
     /**background: linear-gradient(to bottom, #000030, #181818, #181818, #121212);**/
+    color: #1B1C1D;
+}
+
+.whitesmoke-font {
+    color: whitesmoke !important;
+}
+
+.shadow-font {
+    text-shadow: 1px 1px 15px #1B1C1D;
+}
+
+.link-font {
+    color: orange !important;
+}
+
+a.link-font:hover {
+    text-decoration: underline;
 }
 
 body, h1, h2, h3, h4, h5, h6, p {
     font-family: 'Ubuntu', sans-serif !important;
-    color: white;
-}
-
-a {
-    color: orange;
-}
-
-a:hover {
-    color: darkorange;
-    text-decoration: underline;
-}
-
-h1 {
-    font-size: calc(3em + 0.5vw);
-}
-
-h2 {
-    font-size: calc(2.5em + 0.5vw);
-}
-
-h3 {
-    font-size: calc(2em + 0.5vw);
-}
-
-h4 {
-    font-size: calc(1.5em + 0.5vw);
-}
-
-h5 {
-    font-size: calc(1em + 0.5vw);
-}
-
-h6 {
-    font-size: calc(0.5em + 0.5vw);
-    margin: 0;
 }
 
 .ui.center.aligned.stackable.grid.container {
@@ -60,16 +44,30 @@ h6 {
 
 #home {
     height: 100vh;
-    min-height: 400px;
+    min-height: 500px;
     position: relative;
+    /*background: rgba(25, 25, 112, 0.7);
+    background: rgba(27, 28, 29, 0.7);*/
+    background-image: url("../images/cover/hotel.jpg");
+    background-attachment: fixed;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+h1.my-name-segment {
+    font-size: 3em;
+}
+
+p.my-name-segment, #contact-segment {
+    font-size: 1.5em;
 }
 
 #my-name h1.my-name-segment, #my-name p.my-name-segment {
     margin: 5px;
-}
-
-#my-name p.my-name-segment {
-    font-size: calc(1em + 0.5vw);
+    /*color: #FAFAFA;
+    text-shadow: 1px 1px 15px #1B1C1D;*/
 }
 
 /** Blinking caret code **/
@@ -84,20 +82,22 @@ h6 {
 }
 
 a i.white.circular.icon {
-    color: white;
-    border: 1px solid white;
+    color: #F5F5F5;
+    border: 1px solid #F5F5F5;
     margin-left: 10px;
     margin-right: 10px;
     transform: scale(1.0);
-    transition: transform 200ms linear;
+    transition: all 200ms linear;
 }
 
 a i.white.circular.icon:hover {
+    color: orange;
+    background: midnightblue;
     text-decoration: none;
     -moz-transform: scale(1.5);
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
-    transition: transform 200ms linear;
+    transition: all 200ms linear;
 }
 
 div.my-name-segment.network-icons {
@@ -105,7 +105,12 @@ div.my-name-segment.network-icons {
 }
 
 a#homeToProjects.my-name-segment {
-    color: white;
+    background: url("../images/down-arrow.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 52px;
+    width: 67px;
     position: absolute;
     bottom: 0;
     margin-bottom: 2.5vh;
@@ -122,16 +127,18 @@ a#homeToProjects.my-name-segment h5 {
 /** Projects CSS code **/
 
 #projects {
-    padding-bottom: calc(10px + 1vh);
-    background: linear-gradient(to bottom, #181818, #121212, #000030);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    /*background: whitesmoke;*/
+    background: linear-gradient(to bottom,  whitesmoke 0%, whitesmoke 85%, midnightblue 85%, midnightblue 100%);
 }
 
 /** Mobile view padding **/
 @media screen and (max-width: 768px) {
 
     #projects .middle.aligned.row {
-        padding-top: calc(10px + 1vh);
-        padding-bottom: calc(10px + 1vh);
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
 }
@@ -139,145 +146,79 @@ a#homeToProjects.my-name-segment h5 {
 /** About Me CSS code **/
 
 #about {
-    background-image: url("../images/background/pexels-cityscape001.jpeg ");
-    background-attachment: fixed;
-    background-position: right;
-    background-size: cover;
-    background-repeat: no-repeat;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    /*background-color: whitesmoke;*/
+    background: linear-gradient(to bottom,  midnightblue 0%, midnightblue 60%, whitesmoke 60%, whitesmoke 100%);
 }
 
-.section-cover, #about-row {
+#headshot {
+    padding: 2px;
+    border: 2px solid #000;
+    background-color: #FAFaFa;
+}
+
+.bio-summary {
+    font-size: 1.5em;
+}
+
+.mobile-only.bio-summary {
+    text-align: left;
+}
+
+.left-border {
+    border-left: solid 0.5px rgba(34 ,36, 38, 0.15);
+}
+
+.right-border {
+    border-right: solid 0.5px rgba(34, 36, 38, 0.15);
+}
+
+.left-right-border {
+    border-left: solid 0.5px rgba(34 ,36, 38, 0.15);
+    border-right: solid 0.5px rgba(34, 36, 38, 0.15);
+}
+
+.full-cover {
     width: 100%;
-}
-
-div.section-cover {
     height: 100%;
-    min-height: 200px;
-    background: rgba(0, 0, 0, 0.25);
-    transition: background 200ms linear;
-}
-
-footer div.section-cover:hover {
-    background: rgba(0, 0, 0, 0.75);
-    transition: background 200ms linear;
-}
-
-#desktopSelfie {
-    padding: 5px;
-    border: 1px solid #000;
-    background-color: #fff;
-}
-
-#mobileSelfie {
-    padding: 1px;
-    border:1px solid #000;
-    background-color: #fff;
-}
-
-#bio-summary {
-    font-size: calc(1em + 0.5vw);
-}
-
-.skills-item {
-    font-size: calc(0.5em + 0.5vw);
-}
-
-/** Remove fullscreen height and switch pictures when in mobile mode **/
-@media screen and (min-width: 769px) {
-
-    #about {
-        height: calc(100vh - 55px);
-        min-height: 650px;
-    }
-
-    #about .section-cover {
-        height: 100%;
-    }
-
-    #mobileSelfie {
-        display: none;
-    }
-
-}
-
-/** Switch pictures when in desktop mode **/
-@media screen and (max-width: 768px) {
-
-    #desktopSelfie {
-        display: none;
-    }
-
 }
 
 #project {
-    background: linear-gradient(to bottom, #000030, #181818, #181818, #121212);
+    background: #F5F5F5;
 }
 
 /** Contact CSS code **/
 
 #contact {
-    height:75vh;
-    background: linear-gradient(to bottom, #000030, #181818, #181818, #121212);
-}
-
-.contact-segment {
-    font-size: calc(1em + 1vw);
+    /*background: linear-gradient(to bottom, #000030, #181818, #181818, #121212);*/
+    /*background: whitesmoke;*/
+    background: url('../images/cover/hotel-overlook.jpg');
+    background-attachment: fixed;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #contact-button {
-    padding-bottom: 20px;
 }
 
 /** Footer **/
 
 footer {
-    background-image: url("../images/background/pexels-night-silhouette.jpeg");
+    /*background-image: url("../images/background/pexels-night-silhouette.jpeg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-    font-size: 14px;
+    background-repeat: no-repeat;*/
+    /*background-color: #1B1C1D;*/
+    background: midnightblue;
+    min-height: 185px;
 }
 
-div.ui.list .item a, div.ui.list a.item {
-    color: orange;
-}
-
-div.ui.list .item a:hover, div.ui.list a.item:hover {
-    color: darkorange;
-}
-
-@media screen and (min-width: 769px) {
-
-    #contact {
-        height: calc(100vh - 255px);
-        min-height: 400px;
-    }
-
-    footer {
-        min-height: 200px;
-    }
-
-}
-
-@media screen and (max-width: 768px) {
-
-    #contact {
-        height: 100vh;
-    }
-
-    footer {
-        height: 100vh;
-    }
-
-    footer div.ui.list {
-        font-size: calc(14px + 1vw);
-    }
-
-    div.five.wide.right.aligned.bottom.aligned.column {
-        text-align: left;
-    }
-
+#about {
+    padding-top: 25px;
+    padding-bottom: 100px;
 }
 
 .video-wrap {
@@ -295,8 +236,4 @@ div.ui.list .item a:hover, div.ui.list a.item:hover {
     left: 0;
     width: 100%;
     height: 100%;
-}
-
-.black-font {
-    color: black;
 }

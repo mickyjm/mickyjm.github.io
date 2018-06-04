@@ -1,0 +1,77 @@
+<!-- About Me segment -->
+<div class="ui center aligned stackable grid container">
+
+    <div class="row">
+        <div class="ui stackable grid container mobile reversed">
+
+            <div class="eight wide middle aligned center aligned column">
+                <img id="headshot" class="ui medium circular centered image" src="{{ site.baseurl }}/{{ site.data.bio.basics.picture }}" />
+                <p class="mobile-only whitesmoke-font bio-summary">
+                    {{ site.data.bio.basics.summary}}
+                </p>
+            </div>
+
+            <div class="eight wide left aligned middle aligned column">
+                <h1 class="ui inverted header">About Me</h1>
+                <p class="desktop-only whitesmoke-font bio-summary">
+                    {{ site.data.bio.basics.summary}}
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="sixteen wide column">
+        <div class="ui raised segment">
+            <div class="ui three column stackable grid">
+
+                <div class="left aligned column left-border">
+                    <h3 class="ui header">{{ site.data.bio.programming.name }}</h3>
+                    <p>
+                        Languages I am comfortable using in descending order.
+                    </p>
+                    <div class="ui inverted divider"></div>
+                    <div class="ui relaxed list">
+                        {% for item in site.data.bio.programming.list %}
+                        <div class="item skill-item">
+                            <i class="check icon"></i> {{ item }}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="left aligned column left-right-border">
+                    <h3 class="ui header">{{ site.data.bio.web.name }}</h3>
+                    <p>
+                        Languages and Frameworks I like to use for web development.
+                    </p>
+                    <div class="ui divider"></div>
+                    <div class="ui relaxed list">
+                        {% for item in site.data.bio.web.list %}
+                        <div class="item skill-item">
+                            <i class="check icon"></i> {{ item }}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="left aligned column right-border">
+                    <h3 class="ui header">{{ site.data.bio.tools.name }}</h3>
+                    <p>
+                        Where would I be if I can not develop without my tools?
+                    </p>
+                    <div class="ui divider"></div>
+                    <div class="ui relaxed list">
+                        {% for item in site.data.bio.tools.list %}
+                        <div class="item skill-item">
+                            <i class="check icon"></i> {{ item }}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>

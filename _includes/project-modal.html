@@ -1,40 +1,47 @@
-<!-- Project Modal -->
+<!-- Project Modal; displays project information in modal -->
 <div id="{{ include.page.id }}Modal" class="ui modal">
   <div class="header">{{ include.page.title }}</div>
-  <div class="scrolling content black-font">
+  <div class="scrolling content">
         {% if include.page.video %}
         <div class="video-wrap">
             <iframe id="{{ include.page.id }}Video" src="{{ include.page.video }}?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
         </div>
         <br />
-        <p class="black-font">If the embedded video does not work, you can view the video <a href="{{ include.page.videolink }}" target="_blank">here</a>.</p>
+        <p class="black-font">If the embedded video does not work, you can view the video <a class="link-font" href="{{ include.page.videolink }}" target="_blank">here</a>.</p>
         {% else %}
             <img class="ui centered bordered large image" src="{{ base.url }}/{{ include.page.image }}" />
             <br />
         {% endif %}
         <div class="description">
             <div class="ui two column grid">
+
                 <div class="six wide column">
-                    <div class="ui header">Technology Stack</div>
-                    <div class="ui relaxed list">
-                        {% for item in include.page.tech %}
-                        <div class="item">
-                            <i class="check icon"></i> {{ item }}
+                    <div class="ui raised segment">
+
+                        <div class="ui header">Technology Stack</div>
+                        <div class="ui divider"></div>
+                        <div class="ui list">
+                            {% for item in include.page.tech %}
+                            <div class="item">
+                                <i class="check icon"></i> {{ item }}
+                            </div>
+                            {% endfor %}
                         </div>
-                        {% endfor %}
                     </div>
                 </div>
+
                 <div class="ten wide column">
                     <div class="ui header">Description</div>
-                    <p class="black-font">{{ include.page.summary }}</p>
+                    <div class="ui divider"></div>
+                    <p>{{ include.page.summary }}</p>
                     {% if include.page.award %}
-                    <p class="black-font">{{ include.page.award }}</p>
+                    <p>{{ include.page.award }}</p>
                     {% endif %}
                     {% if include.page.website %}
-                    <p class="black-font">Read more at <a href="{{ include.page.website }}" target="_blank">{{ include.page.website }}.</a></p>
+                    <p >Read more at <a class="link-font" href="{{ include.page.website }}" target="_blank">{{ include.page.website }}.</a></p>
                     {% endif %}
                     {% if include.page.references == true %}
-                    <p class="black-font">The project uses the <a href="{{ include.page.refitemlink }}" targer="_blank">{{ include.page.refitem }}</a> framework and is created by <a href="{{ include.page.refauthorlink }}" target="_blank">{{ page.refauthor }}</a>.</p>
+                    <p>The project uses the <a class="link-font" href="{{ include.page.refitemlink }}" targer="_blank">{{ include.page.refitem }}</a> framework and is created by <a class="link-font" href="{{ include.page.refauthorlink }}" target="_blank">{{ page.refauthor }}</a>.</p>
                     {% endif %}
                 </div>
             </div>
@@ -42,7 +49,7 @@
   </div>
 
     <div class="actions">
-        <a href="{{ site.baseurl }}/{{ include.page.permalink }}" target="_blank" class="ui button">View in new window</a>
+        <a class="ui button" href="{{ site.baseurl }}/{{ include.page.permalink }}">View in new window</a>
         <div {% if include.page.video %}id="stop-{{ include.page.id }}Video"{% endif %} class="ui cancel right labeled icon button">
             Close
             <i class="x icon"></i>

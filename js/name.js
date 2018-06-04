@@ -9,36 +9,30 @@ window.onbeforeunload = function () {
 
 $(document).ready(function () {
 
-    /*$('#my-name .my-name-segment').transition('hide').transition({
-        animation   : 'fly up',
-        interval    : 200
-    });*/
-
-    if ($(window).width() > 768) {
-
-        $('#my-name .my-name-segment').transition('hide').transition({
+    function play_name_animations() {
+        $('#my-name .my-name-segment').transition({
             animation   : 'fly up',
             interval    : 200
         });
-
-        setTimeout(beginTyping, 1000);
-
-    } else {
-
-        beginTyping();
-
     }
 
-    $('#homeToProjects').click(function(){
-
-        let menu = '#desktopMenu';
+    function scroll_to_projects() {
+        let menu = '#desktop-menu';
         let href = $(this).attr('href');
         let anchor = $(href).offset();
-        let menuHeight = ($(menu).is(':visible')) ? $(menu).height() : 0;
+        //let menuHeight = ($(menu).is(':visible')) ? $(menu).height() : 0;
+        let menuHeight = ($(menu).is(":visible")) ? $(menu).height() : 55;
+        //let menuHeight = $(menu).height();
         $('html, body').animate({ scrollTop: anchor.top - menuHeight }, 500);
        return false;
+    }
 
-    });
+    $('#my-name .my-name-segment').transition('hide');
+
+    setTimeout(play_name_animations, 100);
+    setTimeout(beginTyping, 1200);
+
+    $('#homeToProjects').click(scroll_to_projects);
 
 });
 
@@ -61,7 +55,7 @@ let beginTyping = function() {
     // INJECT CSS
     let css = document.createElement("style");
     css.type = "text/css";
-    css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #FFF }";
+    css.innerHTML = ".txt-rotate > .wrap { border-right: 0.1em solid #87CEFA }";
     document.body.appendChild(css);
 
 };
