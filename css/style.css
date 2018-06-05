@@ -86,6 +86,8 @@ a i.white.circular.icon {
     border: 1px solid #F5F5F5;
     margin-left: 10px;
     margin-right: 10px;
+    box-shadow: 1px 1px 15px #1B1C1D;
+    background:rgba(27, 28, 29, 0.4);
     transform: scale(1.0);
     transition: all 200ms linear;
 }
@@ -93,7 +95,7 @@ a i.white.circular.icon {
 a i.white.circular.icon:hover {
     color: orange;
     background: midnightblue;
-    text-decoration: none;
+    box-shadow: 1px 1px 5px #1B1C1D;
     -moz-transform: scale(1.5);
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
@@ -201,6 +203,27 @@ a#homeToProjects.my-name-segment h5 {
 }
 
 #contact-button {
+    display: inline-block;
+    width: 150px;
+    height: 55px;
+    border: solid 1px #F5F5F5;
+    line-height: 55px;
+    border-radius: 55px;
+    background: transparent;
+    color: #F5F5F5;
+    font-size: 18px;
+    background: rgba(27, 28, 29, 0.4);
+    box-shadow: 1px 1px 15px #1B1C1D;
+    transform: scale(1.0);
+    transition: all 200ms linear;
+}
+
+#contact-button:hover {
+    background: midnightblue;
+    transform: scale(1.25);
+    box-shadow: 1px 1px 5px #1B1C1D;
+    color: orange;
+    transition: all 200ms linear;
 }
 
 /** Footer **/
