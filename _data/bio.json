@@ -3,15 +3,16 @@
         "name": "Michael (Micky) Mangrobang",
         "nickname": "Micky Mangrobang",
         "label": "Student/Teaching Assistant",
-        "picture": "images/self/mMangro-7.jpg",
+        "picture": "images/self/ProfilePic.jpg",
         "email": "micky.jm4@gmail.com",
         "resume" : "downloads/MichaelMangrobangOnlineResume.pdf",
         "phone": "",
         "website": "https://mickyjm.github.io",
-        "summary": "I'm a graduate, new to the industry. I have experience in software engineering and front-end development with an interest in giving users a better experience through efficiency, control, and design.",
+        "summary": "I'm a software engineer still early in my career. I have experience ranging from front-end development to back-end development with an interest in giving users a better experience through efficiency, control, and design.",
+        "preface": "I will be honest. If you are looking for a \"rockstar\" software engineer that dedicates their entire life to coding even outside of work. That is not me. I am human, I have hobbies, I have other passions. When the moment strikes and the ideas flow, then yes, I will pursue and create a side project. Other than that, I like to enjoy my other interests. I may not bring a life dedicated to coding, but I can promise to bring",
         "location": {
             "address": "",
-            "postalCode": "96822",
+            "postalCode": "96818",
             "city": "Honolulu",
             "countryCode": "USA",
             "region": "Hawaii"
@@ -54,12 +55,12 @@
     "programming": {
         "name": "Programming",
         "list": [
+            "C#",
             "C/C++",
             "Java",
             "Python",
             "Lisp (Common)",
-            "Assembly (x86)",
-            "C#"
+            "Assembly (x86)"
         ]
     },
     "web": {
@@ -67,11 +68,11 @@
         "list": [
             "HTML/CSS",
             "JavaScript",
+            "jQuery",
             "Semantic UI",
             "Jekyll",
-            "jQuery",
-            "PHP",
-            "SQL"
+            "SQL",
+            "PHP"
         ]
     },
     "tools": {
@@ -80,8 +81,9 @@
             "Terminal",
             "Git/GitHub",
             "Atom",
-            "Secure Shell",
+            "Team Foundation Server",
             "Unity",
+            "Unreal Engine",
             "Eclipse",
             "Visual Studio"
         ]
@@ -91,12 +93,12 @@
             "name": "Languages",
             "level": "",
             "keywords": [
+                "C#",
+                "Javascript",
                 "C/C++",
                 "Java",
-                "Javascript",
                 "Python",
-                "Lisp (Common)",
-                "C#"
+                "Lisp (Common)"
             ]
         },
         {

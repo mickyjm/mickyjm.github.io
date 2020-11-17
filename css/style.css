@@ -145,6 +145,10 @@ a#homeToProjects.my-name-segment h5 {
 
 }
 
+#view-projects-button {
+    float: right;
+}
+
 /** About Me CSS code **/
 
 #about {
@@ -195,7 +199,7 @@ a#homeToProjects.my-name-segment h5 {
 #contact {
     /*background: linear-gradient(to bottom, #000030, #181818, #181818, #121212);*/
     /*background: whitesmoke;*/
-    background: url('../images/cover/hotel-overlook.jpg');
+    background: url('../images/cover/washington-ferry-ride.jpg');
     background-attachment: fixed;
     background-position: left;
     background-size: cover;

@@ -44,7 +44,7 @@ let beginTyping = function() {
         //console.log("elements length: " + elements.length);
         //let toRotate = elements[0].getAttribute('data-rotate');
         //let period = elements[0].getAttribute('data-period');
-        let toRotate = [" gamer.", " recent graduate!", "n aspiring software engineer."];
+        let toRotate = [" UH Manoa alumn.", " gamer.", " regular gym-goer.", " software engineer."];
         let period = 2000;
         /*if (toRotate) {
             new TxtRotate(elements[0], JSON.parse(toRotate), period);
